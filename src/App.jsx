@@ -45,7 +45,23 @@ function Hero() {
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
             <img src={ph43} alt="Placeholder de consultorio odontológico" className="h-full w-full object-cover" />
           </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -186,7 +202,23 @@ function Services() {\n  const services = [
               <span className="mt-3 inline-flex items-center text-sky-700 text-sm">Ver m�s detalles ?</span>
             </button>
           ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -212,7 +244,23 @@ function About() {
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
             <img src={ph43} alt="Placeholder del equipo y atención" className="h-full w-full object-cover" />
           </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -241,7 +289,23 @@ function Gallery() {
               </figcaption>
             </figure>
           ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -338,7 +402,23 @@ function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -370,6 +450,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
