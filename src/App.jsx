@@ -51,6 +51,28 @@ function Hero() {
   )
 }
 
+function Modal({ open, onClose, title, children }) {
+  useEffect(() => {
+    function onKey(e) { if (e.key === 'Escape') onClose(); }
+    if (open) document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open, onClose]);
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50" aria-modal="true" role="dialog">
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+      <div className="relative mx-auto my-10 max-w-3xl rounded-xl bg-white shadow-xl border border-gray-100">
+        <div className="flex items-center justify-between border-b border-gray-200 px-5 py-3">
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+          <button onClick={onClose} className="p-2 rounded-md hover:bg-gray-100" aria-label="Cerrar">?</button>
+        </div>
+        <div className="p-5">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
 function Services() {
   const items = [
     { title: 'Odontología general', desc: 'Limpiezas, restauraciones y control preventivo.' },
@@ -258,4 +280,5 @@ export default function App() {
     </div>
   )
 }
+
 
