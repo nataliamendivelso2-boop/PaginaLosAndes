@@ -178,12 +178,13 @@ function Services() {\n  const services = [
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
         <p className="mt-3 text-gray-600">Tratamientos integrales con enfoque humano y resultados predecibles.</p>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((s) => (
-            <div key={s.title} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-              <div className="text-sky-600 text-2xl" aria-hidden>â–¸</div>
+                    {services.map((s) => (
+            <button key={s.key} onClick={() => onCard(s)} className="text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition cursor-pointer">
+              <div className="text-sky-600 text-2xl" aria-hidden>??</div>
               <h3 className="mt-3 font-semibold text-gray-900">{s.title}</h3>
               <p className="mt-2 text-gray-600 text-sm">{s.desc}</p>
-            </div>
+              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">Ver más detalles ?</span>
+            </button>
           ))}
         </div>
       </div>
@@ -369,6 +370,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
