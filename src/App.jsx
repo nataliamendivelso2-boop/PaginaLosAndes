@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import logo from './assets/placeholder-logo.svg'
 import ph43 from './assets/placeholder-4x3.svg'
@@ -257,3 +258,4 @@ export default function App() {
     </div>
   )
 }
+
