@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import './App.css'
 import logo from './assets/placeholder-logo.svg'
 import ph43 from './assets/placeholder-4x3.svg'
@@ -10,11 +10,11 @@ function NavBar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 font-semibold text-sky-700 text-lg">
           <img src={logo} alt="Logo placeholder Los Andes" className="h-8 w-8" />
-          Consultorio Odontolâ”œâ”‚gico Los Andes
+          Consultorio OdontolÃ¢â€Å“Ã¢â€â€šgico Los Andes
         </a>
         <nav className="hidden md:flex gap-6 text-sm text-gray-700">
           <a href="#servicios" className="hover:text-sky-700">Servicios</a>
-          <a href="#galeria" className="hover:text-sky-700">Galerâ”œÂ¡a</a>
+          <a href="#galeria" className="hover:text-sky-700">GalerÃ¢â€Å“Ã‚Â¡a</a>
           <a href="#nosotros" className="hover:text-sky-700">Nosotros</a>
           <a href="#contacto" className="hover:text-sky-700">Contacto</a>
         </nav>
@@ -30,10 +30,10 @@ function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Sonrâ”œÂ¡e con confianza en Soacha
+            SonrÃ¢â€Å“Ã‚Â¡e con confianza en Soacha
           </h1>
           <p className="mt-4 text-gray-600">
-            Mâ”œÃ­s de 12 aâ”œâ–’os de experiencia en consulta particular. Atenciâ”œâ”‚n câ”œÃ­lida, tecnologâ”œÂ¡a moderna y tratamientos
+            MÃ¢â€Å“ÃƒÂ­s de 12 aÃ¢â€Å“Ã¢â€“â€™os de experiencia en consulta particular. AtenciÃ¢â€Å“Ã¢â€â€šn cÃ¢â€Å“ÃƒÂ­lida, tecnologÃ¢â€Å“Ã‚Â¡a moderna y tratamientos
             personalizados para toda la familia.
           </p>
           <div className="mt-8 flex gap-3">
@@ -43,7 +43,7 @@ function Hero() {
         </div>
         <div className="relative">
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
-            <img src={ph43} alt="Placeholder de consultorio odontolâ”œâ”‚gico" className="h-full w-full object-cover" />
+            <img src={ph43} alt="Placeholder de consultorio odontolÃ¢â€Å“Ã¢â€â€šgico" className="h-full w-full object-cover" />
           </div>
         
 
@@ -89,7 +89,8 @@ function Modal({ open, onClose, title, children }) {
     </div>
   );
 }
-function Services() {\n  const services = [
+function Services() {
+  const services = [
   {
     key: 'Odontolog\u00eda general',
     title: 'Odontolog\u00eda general',
@@ -188,18 +189,40 @@ function Services() {\n  const services = [
       'https://source.unsplash.com/featured/?teeth,whitening'
     ]
   }
-];\n  const [selected, setSelected] = useState(null);\n  const [open, setOpen] = useState(false);\n  const onCard = (svc) => { setSelected(svc); setOpen(true); };\n  return (
+];
+  const [selected, setSelected] = useState(null);
+  const [open, setOpen] = useState(false);
+  const onCard = (svc) => { setSelected(svc); setOpen(true); };
+  return (
     <section id="servicios" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
         <p className="mt-3 text-gray-600">Tratamientos integrales con enfoque humano y resultados predecibles.</p>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((s) => (
-            <button key={s.key} onClick={() => onCard(s)} className="text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition cursor-pointer">
-              <div className="text-sky-600 text-2xl" aria-hidden>??</div>
+            <button
+  key={s.key}
+  onClick={() => onCard(s)}
+  className="group text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-sky-200 transition cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+>
+  <div className="text-sky-600 text-2xl" aria-hidden>🦷</div>
               <h3 className="mt-3 font-semibold text-gray-900">{s.title}</h3>
               <p className="mt-2 text-gray-600 text-sm">{s.desc}</p>
-              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">Ver mÃŸs detalles ?</span>
+              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">
+  Ver detalles
+  <svg
+    className="ml-1 h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M9 18l6-6-6-6" />
+  </svg>
+</span>
             </button>
           ))}
         
@@ -231,18 +254,18 @@ function About() {
         <div className="order-2 md:order-1">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Sobre nosotros</h2>
           <p className="mt-4 text-gray-600">
-            En Los Andes combinamos experiencia clâ”œÂ¡nica, bioseguridad rigurosa y trato cercano. Explicamos cada paso del
+            En Los Andes combinamos experiencia clÃ¢â€Å“Ã‚Â¡nica, bioseguridad rigurosa y trato cercano. Explicamos cada paso del
             tratamiento y priorizamos tu comodidad.
           </p>
           <ul className="mt-6 space-y-2 text-gray-700 list-disc pl-5">
-            <li>Evaluaciâ”œâ”‚n integral y planes de tratamiento claros.</li>
-            <li>Materiales certificados y protocolos de esterilizaciâ”œâ”‚n.</li>
-            <li>Opciones de financiaciâ”œâ”‚n y seguimiento post-tratamiento.</li>
+            <li>EvaluaciÃ¢â€Å“Ã¢â€â€šn integral y planes de tratamiento claros.</li>
+            <li>Materiales certificados y protocolos de esterilizaciÃ¢â€Å“Ã¢â€â€šn.</li>
+            <li>Opciones de financiaciÃ¢â€Å“Ã¢â€â€šn y seguimiento post-tratamiento.</li>
           </ul>
         </div>
         <div className="order-1 md:order-2">
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
-            <img src={ph43} alt="Placeholder del equipo y atenciâ”œâ”‚n" className="h-full w-full object-cover" />
+            <img src={ph43} alt="Placeholder del equipo y atenciÃ¢â€Å“Ã¢â€â€šn" className="h-full w-full object-cover" />
           </div>
         
 
@@ -268,15 +291,15 @@ function About() {
 
 function Gallery() {
   const items = [
-    { title: 'Diseâ”œâ–’o de sonrisa', desc: 'Caso estâ”œÂ®tico (antes / despuâ”œÂ®s).', src: ph169 },
-    { title: 'Ortodoncia', desc: 'Alineaciâ”œâ”‚n y correcciâ”œâ”‚n de mordida.', src: ph169 },
-    { title: 'Implantologâ”œÂ¡a', desc: 'Reposiciâ”œâ”‚n de pieza dental.', src: ph169 },
+    { title: 'DiseÃ¢â€Å“Ã¢â€“â€™o de sonrisa', desc: 'Caso estÃ¢â€Å“Ã‚Â®tico (antes / despuÃ¢â€Å“Ã‚Â®s).', src: ph169 },
+    { title: 'Ortodoncia', desc: 'AlineaciÃ¢â€Å“Ã¢â€â€šn y correcciÃ¢â€Å“Ã¢â€â€šn de mordida.', src: ph169 },
+    { title: 'ImplantologÃ¢â€Å“Ã‚Â¡a', desc: 'ReposiciÃ¢â€Å“Ã¢â€â€šn de pieza dental.', src: ph169 },
   ]
   return (
     <section id="galeria" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Galerâ”œÂ¡a de casos</h2>
-        <p className="mt-3 text-gray-600">Imâ”œÃ­genes referenciales. Resultados pueden variar segâ”œâ•‘n diagnâ”œâ”‚stico.</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">GalerÃ¢â€Å“Ã‚Â¡a de casos</h2>
+        <p className="mt-3 text-gray-600">ImÃ¢â€Å“ÃƒÂ­genes referenciales. Resultados pueden variar segÃ¢â€Å“Ã¢â€¢â€˜n diagnÃ¢â€Å“Ã¢â€â€šstico.</p>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((g) => (
             <figure key={g.title} className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
@@ -313,8 +336,8 @@ function Gallery() {
 
 function Contact() {
   const address = 'Carrera 7 #16-92, Segundo Piso, San Luis, Soacha, Cundinamarca';
-  const WhatsApp = 'https://wa.me/57XXXXXXXXXX?text=Hola%20Los%20Andes%2C%20quiero%20agendar%20una%20cita'; // Reemplazar con nâ”œâ•‘mero real
-  const phone = 'tel:+57XXXXXXXXXX'; // Reemplazar con nâ”œâ•‘mero real
+  const WhatsApp = 'https://wa.me/57XXXXXXXXXX?text=Hola%20Los%20Andes%2C%20quiero%20agendar%20una%20cita'; // Reemplazar con nÃ¢â€Å“Ã¢â€¢â€˜mero real
+  const phone = 'tel:+57XXXXXXXXXX'; // Reemplazar con nÃ¢â€Å“Ã¢â€¢â€˜mero real
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -324,7 +347,7 @@ function Contact() {
     const servicio = encodeURIComponent(form.get('servicio') || '');
     const fecha = encodeURIComponent(form.get('fecha') || '');
     const mensaje = encodeURIComponent(form.get('mensaje') || '');
-    const body = `Nombre:%20${nombre}%0ATelâ”œÂ®fono:%20${telefono}%0AServicio:%20${servicio}%0AFecha%20preferida:%20${fecha}%0AMensaje:%20${mensaje}`;
+    const body = `Nombre:%20${nombre}%0ATelÃ¢â€Å“Ã‚Â®fono:%20${telefono}%0AServicio:%20${servicio}%0AFecha%20preferida:%20${fecha}%0AMensaje:%20${mensaje}`;
     window.location.href = `mailto:losandesodontologia@example.com?subject=Solicitud%20de%20cita&body=${body}`; // Reemplazar email
   };
 
@@ -335,21 +358,21 @@ function Contact() {
         <div className="mt-8 grid lg:grid-cols-3 gap-6">
           <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-4">
             <div>
-              <h3 className="font-semibold text-gray-900">Direcciâ”œâ”‚n</h3>
+              <h3 className="font-semibold text-gray-900">DirecciÃ¢â€Å“Ã¢â€â€šn</h3>
               <p className="mt-1 text-gray-700">{address}</p>
-              <p className="text-gray-500">Soacha, Cundinamarca Ã”Ã‡Ã³ San Luis</p>
+              <p className="text-gray-500">Soacha, Cundinamarca Ãƒâ€Ãƒâ€¡ÃƒÂ³ San Luis</p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900">Telâ”œÂ®fono</h3>
-              <a className="mt-1 inline-block text-sky-700 hover:underline" href={phone}>(agrega tu nâ”œâ•‘mero)</a>
+              <h3 className="font-semibold text-gray-900">TelÃ¢â€Å“Ã‚Â®fono</h3>
+              <a className="mt-1 inline-block text-sky-700 hover:underline" href={phone}>(agrega tu nÃ¢â€Å“Ã¢â€¢â€˜mero)</a>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900">WhatsApp</h3>
-              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" href={WhatsApp} rel="noreferrer">Escrâ”œÂ¡benos por WhatsApp</a>
+              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" href={WhatsApp} rel="noreferrer">EscrÃ¢â€Å“Ã‚Â¡benos por WhatsApp</a>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900">Horario de atenciâ”œâ”‚n</h3>
-              <p className="mt-1 text-gray-700">Lunes a Sâ”œÃ­bado (personaliza segâ”œâ•‘n tu agenda)</p>
+              <h3 className="font-semibold text-gray-900">Horario de atenciÃ¢â€Å“Ã¢â€â€šn</h3>
+              <p className="mt-1 text-gray-700">Lunes a SÃ¢â€Å“ÃƒÂ­bado (personaliza segÃ¢â€Å“Ã¢â€¢â€˜n tu agenda)</p>
             </div>
           </div>
           <div className="lg:col-span-2 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -360,19 +383,19 @@ function Contact() {
                 <input name="nombre" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
               </div>
               <div>
-                <label className="block text-sm text-gray-700">Telâ”œÂ®fono</label>
+                <label className="block text-sm text-gray-700">TelÃ¢â€Å“Ã‚Â®fono</label>
                 <input name="telefono" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
               </div>
               <div>
                 <label className="block text-sm text-gray-700">Servicio</label>
                 <select name="servicio" className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500">
-                  <option>Odontologâ”œÂ¡a general</option>
-                  <option>Cirugâ”œÂ¡a oral</option>
+                  <option>OdontologÃ¢â€Å“Ã‚Â¡a general</option>
+                  <option>CirugÃ¢â€Å“Ã‚Â¡a oral</option>
                   <option>Periodoncia</option>
                   <option>Endodoncia</option>
                   <option>Ortodoncia</option>
-                  <option>Implantologâ”œÂ¡a</option>
-                  <option>Diseâ”œâ–’o de sonrisa</option>
+                  <option>ImplantologÃ¢â€Å“Ã‚Â¡a</option>
+                  <option>DiseÃ¢â€Å“Ã¢â€“â€™o de sonrisa</option>
                 </select>
               </div>
               <div>
@@ -396,7 +419,7 @@ function Contact() {
         </div>
         <div className="mt-8 rounded-xl overflow-hidden border border-gray-200">
           <iframe
-            title="Mapa Consultorio Odontolâ”œâ”‚gico Los Andes"
+            title="Mapa Consultorio OdontolÃ¢â€Å“Ã¢â€â€šgico Los Andes"
             src="https://www.google.com/maps?q=Carrera%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca&output=embed"
             className="w-full h-72"
             loading="lazy"
@@ -428,7 +451,7 @@ function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white">
       <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-3">
-        <p>â”¬Â® {new Date().getFullYear()} Consultorio Odontolâ”œâ”‚gico Los Andes Ã”Ã‡Ã³ Soacha</p>
+        <p>Ã¢â€Â¬Ã‚Â® {new Date().getFullYear()} Consultorio OdontolÃ¢â€Å“Ã¢â€â€šgico Los Andes Ãƒâ€Ãƒâ€¡ÃƒÂ³ Soacha</p>
         <a href="#inicio" className="text-sky-700 hover:underline">Volver arriba</a>
       </div>
     </footer>
@@ -450,6 +473,11 @@ export default function App() {
     </div>
   )
 }
+
+
+
+
+
 
 
 
