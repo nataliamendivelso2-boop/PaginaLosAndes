@@ -1,1 +1,457 @@
-浩潰瑲笠甠敳晅敦瑣‬獵卥慴整素映潲⁭爧慥瑣ധ椊灭牯⁴⸧䄯灰挮獳ധ椊灭牯⁴潬潧映潲⁭⸧愯獳瑥⽳汰捡桥汯敤⵲潬潧献杶ധ椊灭牯⁴桰㌴映潲⁭⸧愯獳瑥⽳汰捡桥汯敤⵲破⸳癳❧਍浩潰瑲瀠ㅨ㤶映潲⁭⸧愯獳瑥⽳汰捡桥汯敤⵲㘱㥸献杶ധഊ昊湵瑣潩⁮慎䉶牡⤨笠਍†敲畴湲⠠਍††格慥敤⁲汣獡乳浡㵥猢楴正⁹潴⵰‰⵺〵戠ⵧ桷瑩⽥〸戠捡摫潲⵰汢牵戠牯敤⵲⁢潢摲牥札慲⵹〲∰ാ ††㰠楤⁶汣獡乳浡㵥洢硡眭㘭汸洠⵸畡潴瀠⵸‴祰㌭映敬⁸瑩浥⵳散瑮牥樠獵楴祦戭瑥敷湥㸢਍††††愼栠敲㵦⌢湩捩潩•汣獡乳浡㵥昢敬⁸瑩浥⵳散瑮牥朠灡㈭映湯⵴敳業潢摬琠硥⵴歳⵹〷‰整瑸氭≧ാ ††††㰠浩⁧牳㵣汻杯絯愠瑬∽潌潧瀠慬散潨摬牥䰠獯䄠摮獥•汣獡乳浡㵥栢㠭眠㠭•㸯਍†††††潃獮汵潴楲⁯摏湯潴썬枳捩⁯潌⁳湁敤൳ †††㰠愯ാ †††㰠慮⁶汣獡乳浡㵥栢摩敤⁮摭昺敬⁸慧⵰‶整瑸猭⁭整瑸札慲⵹〷∰ാ ††††㰠⁡牨晥∽猣牥楶楣獯•汣獡乳浡㵥栢癯牥琺硥⵴歳⵹〷∰匾牥楶楣獯⼼㹡਍†††††愼栠敲㵦⌢慧敬楲≡挠慬獳慎敭∽潨敶㩲整瑸猭祫㜭〰㸢慇敬썲憭⼼㹡਍†††††愼栠敲㵦⌢潮潳牴獯•汣獡乳浡㵥栢癯牥琺硥⵴歳⵹〷∰举獯瑯潲㱳愯ാ ††††㰠⁡牨晥∽挣湯慴瑣≯挠慬獳慎敭∽潨敶㩲整瑸猭祫㜭〰㸢潃瑮捡潴⼼㹡਍††††⼼慮㹶਍††††愼栠敲㵦⌢潣瑮捡潴•汣獡乳浡㵥洢⵬‴湩楬敮昭敬⁸瑩浥⵳散瑮牥爠畯摮摥洭⁤杢猭祫㘭〰瀠⵸‴祰㈭琠硥⵴桷瑩⁥潨敶㩲杢猭祫㜭〰㸢敒敳癲牡挠瑩㱡愯ാ ††㰠搯癩ാ †㰠栯慥敤㹲਍†ഩ紊਍਍畦据楴湯䠠牥⡯ ൻ 爠瑥牵⁮ന †㰠敳瑣潩⁮摩∽湩捩潩•汣獡乳浡㵥戢ⵧ牧摡敩瑮琭ⵯ⁢牦浯猭祫㔭‰潴眭楨整㸢਍†††搼癩挠慬獳慎敭∽慭⵸⵷砶⁬硭愭瑵⁯硰㐭瀠⵹㘱洠㩤祰㈭‴牧摩洠㩤牧摩挭汯⵳′慧⵰〱椠整獭挭湥整≲ാ †††㰠楤㹶਍†††††格‱汣獡乳浡㵥琢硥⵴破⁬摭琺硥⵴砵⁬潦瑮戭汯⁤整瑸札慲⵹〹‰敬摡湩ⵧ楴桧≴ാ †††††匠湯썲断挠湯挠湯楦湡慺攠⁮潓捡慨਍†††††⼼ㅨാ ††††㰠⁰汣獡乳浡㵥洢⵴‴整瑸札慲⵹〶∰ാ †††††䴠ꇃ⁳敤ㄠ′썡澱⁳敤攠灸牥敩据慩攠⁮潣獮汵慴瀠牡楴畣慬⹲䄠整据썩溳挠ꇃ楬慤‬整湣汯杯귃⁡潭敤湲⁡⁹牴瑡浡敩瑮獯਍††††††数獲湯污穩摡獯瀠牡⁡潴慤氠⁡慦業楬⹡਍†††††⼼㹰਍†††††搼癩挠慬獳慎敭∽瑭㠭映敬⁸慧⵰∳ാ †††††㰠⁡牨晥∽挣湯慴瑣≯挠慬獳慎敭∽湩楬敮昭敬⁸瑩浥⵳散瑮牥爠畯摮摥洭⁤杢猭祫㘭〰瀠⵸‵祰㌭琠硥⵴桷瑩⁥潨敶㩲杢猭祫㜭〰㸢潓楬楣慴⁲楣慴⼼㹡਍††††††愼栠敲㵦⌢敳癲捩潩≳挠慬獳慎敭∽湩楬敮昭敬⁸瑩浥⵳散瑮牥爠畯摮摥洭⁤潢摲牥戠牯敤⵲牧祡㌭〰瀠⵸‵祰㌭琠硥⵴牧祡㜭〰栠癯牥戺ⵧ牧祡㔭∰嘾牥猠牥楶楣獯⼼㹡਍†††††⼼楤㹶਍††††⼼楤㹶਍††††搼癩挠慬獳慎敭∽敲慬楴敶㸢਍†††††搼癩挠慬獳慎敭∽獡数瑣嬭⼴崳漠敶晲潬⵷楨摤湥爠畯摮摥㈭汸戠ⵧ桷瑩⁥桳摡睯砭⁬潢摲牥戠牯敤⵲牧祡ㄭ〰㸢਍††††††椼杭猠捲笽桰㌴⁽污㵴倢慬散潨摬牥搠⁥潣獮汵潴楲⁯摯湯潴썬枳捩≯挠慬獳慎敭∽⵨畦汬眠昭汵⁬扯敪瑣挭癯牥•㸯਍†††††⼼楤㹶਍††††਍਍††䴼摯污漠数㵮潻数絮漠䍮潬敳笽⤨㴠‾敳佴数⡮慦獬⥥⁽楴汴㵥獻汥捥整㽤琮瑩敬㹽਍†††獻汥捥整⁤☦⠠਍††††搼癩挠慬獳慎敭∽灳捡ⵥ⵹∵ാ ††††㰠汵挠慬獳慎敭∽楬瑳搭獩⁣汰㔭琠硥⵴牧祡㜭〰㸢਍††††††獻汥捥整⹤敤慴汩⹳慭⡰搨‬⥩㴠‾㰨楬欠祥笽絩笾絤⼼楬⤾紩਍†††††⼼汵ാ ††††㰠楤⁶汣獡乳浡㵥朢楲⁤牧摩挭汯⵳′慧⵰∳ാ †††††笠敳敬瑣摥椮慭敧⹳慭⡰猨捲‬⥩㴠‾ന ††††††㰠浩⁧敫㵹楻⁽牳㵣獻捲⁽污㵴獻汥捥整⹤楴汴⁥‫‧浩条湥✠⬠⠠⭩⤱⁽汣獡乳浡㵥眢昭汵⁬⵨〴漠橢捥⵴潣敶⁲潲湵敤ⵤ杬戠牯敤≲氠慯楤杮∽慬祺⼢ാ †††††⤠紩਍†††††⼼楤㹶਍††††⼼楤㹶਍†††紩਍††⼼潍慤㹬਍†⼼楤㹶਍†††⼼楤㹶਍††⼼敳瑣潩㹮਍†ഩ紊਍਍畦据楴湯䴠摯污笨漠数Ɱ漠䍮潬敳‬楴汴ⱥ挠楨摬敲⁮⥽笠਍†獵䕥晦捥⡴⤨㴠‾ൻ †映湵瑣潩⁮湯敋⡹⥥笠椠⁦攨欮祥㴠㴽✠獅慣数⤧漠䍮潬敳⤨※ൽ †椠⁦漨数⥮搠捯浵湥⹴摡䕤敶瑮楌瑳湥牥✨敫摹睯❮‬湯敋⥹഻ †爠瑥牵⁮⤨㴠‾潤畣敭瑮爮浥癯䕥敶瑮楌瑳湥牥✨敫摹睯❮‬湯敋⥹഻ 素‬潛数Ɱ漠䍮潬敳⥝഻ 椠⁦ℨ灯湥 敲畴湲渠汵㭬਍†敲畴湲⠠਍††搼癩挠慬獳慎敭∽楦數⁤湩敳⵴‰⵺〵•牡慩洭摯污∽牴敵•潲敬∽楤污杯㸢਍†††搼癩挠慬獳慎敭∽扡潳畬整椠獮瑥〭戠ⵧ汢捡⽫〵•湯汃捩㵫潻䍮潬敳⁽㸯਍†††搼癩挠慬獳慎敭∽敲慬楴敶洠⵸畡潴洠⵹〱洠硡眭㌭汸爠畯摮摥砭⁬杢眭楨整猠慨潤⵷汸戠牯敤⁲潢摲牥札慲⵹〱∰ാ †††㰠楤⁶汣獡乳浡㵥昢敬⁸瑩浥⵳散瑮牥樠獵楴祦戭瑥敷湥戠牯敤⵲⁢潢摲牥札慲⵹〲‰硰㔭瀠⵹∳ാ ††††㰠㍨挠慬獳慎敭∽整瑸氭⁧潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰笾楴汴絥⼼㍨ാ ††††㰠畢瑴湯漠䍮楬正笽湯汃獯絥挠慬獳慎敭∽⵰′潲湵敤ⵤ摭栠癯牥戺ⵧ牧祡ㄭ〰•牡慩氭扡汥∽敃牲牡㸢㰿戯瑵潴㹮਍††††⼼楤㹶਍††††搼癩挠慬獳慎敭∽⵰∵ാ ††††笠档汩牤湥ൽ †††㰠搯癩ാ ††㰠搯癩ാ †㰠搯癩ാ ⤠഻紊਍畦据楴湯匠牥楶散⡳ 屻⁮挠湯瑳猠牥楶散⁳‽൛ †笠਍†††敫㩹✠摏湯潴潬⁡敧敮慲❬ബ ††琠瑩敬›伧潤瑮汯杯懭朠湥牥污Ⱗ਍†††敤捳›䰧浩楰穥獡‬敲瑳畡慲楣湯獥礠挠湯牴汯瀠敲敶瑮癩⹯Ⱗ਍†††敤慴汩㩳嬠਍††††倧潲楦慬楸⁳⁹潣瑮潲⁬敤瀠慬慣Ⱗ਍††††刧獥湩獡攠瑳瓩捩獡礠猠汥慬瑮獥Ⱗ਍††††䔧慶畬捡⁮湩整牧污礠攠畤慣楣滳攠⁮楨楧湥❥਍†††ⱝ਍†††浩条獥›൛ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯敤瑮污挬敬湡湩❧ബ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯潴瑯ⱨ慣敲ധ ††崠਍††ⱽ਍††ൻ ††欠祥›䌧物杵懭漠慲❬ബ ††琠瑩敬›䌧物杵懭漠慲❬ബ ††搠獥㩣✠硅牴捡楣湯獥礠瀠潲散楤業湥潴⁳畱物狺楧潣⁳浡畢慬潴楲獯✮ബ ††搠瑥楡獬›൛ †††✠硅牴捡楣滳搠⁥整捲牥獯洠汯牡獥Ⱗ਍††††䌧物杵懭⁳敭潮敲⁳潣⁮湡獥整楳⁡潬慣❬ബ †††✠慍敮潪搠⁥敬楳湯獥漠慲敬⁳敬敶❳਍†††ⱝ਍†††浩条獥›൛ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯牯污猬牵敧祲Ⱗ਍††††栧瑴獰⼺猯畯捲⹥湵灳慬桳挮浯是慥畴敲⽤搿湥楴瑳挬楬楮❣਍†††൝ †素ബ †笠਍†††敫㩹✠敐楲摯湯楣❡ബ ††琠瑩敬›倧牥潩潤据慩Ⱗ਍†††敤捳›匧污摵搠⁥湥獡›牰癥湥楣滳礠琠慲慴業湥潴✮ബ ††搠瑥楡獬›൛ †††✠楌灭敩慺⁳牰景湵慤⁳爨獡慰潤礠愠楬慳潤爠摡捩汵牡✩ബ †††✠牔瑡浡敩瑮⁯敤朠湩楧楶楴⁳⁹数楲摯湯楴楴❳ബ †††✠慍瑮湥浩敩瑮⁯数楲摯湯慴⁬⁹潣瑮潲❬਍†††ⱝ਍†††浩条獥›൛ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯畧Ɑ慣敲Ⱗ਍††††栧瑴獰⼺猯畯捲⹥湵灳慬桳挮浯是慥畴敲⽤搿湥慴ⱬ票楧湥❥਍†††൝ †素ബ †笠਍†††敫㩹✠湅潤潤据慩Ⱗ਍†††楴汴㩥✠湅潤潤据慩Ⱗ਍†††敤捳›吧慲慴業湥潴⁳敤挠湯畤瑣⁯潣⁮湥潦畱⁥潣獮牥慶潤⹲Ⱗ਍†††敤慴汩㩳嬠਍††††䄧楬楶⁯敤搠汯牯礠瀠敲敳癲捡⁮敤瀠敩慺❳ബ †††✠牔瑡浡敩瑮獯甠楮礠洠汵楴牲摡捩汵牡獥Ⱗ਍††††刧敥摮摯湯楣⁡敳敬瑣⁡猨来滺攠慶畬捡⥮ധ ††崠ബ ††椠慭敧㩳嬠਍††††栧瑴獰⼺猯畯捲⹥湵灳慬桳挮浯是慥畴敲⽤爿潯ⱴ慣慮❬ബ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯湥潤潤瑮捩❳਍†††൝ †素ബ †笠਍†††敫㩹✠牏潴潤据慩Ⱗ਍†††楴汴㩥✠牏潴潤据慩Ⱗ਍†††敤捳›䌧牯敲捣⁮敤洠污捯畬楳湯獥挠湯戠慲正瑥⁳⁹污湩慥潤敲⹳Ⱗ਍†††敤慴汩㩳嬠਍††††䐧慩湧珳楴潣挠晥污浯瓩楲潣礠瀠慬⁮敤琠慲慴業湥潴Ⱗ਍††††䈧慲正瑥⁳敭楬潣⽳獥楴潣⁳⁹污湩慥潤敲❳ബ †††✠潃瑮湥楣滳礠猠来極業湥潴瀠獯⵴牴瑡浡敩瑮❯਍†††ⱝ਍†††浩条獥›൛ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯牢捡獥琬敥桴Ⱗ਍††††栧瑴獰⼺猯畯捲⹥湵灳慬桳挮浯是慥畴敲⽤愿楬湧牥ⱳ牯桴摯湯楴獣ധ ††崠਍††ⱽ਍††ൻ ††欠祥›䤧灭慬瑮汯杯懭Ⱗ਍†††楴汴㩥✠浉汰湡潴潬❡ബ ††搠獥㩣✠敒潰楳楣滳搠⁥楰穥獡挠湯椠灭慬瑮獥礠瀠整楳⹳Ⱗ਍†††敤慴汩㩳嬠਍††††䔧慶畬捡⁮珳慥礠瀠慬楮楦慣楣滳Ⱗ਍††††䌧汯捯捡⁮敤椠灭慬瑮獥⠠敳逸⁮慣潳✩ബ †††✠敒慨楢楬慴楣滳瀠潲楳慣猠扯敲椠灭慬瑮獥ധ ††崠ബ ††椠慭敧㩳嬠਍††††栧瑴獰⼺猯畯捲⹥湵灳慬桳挮浯是慥畴敲⽤搿湥慴ⱬ浩汰湡❴ബ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯牰獯桴獥獩搬湥慴❬਍†††൝ †素ബ †笠਍†††敫㩹✠楄敳濱搠⁥潳牮獩❡ബ ††琠瑩敬›䐧獩⁯敤猠湯楲慳Ⱗ਍†††敤捳›䔧瑳瓩捩⁡敤瑮污›敲楳慮ⱳ挠牡汩慬⁳⁹汢湡畱慥業湥潴✮ബ ††搠瑥楡獬›൛ †††✠湁泡獩獩攠瑳瓩捩⁯⁹潭正甭❰ബ †††✠慃楲汬獡礠爠獥湩獡搠物捥慴❳ബ †††✠求湡畱慥業湥潴朠極摡⁯⁹慭瑮湥浩敩瑮❯਍†††ⱝ਍†††浩条獥›൛ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯浳汩ⱥ整瑥❨ബ †††✠瑨灴㩳⼯潳牵散甮獮汰獡⹨潣⽭敦瑡牵摥㼯整瑥ⱨ桷瑩湥湩❧਍†††൝ †素਍†㭝湜†潣獮⁴獛汥捥整Ɽ猠瑥敓敬瑣摥⁝‽獵卥慴整渨汵⥬尻⁮挠湯瑳嬠灯湥‬敳佴数嵮㴠甠敳瑓瑡⡥慦獬⥥尻⁮挠湯瑳漠䍮牡⁤‽猨捶 㸽笠猠瑥敓敬瑣摥猨捶㬩猠瑥灏湥琨畲⥥※㭽湜†敲畴湲⠠਍††猼捥楴湯椠㵤猢牥楶楣獯•汣獡乳浡㵥瀢⵹㘱洠㩤祰㈭∴ാ ††㰠楤⁶汣獡乳浡㵥洢硡眭㘭汸洠⵸畡潴瀠⵸∴ാ †††㰠㉨挠慬獳慎敭∽整瑸㌭汸洠㩤整瑸㐭汸映湯⵴潢摬琠硥⵴牧祡㤭〰㸢敓癲捩潩㱳栯㸲਍††††瀼挠慬獳慎敭∽瑭㌭琠硥⵴牧祡㘭〰㸢牔瑡浡敩瑮獯椠瑮来慲敬⁳潣⁮湥潦畱⁥畨慭潮礠爠獥汵慴潤⁳牰摥捥扩敬⹳⼼㹰਍††††搼癩挠慬獳慎敭∽瑭ㄭ‰牧摩猠㩭牧摩挭汯⵳′杬机楲ⵤ潣獬㌭朠灡㘭㸢਍††††††††††獻牥楶散⹳慭⡰猨 㸽⠠਍††††††戼瑵潴⁮敫㵹獻欮祥⁽湯汃捩㵫⡻ 㸽漠䍮牡⡤⥳⁽汣獡乳浡㵥琢硥⵴敬瑦爠畯摮摥砭⁬潢摲牥戠牯敤⵲牧祡㈭〰戠ⵧ桷瑩⁥⵰‶桳摡睯猭⁭潨敶㩲桳摡睯洭⁤牴湡楳楴湯挠牵潳⵲潰湩整≲ാ ††††††㰠楤⁶汣獡乳浡㵥琢硥⵴歳⵹〶‰整瑸㈭汸•牡慩栭摩敤㹮㼿⼼楤㹶਍†††††††格″汣獡乳浡㵥洢⵴″潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰笾⹳楴汴絥⼼㍨ാ ††††††㰠⁰汣獡乳浡㵥洢⵴′整瑸札慲⵹〶‰整瑸猭≭笾⹳敤捳㱽瀯ാ ††††††㰠灳湡挠慬獳慎敭∽瑭㌭椠汮湩ⵥ汦硥椠整獭挭湥整⁲整瑸猭祫㜭〰琠硥⵴浳㸢敖⁲⁳敤慴汬獥㼠⼼灳湡ാ †††††㰠戯瑵潴㹮਍†††††⤩ൽ †††ഠഊ †㰠潍慤⁬灯湥笽灯湥⁽湯汃獯㵥⡻ 㸽猠瑥灏湥昨污敳紩琠瑩敬笽敳敬瑣摥⸿楴汴絥ാ ††笠敳敬瑣摥☠…ന †††㰠楤⁶汣獡乳浡㵥猢慰散礭㔭㸢਍†††††甼⁬汣獡乳浡㵥氢獩⵴楤捳瀠⵬‵整瑸札慲⵹〷∰ാ †††††笠敳敬瑣摥搮瑥楡獬洮灡⠨Ɽ椠 㸽⠠氼⁩敫㵹楻㹽摻㱽氯㹩⤩ൽ ††††㰠甯㹬਍†††††搼癩挠慬獳慎敭∽牧摩朠楲ⵤ潣獬㈭朠灡㌭㸢਍††††††獻汥捥整⹤浩条獥洮灡⠨牳Ᵽ椠 㸽⠠਍†††††††椼杭欠祥笽絩猠捲笽牳絣愠瑬笽敳敬瑣摥琮瑩敬⬠✠椠慭敧⁮‧‫椨ㄫ紩挠慬獳慎敭∽⵷畦汬栠㐭‰扯敪瑣挭癯牥爠畯摮摥氭⁧潢摲牥•潬摡湩㵧氢穡≹㸯਍††††††⤩ൽ ††††㰠搯癩ാ †††㰠搯癩ാ ††⤠ൽ †㰠䴯摯污ാ 㰠搯癩ാ ††㰠搯癩ാ †㰠猯捥楴湯ാ ⤠਍ൽഊ昊湵瑣潩⁮扁畯⡴ ൻ 爠瑥牵⁮ന †㰠敳瑣潩⁮摩∽潮潳牴獯•汣獡乳浡㵥瀢⵹㘱洠㩤祰㈭‴杢猭祫㔭∰ാ ††㰠楤⁶汣獡乳浡㵥洢硡眭㘭汸洠⵸畡潴瀠⵸‴牧摩洠㩤牧摩挭汯⵳′慧⵰〱椠整獭挭湥整≲ാ †††㰠楤⁶汣獡乳浡㵥漢摲牥㈭洠㩤牯敤⵲∱ാ ††††㰠㉨挠慬獳慎敭∽整瑸㌭汸洠㩤整瑸㐭汸映湯⵴潢摬琠硥⵴牧祡㤭〰㸢潓牢⁥潮潳牴獯⼼㉨ാ ††††㰠⁰汣獡乳浡㵥洢⵴‴整瑸札慲⵹〶∰ാ †††††䔠⁮潌⁳湁敤⁳潣扭湩浡獯攠灸牥敩据慩挠썬溭捩ⱡ戠潩敳畧楲慤⁤楲畧潲慳礠琠慲潴挠牥慣潮‮硅汰捩浡獯挠摡⁡慰潳搠汥਍††††††牴瑡浡敩瑮⁯⁹牰潩楲慺潭⁳畴挠浯摯摩摡മ ††††㰠瀯ാ ††††㰠汵挠慬獳慎敭∽瑭㘭猠慰散礭㈭琠硥⵴牧祡㜭〰氠獩⵴楤捳瀠⵬∵ാ †††††㰠楬䔾慶畬捡썩溳椠瑮来慲⁬⁹汰湡獥搠⁥牴瑡浡敩瑮⁯汣牡獯㰮氯㹩਍††††††氼㹩慍整楲污獥挠牥楴楦慣潤⁳⁹牰瑯捯汯獯搠⁥獥整楲楬慺楣돃⹮⼼楬ാ †††††㰠楬伾捰潩敮⁳敤映湩湡楣捡썩溳礠猠来極業湥潴瀠獯⵴牴瑡浡敩瑮⹯⼼楬ാ ††††㰠甯㹬਍††††⼼楤㹶਍††††搼癩挠慬獳慎敭∽牯敤⵲‱摭漺摲牥㈭㸢਍†††††搼癩挠慬獳慎敭∽獡数瑣嬭⼴崳漠敶晲潬⵷楨摤湥爠畯摮摥㈭汸戠ⵧ桷瑩⁥桳摡睯砭⁬潢摲牥戠牯敤⵲牧祡ㄭ〰㸢਍††††††椼杭猠捲笽桰㌴⁽污㵴倢慬散潨摬牥搠汥攠畱灩⁯⁹瑡湥楣돃≮挠慬獳慎敭∽⵨畦汬眠昭汵⁬扯敪瑣挭癯牥•㸯਍†††††⼼楤㹶਍††††਍਍††䴼摯污漠数㵮潻数絮漠䍮潬敳笽⤨㴠‾敳佴数⡮慦獬⥥⁽楴汴㵥獻汥捥整㽤琮瑩敬㹽਍†††獻汥捥整⁤☦⠠਍††††搼癩挠慬獳慎敭∽灳捡ⵥ⵹∵ാ ††††㰠汵挠慬獳慎敭∽楬瑳搭獩⁣汰㔭琠硥⵴牧祡㜭〰㸢਍††††††獻汥捥整⹤敤慴汩⹳慭⡰搨‬⥩㴠‾㰨楬欠祥笽絩笾絤⼼楬⤾紩਍†††††⼼汵ാ ††††㰠楤⁶汣獡乳浡㵥朢楲⁤牧摩挭汯⵳′慧⵰∳ാ †††††笠敳敬瑣摥椮慭敧⹳慭⡰猨捲‬⥩㴠‾ന ††††††㰠浩⁧敫㵹楻⁽牳㵣獻捲⁽污㵴獻汥捥整⹤楴汴⁥‫‧浩条湥✠⬠⠠⭩⤱⁽汣獡乳浡㵥眢昭汵⁬⵨〴漠橢捥⵴潣敶⁲潲湵敤ⵤ杬戠牯敤≲氠慯楤杮∽慬祺⼢ാ †††††⤠紩਍†††††⼼楤㹶਍††††⼼楤㹶਍†††紩਍††⼼潍慤㹬਍†⼼楤㹶਍†††⼼楤㹶਍††⼼敳瑣潩㹮਍†ഩ紊਍਍畦据楴湯䜠污敬祲⤨笠਍†潣獮⁴瑩浥⁳‽൛ †笠琠瑩敬›䐧獩썥澱搠⁥潳牮獩❡‬敤捳›䌧獡⁯獥썴璩捩⁯愨瑮獥⼠搠獥異꧃⥳✮‬牳㩣瀠ㅨ㤶素ബ †笠琠瑩敬›伧瑲摯湯楣❡‬敤捳›䄧楬敮捡썩溳礠挠牯敲捣썩溳搠⁥潭摲摩⹡Ⱗ猠捲›桰㘱‹ⱽ਍††⁻楴汴㩥✠浉汰湡潴潬썧憭Ⱗ搠獥㩣✠敒潰楳楣돃⁮敤瀠敩慺搠湥慴⹬Ⱗ猠捲›桰㘱‹ⱽ਍†൝ 爠瑥牵⁮ന †㰠敳瑣潩⁮摩∽慧敬楲≡挠慬獳慎敭∽祰ㄭ‶摭瀺⵹㐲㸢਍†††搼癩挠慬獳慎敭∽慭⵸⵷砶⁬硭愭瑵⁯硰㐭㸢਍††††格′汣獡乳浡㵥琢硥⵴砳⁬摭琺硥⵴破⁬潦瑮戭汯⁤整瑸札慲⵹〹∰䜾污牥귃⁡敤挠獡獯⼼㉨ാ †††㰠⁰汣獡乳浡㵥洢⵴″整瑸札慲⵹〶∰䤾썭枡湥獥爠晥牥湥楣污獥‮敒畳瑬摡獯瀠敵敤⁮慶楲牡猠来뫃⁮楤条썮玳楴潣㰮瀯ാ †††㰠楤⁶汣獡乳浡㵥洢⵴〱朠楲⁤浳机楲ⵤ潣獬㈭氠㩧牧摩挭汯⵳″慧⵰∶ാ ††††笠瑩浥⹳慭⡰木 㸽⠠਍††††††昼杩牵⁥敫㵹杻琮瑩敬⁽汣獡乳浡㵥爢畯摮摥砭⁬潢摲牥戠牯敤⵲牧祡㈭〰戠ⵧ桷瑩⁥桳摡睯猭⁭癯牥汦睯栭摩敤≮ാ ††††††㰠楤⁶汣獡乳浡㵥愢灳捥⵴楶敤⁯杢札慲⵹〱∰ാ †††††††㰠浩⁧牳㵣杻献捲⁽污㵴恻汐捡桥汯敤⁲笤⹧楴汴絥絠挠慬獳慎敭∽⵨畦汬眠昭汵⁬扯敪瑣挭癯牥•㸯਍†††††††⼼楤㹶਍†††††††昼杩慣瑰潩⁮汣獡乳浡㵥瀢㐭㸢਍††††††††瀼挠慬獳慎敭∽潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰笾⹧楴汴絥⼼㹰਍††††††††瀼挠慬獳慎敭∽整瑸猭⁭整瑸札慲⵹〶∰笾⹧敤捳㱽瀯ാ ††††††㰠是杩慣瑰潩㹮਍††††††⼼楦畧敲ാ ††††⤠紩਍††††਍਍††䴼摯污漠数㵮潻数絮漠䍮潬敳笽⤨㴠‾敳佴数⡮慦獬⥥⁽楴汴㵥獻汥捥整㽤琮瑩敬㹽਍†††獻汥捥整⁤☦⠠਍††††搼癩挠慬獳慎敭∽灳捡ⵥ⵹∵ാ ††††㰠汵挠慬獳慎敭∽楬瑳搭獩⁣汰㔭琠硥⵴牧祡㜭〰㸢਍††††††獻汥捥整⹤敤慴汩⹳慭⡰搨‬⥩㴠‾㰨楬欠祥笽絩笾絤⼼楬⤾紩਍†††††⼼汵ാ ††††㰠楤⁶汣獡乳浡㵥朢楲⁤牧摩挭汯⵳′慧⵰∳ാ †††††笠敳敬瑣摥椮慭敧⹳慭⡰猨捲‬⥩㴠‾ന ††††††㰠浩⁧敫㵹楻⁽牳㵣獻捲⁽污㵴獻汥捥整⹤楴汴⁥‫‧浩条湥✠⬠⠠⭩⤱⁽汣獡乳浡㵥眢昭汵⁬⵨〴漠橢捥⵴潣敶⁲潲湵敤ⵤ杬戠牯敤≲氠慯楤杮∽慬祺⼢ാ †††††⤠紩਍†††††⼼楤㹶਍††††⼼楤㹶਍†††紩਍††⼼潍慤㹬਍†⼼楤㹶਍†††⼼楤㹶਍††⼼敳瑣潩㹮਍†ഩ紊਍਍畦据楴湯䌠湯慴瑣⤨笠਍†潣獮⁴摡牤獥⁳‽䌧牡敲慲㜠⌠㘱㤭ⰲ匠来湵潤倠獩Ɐ匠湡䰠極ⱳ匠慯档ⱡ䌠湵楤慮慭捲❡഻ 挠湯瑳眠慨獴灁⁰‽栧瑴獰⼺眯⹡敭㔯堷塘塘塘塘㽘整瑸䠽汯╡〲潌╳〲湁敤╳䌲㈥焰極牥╯〲条湥慤╲〲湵╡〲楣慴㬧⼠ 敒浥汰穡牡挠湯渠뫃敭潲爠慥൬ 挠湯瑳瀠潨敮㴠✠整㩬㔫堷塘塘塘塘❘※⼯删敥灭慬慺⁲潣⁮썮涺牥⁯敲污਍਍†潣獮⁴慨摮敬畓浢瑩㴠⠠⥥㴠‾ൻ †攠瀮敲敶瑮敄慦汵⡴㬩਍††潣獮⁴潦浲㴠渠睥䘠牯䑭瑡⡡⹥畣牲湥呴牡敧⥴഻ †挠湯瑳渠浯牢⁥‽湥潣敤剕䍉浯潰敮瑮昨牯⹭敧⡴渧浯牢❥ 籼✠⤧഻ †挠湯瑳琠汥晥湯⁯‽湥潣敤剕䍉浯潰敮瑮昨牯⹭敧⡴琧汥晥湯❯ 籼✠⤧഻ †挠湯瑳猠牥楶楣⁯‽湥潣敤剕䍉浯潰敮瑮昨牯⹭敧⡴猧牥楶楣❯ 籼✠⤧഻ †挠湯瑳映捥慨㴠攠据摯啥䥒潃灭湯湥⡴潦浲朮瑥✨敦档❡ 籼✠⤧഻ †挠湯瑳洠湥慳敪㴠攠据摯啥䥒潃灭湯湥⡴潦浲朮瑥✨敭獮橡❥ 籼✠⤧഻ †挠湯瑳戠摯⁹‽习浯牢㩥㈥␰湻浯牢絥〥呁汥꧃潦潮┺〲笤整敬潦潮╽䄰敓癲捩潩┺〲笤敳癲捩潩╽䄰敆档╡〲牰晥牥摩㩡㈥␰晻捥慨╽䄰敍獮橡㩥㈥␰浻湥慳敪恽഻ †眠湩潤⹷潬慣楴湯栮敲⁦‽浠楡瑬㩯潬慳摮獥摯湯潴潬楧䁡硥浡汰⹥潣㽭畳橢捥㵴潓楬楣畴╤〲敤㈥挰瑩♡潢祤␽扻摯絹㭠⼠ 敒浥汰穡牡攠慭汩਍†㭽਍਍†敲畴湲⠠਍††猼捥楴湯椠㵤挢湯慴瑣≯挠慬獳慎敭∽祰ㄭ‶摭瀺⵹㐲㸢਍†††搼癩挠慬獳慎敭∽慭⵸⵷砶⁬硭愭瑵⁯硰㐭㸢਍††††格′汣獡乳浡㵥琢硥⵴砳⁬摭琺硥⵴破⁬潦瑮戭汯⁤整瑸札慲⵹〹∰䌾湯慴瑣⁯⁹楣慴㱳栯㸲਍††††搼癩挠慬獳慎敭∽瑭㠭朠楲⁤杬机楲ⵤ潣獬㌭朠灡㘭㸢਍†††††搼癩挠慬獳慎敭∽潲湵敤ⵤ汸戠牯敤⁲潢摲牥札慲⵹〲‰杢眭楨整瀠㘭猠慨潤⵷浳猠慰散礭㐭㸢਍††††††搼癩ാ ††††††㰠㍨挠慬獳慎敭∽潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰䐾物捥楣돃㱮栯㸳਍†††††††瀼挠慬獳慎敭∽瑭ㄭ琠硥⵴牧祡㜭〰㸢慻摤敲獳㱽瀯ാ ††††††㰠⁰汣獡乳浡㵥琢硥⵴牧祡㔭〰㸢潓捡慨‬畃摮湩浡牡慣ꊀ匠湡䰠極㱳瀯ാ †††††㰠搯癩ാ †††††㰠楤㹶਍†††††††格″汣獡乳浡㵥昢湯⵴敳業潢摬琠硥⵴牧祡㤭〰㸢敔썬暩湯㱯栯㸳਍†††††††愼挠慬獳慎敭∽瑭ㄭ椠汮湩ⵥ汢捯⁫整瑸猭祫㜭〰栠癯牥町摮牥楬敮•牨晥笽桰湯絥⠾条敲慧琠⁵썮涺牥⥯⼼㹡਍††††††⼼楤㹶਍††††††搼癩ാ ††††††㰠㍨挠慬獳慎敭∽潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰圾慨獴灁㱰栯㸳਍†††††††愼挠慬獳慎敭∽瑭ㄭ椠汮湩ⵥ汢捯⁫整瑸猭祫㜭〰栠癯牥町摮牥楬敮•慴杲瑥∽扟慬歮•牨晥笽桷瑡䅳灰⁽敲㵬渢牯晥牥敲≲䔾捳썲抭湥獯瀠牯圠慨獴灁㱰愯ാ †††††㰠搯癩ാ †††††㰠楤㹶਍†††††††格″汣獡乳浡㵥昢湯⵴敳業潢摬琠硥⵴牧祡㤭〰㸢潈慲楲⁯敤愠整据썩溳⼼㍨ാ ††††††㰠⁰汣獡乳浡㵥洢⵴‱整瑸札慲⵹〷∰䰾湵獥愠匠ꇃ慢潤⠠数獲湯污穩⁡敳썧溺琠⁵条湥慤㰩瀯ാ †††††㰠搯癩ാ ††††㰠搯癩ാ ††††㰠楤⁶汣獡乳浡㵥氢㩧潣⵬灳湡㈭爠畯摮摥砭⁬潢摲牥戠牯敤⵲牧祡㈭〰戠ⵧ桷瑩⁥⵰‶桳摡睯猭≭ാ †††††㰠㍨挠慬獳慎敭∽潦瑮猭浥扩汯⁤整瑸札慲⵹〹∰匾汯捩瑩牡挠瑩㱡栯㸳਍††††††昼牯⁭汣獡乳浡㵥洢⵴‴牧摩猠㩭牧摩挭汯⵳′慧⵰∴漠卮扵業㵴桻湡汤卥扵業絴ാ ††††††㰠楤㹶਍††††††††氼扡汥挠慬獳慎敭∽汢捯⁫整瑸猭⁭整瑸札慲⵹〷∰举浯牢㱥氯扡汥ാ †††††††㰠湩異⁴慮敭∽潮扭敲•敲畱物摥挠慬獳慎敭∽瑭ㄭ眠昭汵⁬潲湵敤ⵤ摭戠牯敤⁲潢摲牥札慲⵹〳‰硰㌭瀠⵹′畯汴湩ⵥ潮敮映捯獵爺湩ⵧ′潦畣㩳楲杮猭祫㔭〰•㸯਍†††††††⼼楤㹶਍†††††††搼癩ാ †††††††㰠慬敢⁬汣獡乳浡㵥戢潬正琠硥⵴浳琠硥⵴牧祡㜭〰㸢敔썬暩湯㱯氯扡汥ാ †††††††㰠湩異⁴慮敭∽整敬潦潮•敲畱物摥挠慬獳慎敭∽瑭ㄭ眠昭汵⁬潲湵敤ⵤ摭戠牯敤⁲潢摲牥札慲⵹〳‰硰㌭瀠⵹′畯汴湩ⵥ潮敮映捯獵爺湩ⵧ′潦畣㩳楲杮猭祫㔭〰•㸯਍†††††††⼼楤㹶਍†††††††搼癩ാ †††††††㰠慬敢⁬汣獡乳浡㵥戢潬正琠硥⵴浳琠硥⵴牧祡㜭〰㸢敓癲捩潩⼼慬敢㹬਍††††††††猼汥捥⁴慮敭∽敳癲捩潩•汣獡乳浡㵥洢⵴‱⵷畦汬爠畯摮摥洭⁤潢摲牥戠牯敤⵲牧祡㌭〰瀠⵸″祰㈭漠瑵楬敮渭湯⁥潦畣㩳楲杮㈭映捯獵爺湩ⵧ歳⵹〵∰ാ ††††††††㰠灯楴湯伾潤瑮汯杯귃⁡敧敮慲㱬漯瑰潩㹮਍†††††††††漼瑰潩㹮楃畲썧憭漠慲㱬漯瑰潩㹮਍†††††††††漼瑰潩㹮敐楲摯湯楣㱡漯瑰潩㹮਍†††††††††漼瑰潩㹮湅潤潤据慩⼼灯楴湯ാ ††††††††㰠灯楴湯伾瑲摯湯楣㱡漯瑰潩㹮਍†††††††††漼瑰潩㹮浉汰湡潴潬썧憭⼼灯楴湯ാ ††††††††㰠灯楴湯䐾獩썥澱搠⁥潳牮獩㱡漯瑰潩㹮਍††††††††⼼敳敬瑣ാ ††††††㰠搯癩ാ ††††††㰠楤㹶਍††††††††氼扡汥挠慬獳慎敭∽汢捯⁫整瑸猭⁭整瑸札慲⵹〷∰䘾捥慨瀠敲敦楲慤⼼慬敢㹬਍††††††††椼灮瑵琠灹㵥搢瑡≥渠浡㵥昢捥慨•汣獡乳浡㵥洢⵴‱⵷畦汬爠畯摮摥洭⁤潢摲牥戠牯敤⵲牧祡㌭〰瀠⵸″祰㈭漠瑵楬敮渭湯⁥潦畣㩳楲杮㈭映捯獵爺湩ⵧ歳⵹〵∰⼠ാ ††††††㰠搯癩ാ ††††††㰠楤⁶汣獡乳浡㵥猢㩭潣⵬灳湡㈭㸢਍††††††††氼扡汥挠慬獳慎敭∽汢捯⁫整瑸猭⁭整瑸札慲⵹〷∰䴾湥慳敪⼼慬敢㹬਍††††††††琼硥慴敲⁡慮敭∽敭獮橡≥爠睯㵳㑻⁽汣獡乳浡㵥洢⵴‱⵷畦汬爠畯摮摥洭⁤潢摲牥戠牯敤⵲牧祡㌭〰瀠⵸″祰㈭漠瑵楬敮渭湯⁥潦畣㩳楲杮㈭映捯獵爺湩ⵧ歳⵹〵∰⼠ാ ††††††㰠搯癩ാ ††††††㰠楤⁶汣獡乳浡㵥猢㩭潣⵬灳湡㈭映敬⁸慧⵰∳ാ †††††††㰠畢瑴湯琠灹㵥猢扵業≴挠慬獳慎敭∽湩楬敮昭敬⁸瑩浥⵳散瑮牥爠畯摮摥洭⁤杢猭祫㘭〰瀠⵸‵祰㌭琠硥⵴桷瑩⁥潨敶㩲杢猭祫㜭〰㸢਍†††††††††湅楶牡猠汯捩瑩摵瀠牯挠牯敲൯ †††††††㰠戯瑵潴㹮਍††††††††愼栠敲㵦睻慨獴灁絰琠牡敧㵴弢汢湡≫爠汥∽潮敲敦牲牥•汣獡乳浡㵥椢汮湩ⵥ汦硥椠整獭挭湥整⁲潲湵敤ⵤ摭戠牯敤⁲潢摲牥札慲⵹〳‰硰㔭瀠⵹″整瑸札慲⵹〷‰潨敶㩲杢札慲⵹〵㸢਍†††††††††杁湥慤⁲潰⁲桗瑡䅳灰਍††††††††⼼㹡਍†††††††⼼楤㹶਍††††††⼼潦浲ാ ††††㰠搯癩ാ †††㰠搯癩ാ †††㰠楤⁶汣獡乳浡㵥洢⵴‸潲湵敤ⵤ汸漠敶晲潬⵷楨摤湥戠牯敤⁲潢摲牥札慲⵹〲∰ാ ††††㰠晩慲敭਍††††††楴汴㵥䴢灡⁡潃獮汵潴楲⁯摏湯潴썬枳捩⁯潌⁳湁敤≳਍††††††牳㵣栢瑴獰⼺眯睷朮潯汧⹥潣⽭慭獰焿䌽牡敲慲㈥㜰㈥┰㌲㘱㤭┲䌲㈥匰湡㈥䰰極╳䌲㈥匰慯档╡䌲㈥䌰湵楤慮慭捲♡畯灴瑵攽扭摥ഢ †††††挠慬獳慎敭∽⵷畦汬栠㜭∲਍††††††潬摡湩㵧氢穡≹਍††††††敲敦牲牥潐楬祣∽潮爭晥牥敲⵲桷湥搭睯杮慲敤ഢ ††††⼠ാ †††ഠഊ †㰠潍慤⁬灯湥笽灯湥⁽湯汃獯㵥⡻ 㸽猠瑥灏湥昨污敳紩琠瑩敬笽敳敬瑣摥⸿楴汴絥ാ ††笠敳敬瑣摥☠…ന †††㰠楤⁶汣獡乳浡㵥猢慰散礭㔭㸢਍†††††甼⁬汣獡乳浡㵥氢獩⵴楤捳瀠⵬‵整瑸札慲⵹〷∰ാ †††††笠敳敬瑣摥搮瑥楡獬洮灡⠨Ɽ椠 㸽⠠氼⁩敫㵹楻㹽摻㱽氯㹩⤩ൽ ††††㰠甯㹬਍†††††搼癩挠慬獳慎敭∽牧摩朠楲ⵤ潣獬㈭朠灡㌭㸢਍††††††獻汥捥整⹤浩条獥洮灡⠨牳Ᵽ椠 㸽⠠਍†††††††椼杭欠祥笽絩猠捲笽牳絣愠瑬笽敳敬瑣摥琮瑩敬⬠✠椠慭敧⁮‧‫椨ㄫ紩挠慬獳慎敭∽⵷畦汬栠㐭‰扯敪瑣挭癯牥爠畯摮摥氭⁧潢摲牥•潬摡湩㵧氢穡≹㸯਍††††††⤩ൽ ††††㰠搯癩ാ †††㰠搯癩ാ ††⤠ൽ †㰠䴯摯污ാ 㰠搯癩ാ ††㰠搯癩ാ †㰠猯捥楴湯ാ ⤠਍ൽഊ昊湵瑣潩⁮潆瑯牥⤨笠਍†敲畴湲⠠਍††昼潯整⁲汣獡乳浡㵥戢牯敤⵲⁴潢摲牥札慲⵹〲‰杢眭楨整㸢਍†††搼癩挠慬獳慎敭∽慭⵸⵷砶⁬硭愭瑵⁯硰㐭瀠⵹‸整瑸猭⁭整瑸札慲⵹〶‰汦硥映敬⵸潣⁬摭昺敬⵸潲⁷瑩浥⵳散瑮牥樠獵楴祦戭瑥敷湥朠灡㌭㸢਍††††瀼숾₩湻睥䐠瑡⡥⸩敧䙴汵奬慥⡲紩䌠湯畳瑬牯潩传潤瑮汯돃楧潣䰠獯䄠摮獥ꊀ匠慯档㱡瀯ാ †††㰠⁡牨晥∽椣楮楣≯挠慬獳慎敭∽整瑸猭祫㜭〰栠癯牥町摮牥楬敮㸢潖癬牥愠牲扩㱡愯ാ ††㰠搯癩ാ †㰠是潯整㹲਍†ഩ紊਍਍硥潰瑲搠晥畡瑬映湵瑣潩⁮灁⡰ ൻ 爠瑥牵⁮ന †㰠楤⁶汣獡乳浡㵥洢湩栭猭牣敥⁮汦硥映敬⵸潣⁬杢眭楨整琠硥⵴牧祡㤭〰㸢਍†††丼癡慂⁲㸯਍†††洼楡⁮汣獡乳浡㵥昢敬⵸∱ാ †††㰠效潲⼠ാ †††㰠敓癲捩獥⼠ാ †††㰠慇汬牥⁹㸯਍††††䄼潢瑵⼠ാ †††㰠潃瑮捡⁴㸯਍†††⼼慭湩ാ ††㰠潆瑯牥⼠ാ †㰠搯癩ാ ⤠਍ൽഊഊഊഊഊ�
+﻿import { useEffect, useState } from 'react'
+import './App.css'
+import logo from './assets/placeholder-logo.svg'
+import ph43 from './assets/placeholder-4x3.svg'
+import ph169 from './assets/placeholder-16x9.svg'
+
+function NavBar() {
+  return (
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#inicio" className="flex items-center gap-2 font-semibold text-sky-700 text-lg">
+          <img src={logo} alt="Logo placeholder Los Andes" className="h-8 w-8" />
+          Consultorio Odontol├│gico Los Andes
+        </a>
+        <nav className="hidden md:flex gap-6 text-sm text-gray-700">
+          <a href="#servicios" className="hover:text-sky-700">Servicios</a>
+          <a href="#galeria" className="hover:text-sky-700">Galer├¡a</a>
+          <a href="#nosotros" className="hover:text-sky-700">Nosotros</a>
+          <a href="#contacto" className="hover:text-sky-700">Contacto</a>
+        </nav>
+        <a href="#contacto" className="ml-4 inline-flex items-center rounded-md bg-sky-600 px-4 py-2 text-white hover:bg-sky-700">Reservar cita</a>
+      </div>
+    </header>
+  )
+}
+
+function Hero() {
+  return (
+    <section id="inicio" className="bg-gradient-to-b from-sky-50 to-white">
+      <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Sonr├¡e con confianza en Soacha
+          </h1>
+          <p className="mt-4 text-gray-600">
+            M├ís de 12 a├▒os de experiencia en consulta particular. Atenci├│n c├ílida, tecnolog├¡a moderna y tratamientos
+            personalizados para toda la familia.
+          </p>
+          <div className="mt-8 flex gap-3">
+            <a href="#contacto" className="inline-flex items-center rounded-md bg-sky-600 px-5 py-3 text-white hover:bg-sky-700">Solicitar cita</a>
+            <a href="#servicios" className="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-700 hover:bg-gray-50">Ver servicios</a>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
+            <img src={ph43} alt="Placeholder de consultorio odontol├│gico" className="h-full w-full object-cover" />
+          </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
+        </div>
+      )}
+    </Modal>
+  </div>
+      </div>
+    </section>
+  )
+}
+
+function Modal({ open, onClose, title, children }) {
+  useEffect(() => {
+    function onKey(e) { if (e.key === 'Escape') onClose(); }
+    if (open) document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open, onClose]);
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50" aria-modal="true" role="dialog">
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+      <div className="relative mx-auto my-10 max-w-3xl rounded-xl bg-white shadow-xl border border-gray-100">
+        <div className="flex items-center justify-between border-b border-gray-200 px-5 py-3">
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+          <button onClick={onClose} className="p-2 rounded-md hover:bg-gray-100" aria-label="Cerrar">?</button>
+        </div>
+        <div className="p-5">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+function Services() {\n  const services = [
+    {
+      key: 'OdontologÝa general',
+      title: 'OdontologÝa general',
+      desc: 'Limpiezas, restauraciones y control preventivo.',
+      details: [
+        'Profilaxis y control de placa',
+        'Resinas estÚticas y sellantes',
+        'Evaluaci¾n integral y educaci¾n en higiene'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,cleaning',
+        'https://source.unsplash.com/featured/?tooth,care'
+      ]
+    },
+    {
+      key: 'CirugÝa oral',
+      title: 'CirugÝa oral',
+      desc: 'Extracciones y procedimientos quir·rgicos ambulatorios.',
+      details: [
+        'Extracci¾n de terceros molares',
+        'CirugÝas menores con anestesia local',
+        'Manejo de lesiones orales leves'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?oral,surgery',
+        'https://source.unsplash.com/featured/?dentist,clinic'
+      ]
+    },
+    {
+      key: 'Periodoncia',
+      title: 'Periodoncia',
+      desc: 'Salud de encÝas: prevenci¾n y tratamiento.',
+      details: [
+        'Limpiezas profundas (raspado y alisado radicular)',
+        'Tratamiento de gingivitis y periodontitis',
+        'Mantenimiento periodontal y control'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?gum,care',
+        'https://source.unsplash.com/featured/?dental,hygiene'
+      ]
+    },
+    {
+      key: 'Endodoncia',
+      title: 'Endodoncia',
+      desc: 'Tratamientos de conducto con enfoque conservador.',
+      details: [
+        'Alivio de dolor y preservaci¾n de piezas',
+        'Tratamientos uni y multirradiculares',
+        'Reendodoncia selecta (seg·n evaluaci¾n)'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?root,canal',
+        'https://source.unsplash.com/featured/?endodontics'
+      ]
+    },
+    {
+      key: 'Ortodoncia',
+      title: 'Ortodoncia',
+      desc: 'Correcci¾n de maloclusiones con brackets y alineadores.',
+      details: [
+        'Diagn¾stico cefalomÚtrico y plan de tratamiento',
+        'Brackets metßlicos/estÚticos y alineadores',
+        'Contenci¾n y seguimiento post-tratamiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?braces,teeth',
+        'https://source.unsplash.com/featured/?aligners,orthodontics'
+      ]
+    },
+    {
+      key: 'ImplantologÝa',
+      title: 'ImplantologÝa',
+      desc: 'Reposici¾n de piezas con implantes y pr¾tesis.',
+      details: [
+        'Evaluaci¾n ¾sea y planificaci¾n',
+        'Colocaci¾n de implantes (seg·n caso)',
+        'Rehabilitaci¾n protÚsica sobre implantes'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,implant',
+        'https://source.unsplash.com/featured/?prosthesis,dental'
+      ]
+    },
+    {
+      key: 'Dise±o de sonrisa',
+      title: 'Dise±o de sonrisa',
+      desc: 'EstÚtica dental: resinas, carillas y blanqueamiento.',
+      details: [
+        'Anßlisis estÚtico y mock-up',
+        'Carillas y resinas directas',
+        'Blanqueamiento guiado y mantenimiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?smile,teeth',
+        'https://source.unsplash.com/featured/?teeth,whitening'
+      ]
+    }
+  ];\n  const [selected, setSelected] = useState(null);\n  const [open, setOpen] = useState(false);\n  const onCard = (svc) => { setSelected(svc); setOpen(true); };\n  return (
+    <section id="servicios" className="py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
+        <p className="mt-3 text-gray-600">Tratamientos integrales con enfoque humano y resultados predecibles.</p>
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {services.map((s) => (
+            <button key={s.key} onClick={() => onCard(s)} className="text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition cursor-pointer">
+              <div className="text-sky-600 text-2xl" aria-hidden>??</div>
+              <h3 className="mt-3 font-semibold text-gray-900">{s.title}</h3>
+              <p className="mt-2 text-gray-600 text-sm">{s.desc}</p>
+              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">Ver mßs detalles ?</span>
+            </button>
+          ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
+        </div>
+      )}
+    </Modal>
+  </div>
+      </div>
+    </section>
+  )
+}
+
+function About() {
+  return (
+    <section id="nosotros" className="py-16 md:py-24 bg-sky-50">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="order-2 md:order-1">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Sobre nosotros</h2>
+          <p className="mt-4 text-gray-600">
+            En Los Andes combinamos experiencia cl├¡nica, bioseguridad rigurosa y trato cercano. Explicamos cada paso del
+            tratamiento y priorizamos tu comodidad.
+          </p>
+          <ul className="mt-6 space-y-2 text-gray-700 list-disc pl-5">
+            <li>Evaluaci├│n integral y planes de tratamiento claros.</li>
+            <li>Materiales certificados y protocolos de esterilizaci├│n.</li>
+            <li>Opciones de financiaci├│n y seguimiento post-tratamiento.</li>
+          </ul>
+        </div>
+        <div className="order-1 md:order-2">
+          <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
+            <img src={ph43} alt="Placeholder del equipo y atenci├│n" className="h-full w-full object-cover" />
+          </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
+        </div>
+      )}
+    </Modal>
+  </div>
+      </div>
+    </section>
+  )
+}
+
+function Gallery() {
+  const items = [
+    { title: 'Dise├▒o de sonrisa', desc: 'Caso est├®tico (antes / despu├®s).', src: ph169 },
+    { title: 'Ortodoncia', desc: 'Alineaci├│n y correcci├│n de mordida.', src: ph169 },
+    { title: 'Implantolog├¡a', desc: 'Reposici├│n de pieza dental.', src: ph169 },
+  ]
+  return (
+    <section id="galeria" className="py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Galer├¡a de casos</h2>
+        <p className="mt-3 text-gray-600">Im├ígenes referenciales. Resultados pueden variar seg├║n diagn├│stico.</p>
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map((g) => (
+            <figure key={g.title} className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+              <div className="aspect-video bg-gray-100">
+                <img src={g.src} alt={`Placeholder ${g.title}`} className="h-full w-full object-cover" />
+              </div>
+              <figcaption className="p-4">
+                <p className="font-semibold text-gray-900">{g.title}</p>
+                <p className="text-sm text-gray-600">{g.desc}</p>
+              </figcaption>
+            </figure>
+          ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
+        </div>
+      )}
+    </Modal>
+  </div>
+      </div>
+    </section>
+  )
+}
+
+function Contact() {
+  const address = 'Carrera 7 #16-92, Segundo Piso, San Luis, Soacha, Cundinamarca';
+  const whatsApp = 'https://wa.me/57XXXXXXXXXX?text=Hola%20Los%20Andes%2C%20quiero%20agendar%20una%20cita'; // Reemplazar con n├║mero real
+  const phone = 'tel:+57XXXXXXXXXX'; // Reemplazar con n├║mero real
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const nombre = encodeURIComponent(form.get('nombre') || '');
+    const telefono = encodeURIComponent(form.get('telefono') || '');
+    const servicio = encodeURIComponent(form.get('servicio') || '');
+    const fecha = encodeURIComponent(form.get('fecha') || '');
+    const mensaje = encodeURIComponent(form.get('mensaje') || '');
+    const body = `Nombre:%20${nombre}%0ATel├®fono:%20${telefono}%0AServicio:%20${servicio}%0AFecha%20preferida:%20${fecha}%0AMensaje:%20${mensaje}`;
+    window.location.href = `mailto:losandesodontologia@example.com?subject=Solicitud%20de%20cita&body=${body}`; // Reemplazar email
+  };
+
+  return (
+    <section id="contacto" className="py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Contacto y citas</h2>
+        <div className="mt-8 grid lg:grid-cols-3 gap-6">
+          <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-4">
+            <div>
+              <h3 className="font-semibold text-gray-900">Direcci├│n</h3>
+              <p className="mt-1 text-gray-700">{address}</p>
+              <p className="text-gray-500">Soacha, Cundinamarca ÔÇó San Luis</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900">Tel├®fono</h3>
+              <a className="mt-1 inline-block text-sky-700 hover:underline" href={phone}>(agrega tu n├║mero)</a>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900">WhatsApp</h3>
+              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" href={whatsApp} rel="noreferrer">Escr├¡benos por WhatsApp</a>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900">Horario de atenci├│n</h3>
+              <p className="mt-1 text-gray-700">Lunes a S├íbado (personaliza seg├║n tu agenda)</p>
+            </div>
+          </div>
+          <div className="lg:col-span-2 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+            <h3 className="font-semibold text-gray-900">Solicitar cita</h3>
+            <form className="mt-4 grid sm:grid-cols-2 gap-4" onSubmit={handleSubmit}>
+              <div>
+                <label className="block text-sm text-gray-700">Nombre</label>
+                <input name="nombre" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700">Tel├®fono</label>
+                <input name="telefono" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700">Servicio</label>
+                <select name="servicio" className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500">
+                  <option>Odontolog├¡a general</option>
+                  <option>Cirug├¡a oral</option>
+                  <option>Periodoncia</option>
+                  <option>Endodoncia</option>
+                  <option>Ortodoncia</option>
+                  <option>Implantolog├¡a</option>
+                  <option>Dise├▒o de sonrisa</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700">Fecha preferida</label>
+                <input type="date" name="fecha" className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+              </div>
+              <div className="sm:col-span-2">
+                <label className="block text-sm text-gray-700">Mensaje</label>
+                <textarea name="mensaje" rows={4} className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+              </div>
+              <div className="sm:col-span-2 flex gap-3">
+                <button type="submit" className="inline-flex items-center rounded-md bg-sky-600 px-5 py-3 text-white hover:bg-sky-700">
+                  Enviar solicitud por correo
+                </button>
+                <a href={whatsApp} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-700 hover:bg-gray-50">
+                  Agendar por WhatsApp
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="mt-8 rounded-xl overflow-hidden border border-gray-200">
+          <iframe
+            title="Mapa Consultorio Odontol├│gico Los Andes"
+            src="https://www.google.com/maps?q=Carrera%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca&output=embed"
+            className="w-full h-72"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
+        </div>
+      )}
+    </Modal>
+  </div>
+      </div>
+    </section>
+  )
+}
+
+function Footer() {
+  return (
+    <footer className="border-t border-gray-200 bg-white">
+      <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p>┬® {new Date().getFullYear()} Consultorio Odontol├│gico Los Andes ÔÇó Soacha</p>
+        <a href="#inicio" className="text-sky-700 hover:underline">Volver arriba</a>
+      </div>
+    </footer>
+  )
+}
+
+export default function App() {
+  return (
+    <div className="min-h-screen flex flex-col bg-white text-gray-900">
+      <NavBar />
+      <main className="flex-1">
+        <Hero />
+        <Services />
+        <Gallery />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+
+
+
+
