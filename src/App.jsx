@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import logo from './assets/placeholder-logo.svg'
 import ph43 from './assets/placeholder-4x3.svg'
@@ -44,36 +45,180 @@ function Hero() {
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
             <img src={ph43} alt="Placeholder de consultorio odontolÃ³gico" className="h-full w-full object-cover" />
           </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
 }
 
-function Services() {
-  const items = [
-    { title: 'OdontologÃ­a general', desc: 'Limpiezas, restauraciones y control preventivo.' },
-    { title: 'CirugÃ­a oral', desc: 'Extracciones y procedimientos quirÃºrgicos ambulatorios.' },
-    { title: 'Periodoncia', desc: 'Salud de encÃ­as: prevenciÃ³n y tratamiento.' },
-    { title: 'Endodoncia', desc: 'Tratamientos de conducto con enfoque conservador.' },
-    { title: 'Ortodoncia', desc: 'CorrecciÃ³n de maloclusiones con brackets y alineadores.' },
-    { title: 'ImplantologÃ­a', desc: 'ReposiciÃ³n de piezas con implantes y prÃ³tesis.' },
-    { title: 'DiseÃ±o de sonrisa', desc: 'EstÃ©tica dental: resinas, carillas y blanqueamiento.' },
-  ]
+function Modal({ open, onClose, title, children }) {
+  useEffect(() => {
+    function onKey(e) { if (e.key === 'Escape') onClose(); }
+    if (open) document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open, onClose]);
+  if (!open) return null;
   return (
+    <div className="fixed inset-0 z-50" aria-modal="true" role="dialog">
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+      <div className="relative mx-auto my-10 max-w-3xl rounded-xl bg-white shadow-xl border border-gray-100">
+        <div className="flex items-center justify-between border-b border-gray-200 px-5 py-3">
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+          <button onClick={onClose} className="p-2 rounded-md hover:bg-gray-100" aria-label="Cerrar">?</button>
+        </div>
+        <div className="p-5">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+function Services() {\n  const services = [
+    {
+      key: 'Odontología general',
+      title: 'Odontología general',
+      desc: 'Limpiezas, restauraciones y control preventivo.',
+      details: [
+        'Profilaxis y control de placa',
+        'Resinas estéticas y sellantes',
+        'Evaluación integral y educación en higiene'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,cleaning',
+        'https://source.unsplash.com/featured/?tooth,care'
+      ]
+    },
+    {
+      key: 'Cirugía oral',
+      title: 'Cirugía oral',
+      desc: 'Extracciones y procedimientos quirúrgicos ambulatorios.',
+      details: [
+        'Extracción de terceros molares',
+        'Cirugías menores con anestesia local',
+        'Manejo de lesiones orales leves'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?oral,surgery',
+        'https://source.unsplash.com/featured/?dentist,clinic'
+      ]
+    },
+    {
+      key: 'Periodoncia',
+      title: 'Periodoncia',
+      desc: 'Salud de encías: prevención y tratamiento.',
+      details: [
+        'Limpiezas profundas (raspado y alisado radicular)',
+        'Tratamiento de gingivitis y periodontitis',
+        'Mantenimiento periodontal y control'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?gum,care',
+        'https://source.unsplash.com/featured/?dental,hygiene'
+      ]
+    },
+    {
+      key: 'Endodoncia',
+      title: 'Endodoncia',
+      desc: 'Tratamientos de conducto con enfoque conservador.',
+      details: [
+        'Alivio de dolor y preservación de piezas',
+        'Tratamientos uni y multirradiculares',
+        'Reendodoncia selecta (según evaluación)'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?root,canal',
+        'https://source.unsplash.com/featured/?endodontics'
+      ]
+    },
+    {
+      key: 'Ortodoncia',
+      title: 'Ortodoncia',
+      desc: 'Corrección de maloclusiones con brackets y alineadores.',
+      details: [
+        'Diagnóstico cefalométrico y plan de tratamiento',
+        'Brackets metálicos/estéticos y alineadores',
+        'Contención y seguimiento post-tratamiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?braces,teeth',
+        'https://source.unsplash.com/featured/?aligners,orthodontics'
+      ]
+    },
+    {
+      key: 'Implantología',
+      title: 'Implantología',
+      desc: 'Reposición de piezas con implantes y prótesis.',
+      details: [
+        'Evaluación ósea y planificación',
+        'Colocación de implantes (según caso)',
+        'Rehabilitación protésica sobre implantes'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,implant',
+        'https://source.unsplash.com/featured/?prosthesis,dental'
+      ]
+    },
+    {
+      key: 'Diseño de sonrisa',
+      title: 'Diseño de sonrisa',
+      desc: 'Estética dental: resinas, carillas y blanqueamiento.',
+      details: [
+        'Análisis estético y mock-up',
+        'Carillas y resinas directas',
+        'Blanqueamiento guiado y mantenimiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?smile,teeth',
+        'https://source.unsplash.com/featured/?teeth,whitening'
+      ]
+    }
+  ];\n  const [selected, setSelected] = useState(null);\n  const [open, setOpen] = useState(false);\n  const onCard = (svc) => { setSelected(svc); setOpen(true); };\n  return (
     <section id="servicios" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
         <p className="mt-3 text-gray-600">Tratamientos integrales con enfoque humano y resultados predecibles.</p>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((s) => (
-            <div key={s.title} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-              <div className="text-sky-600 text-2xl" aria-hidden>â–¸</div>
+                    {services.map((s) => (
+            <button key={s.key} onClick={() => onCard(s)} className="text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition cursor-pointer">
+              <div className="text-sky-600 text-2xl" aria-hidden>??</div>
               <h3 className="mt-3 font-semibold text-gray-900">{s.title}</h3>
               <p className="mt-2 text-gray-600 text-sm">{s.desc}</p>
-            </div>
+              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">Ver más detalles ?</span>
+            </button>
           ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -99,7 +244,23 @@ function About() {
           <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100">
             <img src={ph43} alt="Placeholder del equipo y atenciÃ³n" className="h-full w-full object-cover" />
           </div>
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -128,7 +289,23 @@ function Gallery() {
               </figcaption>
             </figure>
           ))}
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -225,7 +402,23 @@ function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+        
+
+    <Modal open={open} onClose={() => setOpen(false)} title={selected?.title}>
+      {selected && (
+        <div className="space-y-5">
+          <ul className="list-disc pl-5 text-gray-700">
+            {selected.details.map((d, i) => (<li key={i}>{d}</li>))}
+          </ul>
+          <div className="grid grid-cols-2 gap-3">
+            {selected.images.map((src, i) => (
+              <img key={i} src={src} alt={selected.title + ' imagen ' + (i+1)} className="w-full h-40 object-cover rounded-lg border" loading="lazy"/>
+            ))}
+          </div>
         </div>
+      )}
+    </Modal>
+  </div>
       </div>
     </section>
   )
@@ -257,3 +450,8 @@ export default function App() {
     </div>
   )
 }
+
+
+
+
+
