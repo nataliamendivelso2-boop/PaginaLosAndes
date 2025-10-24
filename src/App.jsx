@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import logo from './assets/placeholder-logo.svg'
 import ph43 from './assets/placeholder-4x3.svg'
@@ -313,7 +313,7 @@ function Gallery() {
 
 function Contact() {
   const address = 'Carrera 7 #16-92, Segundo Piso, San Luis, Soacha, Cundinamarca';
-  const whatsApp = 'https://wa.me/57XXXXXXXXXX?text=Hola%20Los%20Andes%2C%20quiero%20agendar%20una%20cita'; // Reemplazar con n├║mero real
+  const WhatsApp = 'https://wa.me/57XXXXXXXXXX?text=Hola%20Los%20Andes%2C%20quiero%20agendar%20una%20cita'; // Reemplazar con n├║mero real
   const phone = 'tel:+57XXXXXXXXXX'; // Reemplazar con n├║mero real
 
   const handleSubmit = (e) => {
@@ -345,7 +345,7 @@ function Contact() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900">WhatsApp</h3>
-              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" href={whatsApp} rel="noreferrer">Escr├¡benos por WhatsApp</a>
+              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" href={WhatsApp} rel="noreferrer">Escr├¡benos por WhatsApp</a>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900">Horario de atenci├│n</h3>
@@ -387,7 +387,7 @@ function Contact() {
                 <button type="submit" className="inline-flex items-center rounded-md bg-sky-600 px-5 py-3 text-white hover:bg-sky-700">
                   Enviar solicitud por correo
                 </button>
-                <a href={whatsApp} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-700 hover:bg-gray-50">
+                <a href={WhatsApp} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-700 hover:bg-gray-50">
                   Agendar por WhatsApp
                 </a>
               </div>
