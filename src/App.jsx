@@ -73,17 +73,106 @@ function Modal({ open, onClose, title, children }) {
     </div>
   );
 }
-function Services() {
-  const items = [
-    { title: 'OdontologÃ­a general', desc: 'Limpiezas, restauraciones y control preventivo.' },
-    { title: 'CirugÃ­a oral', desc: 'Extracciones y procedimientos quirÃºrgicos ambulatorios.' },
-    { title: 'Periodoncia', desc: 'Salud de encÃ­as: prevenciÃ³n y tratamiento.' },
-    { title: 'Endodoncia', desc: 'Tratamientos de conducto con enfoque conservador.' },
-    { title: 'Ortodoncia', desc: 'CorrecciÃ³n de maloclusiones con brackets y alineadores.' },
-    { title: 'ImplantologÃ­a', desc: 'ReposiciÃ³n de piezas con implantes y prÃ³tesis.' },
-    { title: 'DiseÃ±o de sonrisa', desc: 'EstÃ©tica dental: resinas, carillas y blanqueamiento.' },
-  ]
-  return (
+function Services() {\n  const services = [
+    {
+      key: 'Odontología general',
+      title: 'Odontología general',
+      desc: 'Limpiezas, restauraciones y control preventivo.',
+      details: [
+        'Profilaxis y control de placa',
+        'Resinas estéticas y sellantes',
+        'Evaluación integral y educación en higiene'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,cleaning',
+        'https://source.unsplash.com/featured/?tooth,care'
+      ]
+    },
+    {
+      key: 'Cirugía oral',
+      title: 'Cirugía oral',
+      desc: 'Extracciones y procedimientos quirúrgicos ambulatorios.',
+      details: [
+        'Extracción de terceros molares',
+        'Cirugías menores con anestesia local',
+        'Manejo de lesiones orales leves'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?oral,surgery',
+        'https://source.unsplash.com/featured/?dentist,clinic'
+      ]
+    },
+    {
+      key: 'Periodoncia',
+      title: 'Periodoncia',
+      desc: 'Salud de encías: prevención y tratamiento.',
+      details: [
+        'Limpiezas profundas (raspado y alisado radicular)',
+        'Tratamiento de gingivitis y periodontitis',
+        'Mantenimiento periodontal y control'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?gum,care',
+        'https://source.unsplash.com/featured/?dental,hygiene'
+      ]
+    },
+    {
+      key: 'Endodoncia',
+      title: 'Endodoncia',
+      desc: 'Tratamientos de conducto con enfoque conservador.',
+      details: [
+        'Alivio de dolor y preservación de piezas',
+        'Tratamientos uni y multirradiculares',
+        'Reendodoncia selecta (según evaluación)'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?root,canal',
+        'https://source.unsplash.com/featured/?endodontics'
+      ]
+    },
+    {
+      key: 'Ortodoncia',
+      title: 'Ortodoncia',
+      desc: 'Corrección de maloclusiones con brackets y alineadores.',
+      details: [
+        'Diagnóstico cefalométrico y plan de tratamiento',
+        'Brackets metálicos/estéticos y alineadores',
+        'Contención y seguimiento post-tratamiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?braces,teeth',
+        'https://source.unsplash.com/featured/?aligners,orthodontics'
+      ]
+    },
+    {
+      key: 'Implantología',
+      title: 'Implantología',
+      desc: 'Reposición de piezas con implantes y prótesis.',
+      details: [
+        'Evaluación ósea y planificación',
+        'Colocación de implantes (según caso)',
+        'Rehabilitación protésica sobre implantes'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?dental,implant',
+        'https://source.unsplash.com/featured/?prosthesis,dental'
+      ]
+    },
+    {
+      key: 'Diseño de sonrisa',
+      title: 'Diseño de sonrisa',
+      desc: 'Estética dental: resinas, carillas y blanqueamiento.',
+      details: [
+        'Análisis estético y mock-up',
+        'Carillas y resinas directas',
+        'Blanqueamiento guiado y mantenimiento'
+      ],
+      images: [
+        'https://source.unsplash.com/featured/?smile,teeth',
+        'https://source.unsplash.com/featured/?teeth,whitening'
+      ]
+    }
+  ];\n  const [selected, setSelected] = useState(null);\n  const [open, setOpen] = useState(false);\n  const onCard = (svc) => { setSelected(svc); setOpen(true); };\n  return (
     <section id="servicios" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
@@ -280,5 +369,6 @@ export default function App() {
     </div>
   )
 }
+
 
 
