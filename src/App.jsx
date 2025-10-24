@@ -91,13 +91,13 @@ function Modal({ open, onClose, title, children }) {
 }
 function Services() {\n  const services = [
   {
-    key: 'Odontología general',
-    title: 'Odontología general',
+    key: 'Odontolog\u00eda general',
+    title: 'Odontolog\u00eda general',
     desc: 'Limpiezas, restauraciones y control preventivo.',
     details: [
       'Profilaxis y control de placa',
-      'Resinas estéticas y sellantes',
-      'Evaluación integral y educación en higiene'
+      'Resinas est\u00e9ticas y sellantes',
+      'Evaluaci\u00f3n integral y educaci\u00f3n en higiene'
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,cleaning',
@@ -105,12 +105,12 @@ function Services() {\n  const services = [
     ]
   },
   {
-    key: 'Cirugía oral',
-    title: 'Cirugía oral',
-    desc: 'Extracciones y procedimientos quirúrgicos ambulatorios.',
+    key: 'Cirug\u00eda oral',
+    title: 'Cirug\u00eda oral',
+    desc: 'Extracciones y procedimientos quir\u00fargicos ambulatorios.',
     details: [
-      'Extracción de terceros molares',
-      'Cirugías menores con anestesia local',
+      'Extracci\u00f3n de terceros molares',
+      'Cirug\u00edas menores con anestesia local',
       'Manejo de lesiones orales leves'
     ],
     images: [
@@ -121,7 +121,7 @@ function Services() {\n  const services = [
   {
     key: 'Periodoncia',
     title: 'Periodoncia',
-    desc: 'Salud de encías: prevención y tratamiento.',
+    desc: 'Salud de enc\u00edas: prevenci\u00f3n y tratamiento.',
     details: [
       'Limpiezas profundas (raspado y alisado radicular)',
       'Tratamiento de gingivitis y periodontitis',
@@ -137,9 +137,9 @@ function Services() {\n  const services = [
     title: 'Endodoncia',
     desc: 'Tratamientos de conducto con enfoque conservador.',
     details: [
-      'Alivio de dolor y preservación de piezas',
+      'Alivio de dolor y preservaci\u00f3n de piezas',
       'Tratamientos uni y multirradiculares',
-      'Reendodoncia selecta (según evaluación)'
+      'Reendodoncia selecta (seg\u00fan evaluaci\u00f3n)'
     ],
     images: [
       'https://source.unsplash.com/featured/?root,canal',
@@ -149,11 +149,11 @@ function Services() {\n  const services = [
   {
     key: 'Ortodoncia',
     title: 'Ortodoncia',
-    desc: 'Corrección de maloclusiones con brackets y alineadores.',
+    desc: 'Correcci\u00f3n de maloclusiones con brackets y alineadores.',
     details: [
-      'Diagnóstico cefalométrico y plan de tratamiento',
-      'Brackets metálicos/estéticos y alineadores',
-      'Contención y seguimiento post-tratamiento'
+      'Diagn\u00f3stico cefalom\u00e9trico y plan de tratamiento',
+      'Brackets met\u00e1licos/est\u00e9ticos y alineadores',
+      'Contenci\u00f3n y seguimiento post-tratamiento'
     ],
     images: [
       'https://source.unsplash.com/featured/?braces,teeth',
@@ -161,13 +161,13 @@ function Services() {\n  const services = [
     ]
   },
   {
-    key: 'Implantología',
-    title: 'Implantología',
-    desc: 'Reposición de piezas con implantes y prótesis.',
+    key: 'Implantolog\u00eda',
+    title: 'Implantolog\u00eda',
+    desc: 'Reposici\u00f3n de piezas con implantes y pr\u00f3tesis.',
     details: [
-      'Evaluación ósea y planificación',
-      'Colocación de implantes (según caso)',
-      'Rehabilitación protésica sobre implantes'
+      'Evaluaci\u00f3n \u00f3sea y planificaci\u00f3n',
+      'Colocaci\u00f3n de implantes (seg\u00fan caso)',
+      'Rehabilitaci\u00f3n prot\u00e9sica sobre implantes'
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,implant',
@@ -175,11 +175,11 @@ function Services() {\n  const services = [
     ]
   },
   {
-    key: 'Diseño de sonrisa',
-    title: 'Diseño de sonrisa',
-    desc: 'Estética dental: resinas, carillas y blanqueamiento.',
+    key: 'Dise\u00f1o de sonrisa',
+    title: 'Dise\u00f1o de sonrisa',
+    desc: 'Est\u00e9tica dental: resinas, carillas y blanqueamiento.',
     details: [
-      'Análisis estético y mock-up',
+      'An\u00e1lisis est\u00e9tico y mock-up',
       'Carillas y resinas directas',
       'Blanqueamiento guiado y mantenimiento'
     ],
