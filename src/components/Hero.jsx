@@ -7,7 +7,7 @@ const Hero = () => (
       <div className="absolute -bottom-32 right-0 h-72 w-72 rounded-full bg-blue-900/15 blur-3xl" />
       <div className="absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/60 blur-3xl" />
     </div>
-    <div className="max-w-6xl mx-auto grid items-center gap-14 px-6 py-20 md:grid-cols-2 md:py-28">
+    <div className="max-w-7xl mx-auto grid items-center gap-8 px-6 py-10 md:grid-cols-2 md:py-14">
       <div className="space-y-8">
         <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-4 py-2 text-sm font-medium text-cyan-700 shadow-sm ring-1 ring-cyan-100">
           Confianza y tecnologia de punta
@@ -20,7 +20,7 @@ const Hero = () => (
             Sonrie con el cuidado integral que merece tu familia
           </h1>
           <p className="text-lg text-slate-600">
-            Con mas de 12 anos acompanando sonrisas en Soacha, creamos planes odontologicos personalizados que combinan calidez humana con
+            Con mas de 12 años acompañando sonrisas en Soacha, creamos planes odontologicos personalizados que combinan calidez humana con
             equipos de ultima generacion.
           </p>
         </div>
