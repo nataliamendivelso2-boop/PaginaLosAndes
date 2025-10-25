@@ -16,53 +16,94 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="py-16 md:py-24">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Contacto y citas</h2>
-        <div className="mt-8 grid lg:grid-cols-3 gap-6">
-          <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-4">
-            <div>
-              <h3 className="font-semibold text-gray-900">Direccion</h3>
-              <p className="mt-1 text-gray-700">{address}</p>
-              <p className="text-gray-500">Soacha, Cundinamarca - San Luis</p>
+    <section id="contacto" className="relative isolate overflow-hidden py-24">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-slate-50" />
+      <div className="absolute right-10 top-10 h-48 w-48 rounded-full bg-cyan-200/25 blur-3xl" />
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="flex flex-col gap-4 text-center md:text-left">
+          <span className="mx-auto inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-600 shadow-sm ring-1 ring-cyan-100 md:mx-0">
+            Agenda y contacto
+          </span>
+          <h2
+            className="text-3xl md:text-4xl font-semibold text-slate-950"
+            style={{ fontFamily: '"Playfair Display", serif' }}
+          >
+            Agenda una cita o escribenos para resolver tus dudas
+          </h2>
+          <p className="mx-auto max-w-3xl text-base text-slate-600 md:mx-0">
+            Nuestro equipo esta listo para diseniar un plan acorde a tus tiempos, necesidades y presupuesto. Elige el canal que prefieras y te contactaremos pronto.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-8 lg:grid-cols-[0.9fr,1.1fr]">
+          <div className="space-y-6 rounded-3xl bg-white p-8 shadow-[0_30px_80px_-40px_rgba(6,182,212,0.5)] ring-1 ring-white/70">
+            <div className="flex gap-3 rounded-2xl bg-cyan-50/60 px-4 py-3 text-left">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-cyan-600 shadow-inner ring-1 ring-cyan-100" aria-hidden>
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="8.25" />
+                  <path d="M12 7.5v4.5l2.75 1.5" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-600">Horario sugerido</h3>
+                <p className="mt-1 text-sm text-slate-600">Lunes a sabado - 8:00 am a 6:00 pm</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-900">Telefono</h3>
-              <a className="mt-1 inline-block text-sky-700 hover:underline" href={phoneLink}>
-                Agrega tu numero
-              </a>
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900">WhatsApp</h3>
-              <a className="mt-1 inline-block text-sky-700 hover:underline" target="_blank" rel="noreferrer" href={whatsappUrl}>
-                Escribenos por WhatsApp
-              </a>
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900">Horario de atencion</h3>
-              <p className="mt-1 text-gray-700">Lunes a Sabado (personaliza segun tu agenda)</p>
+            <div className="space-y-5">
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Direccion</h3>
+                <p className="mt-2 text-base font-medium text-slate-900">{address}</p>
+                <p className="text-sm text-slate-500">Soacha, Cundinamarca - San Luis</p>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Telefono</h3>
+                <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href={phoneLink}>
+                  Agrega tu numero
+                </a>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">WhatsApp</h3>
+                <a className="mt-2 inline-flex items-center gap-2 text-base font-medium text-cyan-600 hover:underline" target="_blank" rel="noreferrer" href={whatsappUrl}>
+                  Escribenos por WhatsApp
+                  <span aria-hidden>-&gt;</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="lg:col-span-2 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h3 className="font-semibold text-gray-900">Solicitar cita</h3>
-            <form className="mt-4 grid sm:grid-cols-2 gap-4" onSubmit={handleSubmit}>
-              <div>
-                <label className="block text-sm text-gray-700" htmlFor="nombre">
+          <div className="rounded-3xl bg-white/95 p-8 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-white/70">
+            <h3 className="text-base font-semibold text-slate-900">Solicitar cita</h3>
+            <p className="mt-2 text-sm text-slate-500">Dejanos tus datos y un odontologo se comunicara contigo.</p>
+            <form className="mt-6 grid gap-5 sm:grid-cols-2" onSubmit={handleSubmit}>
+              <div className="sm:col-span-1">
+                <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="nombre">
                   Nombre
                 </label>
-                <input id="nombre" name="nombre" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+                <input
+                  id="nombre"
+                  name="nombre"
+                  required
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
+                />
               </div>
-              <div>
-                <label className="block text-sm text-gray-700" htmlFor="telefono">
+              <div className="sm:col-span-1">
+                <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="telefono">
                   Telefono
                 </label>
-                <input id="telefono" name="telefono" required className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+                <input
+                  id="telefono"
+                  name="telefono"
+                  required
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
+                />
               </div>
-              <div>
-                <label className="block text-sm text-gray-700" htmlFor="servicio">
+              <div className="sm:col-span-1">
+                <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="servicio">
                   Servicio
                 </label>
-                <select id="servicio" name="servicio" className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500">
+                <select
+                  id="servicio"
+                  name="servicio"
+                  className="mt-2 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
+                >
                   <option>Odontologia general</option>
                   <option>Cirugia oral</option>
                   <option>Periodoncia</option>
@@ -72,34 +113,52 @@ const Contact = () => {
                   <option>Diseno de sonrisa</option>
                 </select>
               </div>
-              <div>
-                <label className="block text-sm text-gray-700" htmlFor="fecha">
+              <div className="sm:col-span-1">
+                <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="fecha">
                   Fecha preferida
                 </label>
-                <input id="fecha" type="date" name="fecha" className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+                <input
+                  id="fecha"
+                  type="date"
+                  name="fecha"
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
+                />
               </div>
               <div className="sm:col-span-2">
-                <label className="block text-sm text-gray-700" htmlFor="mensaje">
+                <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="mensaje">
                   Mensaje
                 </label>
-                <textarea id="mensaje" name="mensaje" rows={4} className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-500" />
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows={4}
+                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
+                />
               </div>
-              <div className="sm:col-span-2 flex gap-3">
-                <button type="submit" className="inline-flex items-center rounded-md bg-sky-600 px-5 py-3 text-white hover:bg-sky-700">
-                  Enviar solicitud por correo
+              <div className="sm:col-span-2 flex flex-wrap gap-4">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-white shadow-lg transition hover:shadow-xl hover:scale-[1.02]"
+                >
+                  Enviar por correo
                 </button>
-                <a href={whatsappUrl} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-700 hover:bg-gray-50">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-slate-700 shadow-sm transition hover:border-cyan-300 hover:text-cyan-600"
+                >
                   Agendar por WhatsApp
                 </a>
               </div>
             </form>
           </div>
         </div>
-        <div className="mt-8 rounded-xl overflow-hidden border border-gray-200">
+        <div className="mt-12 overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_40px_100px_-60px_rgba(15,23,42,0.55)]">
           <iframe
             title="Mapa Consultorio Odontologico Los Andes"
             src="https://www.google.com/maps?q=Carrera%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca&output=embed"
-            className="w-full h-72"
+            className="h-80 w-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

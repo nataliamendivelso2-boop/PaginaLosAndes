@@ -114,59 +114,82 @@ const Services = () => {
   };
 
   return (
-    <section id="servicios" className="py-16 md:py-24">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Servicios</h2>
-        <p className="mt-3 text-gray-600">Tratamientos integrales con enfoque humano y resultados confiables.</p>
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="servicios" className="relative isolate overflow-hidden py-20">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-white to-cyan-50" />
+      <div className="absolute top-12 right-0 h-48 w-48 rounded-full bg-blue-200/20 blur-3xl" />
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="flex flex-col items-start gap-5 text-left sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-blue-700">
+              Servicios integrales
+            </span>
+            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-slate-950" style={{ fontFamily: '"Playfair Display", serif' }}>
+              Especialidades para cuidar cada sonrisa
+            </h2>
+            <p className="mt-3 max-w-2xl text-base text-slate-600">
+              Tratamientos preventivos, restaurativos y esteticos diseniados para generar resultados duraderos, con acompanamiento cercano en cada etapa.
+            </p>
+          </div>
+          <div className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-600 shadow-sm ring-1 ring-slate-100">
+            Selecciona una especialidad y descubre mas detalles y beneficios.
+          </div>
+        </div>
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
             <button
               type="button"
               key={service.key}
               onClick={() => openModal(service)}
-              className="group text-left rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-sky-200 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+              className="group relative overflow-hidden rounded-3xl bg-white/90 p-[1px] text-left shadow-[0_25px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(14,165,233,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sky-700 font-semibold" aria-hidden>
-                {service.title.slice(0, 1)}
+              <span className="absolute inset-x-0 -top-20 h-28 bg-gradient-to-b from-cyan-200/40 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+              <div className="relative h-full rounded-3xl bg-white p-7">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700" aria-hidden>
+                  {service.title.slice(0, 2).toUpperCase()}
+                </div>
+                <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
+                <p className="mt-3 text-sm text-slate-600">{service.summary}</p>
+                <span className="mt-6 inline-flex items-center text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600">
+                  Ver detalles
+                  <svg
+                    className="ml-2 h-4 w-4 transition-transform duration-200 ease-out group-hover:translate-x-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </span>
               </div>
-              <h3 className="mt-3 font-semibold text-gray-900">{service.title}</h3>
-              <p className="mt-2 text-gray-600 text-sm">{service.summary}</p>
-              <span className="mt-3 inline-flex items-center text-sky-700 text-sm">
-                Ver detalles
-                <svg
-                  className="ml-1 h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-              </span>
             </button>
           ))}
         </div>
       </div>
       <Modal open={Boolean(selectedService)} onClose={closeModal} title={selectedService?.title}>
         {selectedService && (
-          <div className="space-y-5">
-            <ul className="list-disc pl-5 text-gray-700">
+          <div className="space-y-6">
+            <ul className="grid gap-2 text-sm text-slate-700">
               {selectedService.details.map((detail) => (
-                <li key={detail}>{detail}</li>
+                <li key={detail} className="flex items-start gap-2">
+                  <span className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-cyan-500" aria-hidden />
+                  <span>{detail}</span>
+                </li>
               ))}
             </ul>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4">
               {selectedService.images.map((src, index) => (
-                <img
-                  key={src}
-                  src={src}
-                  alt={`${selectedService.title} imagen ${index + 1}`}
-                  className="w-full h-40 object-cover rounded-lg border"
-                  loading="lazy"
-                />
+                <div key={src} className="overflow-hidden rounded-2xl border border-white/70 bg-white shadow-sm">
+                  <img
+                    src={src}
+                    alt={`${selectedService.title} imagen ${index + 1}`}
+                    className="h-40 w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
               ))}
             </div>
           </div>
