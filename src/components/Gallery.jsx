@@ -86,7 +86,7 @@ const Gallery = () => {
   };
 
   return (
-    <section id="galeria" className="relative isolate overflow-hidden scroll-mt-24 py-20">
+    <section id="galeria" className="relative isolate overflow-hidden scroll-mt-8 py-20">
       <div className="absolute inset-0 -z-10 bg-white" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-cyan-100/30 via-transparent to-transparent" />
       <div className="max-w-6xl mx-auto px-6">

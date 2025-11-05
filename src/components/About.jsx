@@ -1,7 +1,7 @@
 import ph43 from '../assets/placeholder-4x3.svg';
 
 const About = () => (
-  <section id="nosotros" className="relative isolate overflow-hidden scroll-mt-24 py-20">
+  <section id="nosotros" className="relative isolate overflow-hidden scroll-mt-8 py-20">
     <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-white to-slate-50" />
     <div className="absolute left-12 top-12 h-48 w-48 rounded-full bg-cyan-200/20 blur-3xl" />
     <div className="absolute right-10 bottom-0 h-56 w-56 rounded-full bg-blue-900/10 blur-3xl" />
