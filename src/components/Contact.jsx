@@ -22,49 +22,39 @@ const Contact = () => (
         >
           Agenda una cita o escríbenos para resolver tus dudas
         </h2>
-        <p className="mx-auto max-w-3xl text-base text-slate-600 md:mx-0">
-          Nuestro equipo está listo para diseñar un plan acorde a tus tiempos, necesidades y presupuesto. Elige el canal que prefieras y te contactaremos pronto.
-        </p>
       </div>
       <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <div className="w-full space-y-8 rounded-3xl bg-white p-6 sm:p-8 lg:p-10 shadow-[0_30px_80px_-40px_rgba(6,182,212,0.5)] ring-1 ring-white/70">
-          <p className="text-base text-slate-600">
-            Coordinamos cada cita de manera personalizada para brindarte una experiencia cómoda y oportuna. Escríbenos y te ayudaremos a elegir el mejor horario.
-          </p>
-          <div>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:scale-[1.02] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
-            >
-              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5 transition-transform duration-200 group-hover:scale-105" />
-              <span>Agenda por WhatsApp</span>
-            </a>
-            <p className="mt-3 text-xs font-medium uppercase tracking-[0.3em] text-slate-400">
-              Respuesta dentro del horario de atención.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Dirección</h3>
-              <p className="mt-2 text-base font-medium text-slate-900">{address}</p>
-              <p className="text-sm text-slate-500">Soacha, Cundinamarca - San Luis</p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Teléfono</h3>
-              <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href={phoneLink}>
+        <div className="w-full space-y-6 rounded-3xl bg-white p-6 sm:p-8 lg:p-10 shadow-[0_30px_80px_-40px_rgba(6,182,212,0.5)] ring-1 ring-white/70">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:scale-[1.02] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+          >
+            <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5 transition-transform duration-200 group-hover:scale-105" />
+            <span>Agenda por WhatsApp</span>
+          </a>
+          <ul className="space-y-4 text-left text-sm text-slate-600">
+            <li>
+              <span className="block text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Dirección</span>
+              <span className="mt-1 block text-base font-medium text-slate-900">{address}</span>
+            </li>
+            <li>
+              <span className="block text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Teléfono directo</span>
+              <a className="mt-1 inline-block text-base font-medium text-cyan-600 hover:underline" href={phoneLink}>
                 {displayPhone}
               </a>
-              <p className="text-xs text-slate-400">Llámanos o envíanos un mensaje durante la jornada.</p>
-            </div>
-            <div className="sm:col-span-2">
-              <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Correo</h3>
-              <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href="mailto:losandesodontologiasoacha@gmail.com">
+            </li>
+            <li>
+              <span className="block text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Correo electrónico</span>
+              <a className="mt-1 inline-block text-base font-medium text-cyan-600 hover:underline" href="mailto:losandesodontologiasoacha@gmail.com">
                 losandesodontologiasoacha@gmail.com
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-slate-400">
+            Respuesta dentro del horario de atención.
+          </p>
         </div>
         <div className="w-full space-y-6 rounded-3xl bg-white/95 p-6 sm:p-8 lg:p-10 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-white/70">
           <span className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-600">
