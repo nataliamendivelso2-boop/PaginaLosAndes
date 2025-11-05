@@ -14,28 +14,28 @@ const About = () => (
           className="text-3xl md:text-4xl font-semibold text-slate-950"
           style={{ fontFamily: '"Playfair Display", serif' }}
         >
-          Atencion humana respaldada por protocolos rigurosos
+          Atención humana respaldada por protocolos rigurosos
         </h2>
         <p className="text-base text-slate-600">
-          Nuestra mision es lograr tratamientos odontologicos previsibles, indoloros y adaptados a cada paciente. Respondemos todas tus
-          preguntas con transparencia para que te sientas acompanado de principio a fin.
+          Nuestra misión es lograr tratamientos odontológicos previsibles, indoloros y adaptados a cada paciente. Respondemos todas tus
+          preguntas con transparencia para que te sientas acompañado de principio a fin.
         </p>
         <ul className="grid gap-3 text-sm text-slate-700">
           <li className="flex items-start gap-3">
             <span className="mt-1 inline-flex h-2 w-2 flex-none rounded-full bg-cyan-500" aria-hidden />
-            Evaluacion integral y planes personalizados explicados paso a paso.
+            Evaluación integral y planes personalizados explicados paso a paso.
           </li>
           <li className="flex items-start gap-3">
             <span className="mt-1 inline-flex h-2 w-2 flex-none rounded-full bg-cyan-500" aria-hidden />
-            Bioseguridad certificada, esterilizacion monitoreada y materiales de alta tecnologia.
+            Bioseguridad certificada, esterilización monitoreada y materiales de alta tecnología.
           </li>
           <li className="flex items-start gap-3">
             <span className="mt-1 inline-flex h-2 w-2 flex-none rounded-full bg-cyan-500" aria-hidden />
-            Acompanamiento en seguros y financiacion para facilitar cada tratamiento.
+            Acompañamiento en seguros y financiación para facilitar cada tratamiento.
           </li>
         </ul>
         <div className="rounded-3xl bg-white px-5 py-4 text-sm text-slate-600 shadow-inner ring-1 ring-slate-100">
-          <p>"Creemos que una sonrisa sana es el resultado de empatia, prevencion y detalle clinico."</p>
+          <p>"Creemos que una sonrisa sana es el resultado de empatía, prevención y detalle clínico."</p>
           <p className="mt-2 font-semibold text-cyan-600">- Equipo Los Andes</p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const About = () => (
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
             <img src={ph43} alt="Equipo del consultorio Los Andes" className="h-full w-full object-cover" />
             <div className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-cyan-600 shadow">
-              Equipo clinico
+              Equipo clínico
             </div>
           </div>
         </div>

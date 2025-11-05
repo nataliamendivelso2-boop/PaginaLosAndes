@@ -2,18 +2,18 @@ import ph169 from '../assets/placeholder-16x9.svg';
 
 const ITEMS = [
   {
-    title: 'Diseno de sonrisa',
-    description: 'Caso estetico (antes y despues).',
+    title: 'Diseño de sonrisa',
+    description: 'Caso estético (antes y después).',
     src: ph169,
   },
   {
     title: 'Ortodoncia',
-    description: 'Alineacion y correccion de mordida.',
+    description: 'Alineación y corrección de mordida.',
     src: ph169,
   },
   {
-    title: 'Implantologia',
-    description: 'Reposicion de pieza dental.',
+    title: 'Implantología',
+    description: 'Reposición de pieza dental.',
     src: ph169,
   },
 ];
@@ -34,7 +34,7 @@ const Gallery = () => (
           Casos destacados que inspiran confianza
         </h2>
         <p className="mx-auto max-w-3xl text-base text-slate-600">
-          Cada tratamiento refleja nuestra filosofia: estetica natural, funcionalidad perfecta y bienestar a largo plazo.
+          Cada tratamiento refleja nuestra filosofía: estética natural, funcionalidad perfecta y bienestar a largo plazo.
         </p>
       </div>
       <div className="mt-12 grid gap-8 md:grid-cols-3">

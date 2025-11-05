@@ -11,7 +11,7 @@ const Contact = () => {
     const servicio = encodeURIComponent(form.get('servicio') || '');
     const fecha = encodeURIComponent(form.get('fecha') || '');
     const mensaje = encodeURIComponent(form.get('mensaje') || '');
-    const body = `Nombre:%20${nombre}%0ATelefono:%20${telefono}%0AServicio:%20${servicio}%0AFecha%20preferida:%20${fecha}%0AMensaje:%20${mensaje}`;
+    const body = `Nombre:%20${nombre}%0ATel%C3%A9fono:%20${telefono}%0AServicio:%20${servicio}%0AFecha%20preferida:%20${fecha}%0AMensaje:%20${mensaje}`;
     window.location.href = `mailto:losandesodontologia@example.com?subject=Solicitud%20de%20cita&body=${body}`; // TODO: reemplazar correo
   };
 
@@ -28,10 +28,10 @@ const Contact = () => {
             className="text-3xl md:text-4xl font-semibold text-slate-950"
             style={{ fontFamily: '"Playfair Display", serif' }}
           >
-            Agenda una cita o escribenos para resolver tus dudas
+            Agenda una cita o escríbenos para resolver tus dudas
           </h2>
           <p className="mx-auto max-w-3xl text-base text-slate-600 md:mx-0">
-            Nuestro equipo esta listo para diseniar un plan acorde a tus tiempos, necesidades y presupuesto. Elige el canal que prefieras y te contactaremos pronto.
+            Nuestro equipo está listo para diseñar un plan acorde a tus tiempos, necesidades y presupuesto. Elige el canal que prefieras y te contactaremos pronto.
           </p>
         </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-[0.9fr,1.1fr]">
@@ -45,25 +45,25 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-600">Horario sugerido</h3>
-                <p className="mt-1 text-sm text-slate-600">Lunes a sabado - 8:00 am a 6:00 pm</p>
+                <p className="mt-1 text-sm text-slate-600">Lunes a sábado - 8:00 am a 6:00 pm</p>
               </div>
             </div>
             <div className="space-y-5">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Direccion</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Dirección</h3>
                 <p className="mt-2 text-base font-medium text-slate-900">{address}</p>
                 <p className="text-sm text-slate-500">Soacha, Cundinamarca - San Luis</p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Telefono</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Teléfono</h3>
                 <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href={phoneLink}>
-                  Agrega tu numero
+                  Agrega tu número
                 </a>
               </div>
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">WhatsApp</h3>
                 <a className="mt-2 inline-flex items-center gap-2 text-base font-medium text-cyan-600 hover:underline" target="_blank" rel="noreferrer" href={whatsappUrl}>
-                  Escribenos por WhatsApp
+                  Escríbenos por WhatsApp
                   <span aria-hidden>-&gt;</span>
                 </a>
               </div>
@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
           <div className="rounded-3xl bg-white/95 p-8 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-white/70">
             <h3 className="text-base font-semibold text-slate-900">Solicitar cita</h3>
-            <p className="mt-2 text-sm text-slate-500">Dejanos tus datos y un odontologo se comunicara contigo.</p>
+            <p className="mt-2 text-sm text-slate-500">Déjanos tus datos y un odontólogo se comunicará contigo.</p>
             <form className="mt-6 grid gap-5 sm:grid-cols-2" onSubmit={handleSubmit}>
               <div className="sm:col-span-1">
                 <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="nombre">
@@ -86,7 +86,7 @@ const Contact = () => {
               </div>
               <div className="sm:col-span-1">
                 <label className="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-500" htmlFor="telefono">
-                  Telefono
+                  Teléfono
                 </label>
                 <input
                   id="telefono"
@@ -104,13 +104,13 @@ const Contact = () => {
                   name="servicio"
                   className="mt-2 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-200"
                 >
-                  <option>Odontologia general</option>
-                  <option>Cirugia oral</option>
+                  <option>Odontología general</option>
+                  <option>Cirugía oral</option>
                   <option>Periodoncia</option>
                   <option>Endodoncia</option>
                   <option>Ortodoncia</option>
-                  <option>Implantologia</option>
-                  <option>Diseno de sonrisa</option>
+                  <option>Implantología</option>
+                  <option>Diseño de sonrisa</option>
                 </select>
               </div>
               <div className="sm:col-span-1">
@@ -156,7 +156,7 @@ const Contact = () => {
         </div>
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_40px_100px_-60px_rgba(15,23,42,0.55)]">
           <iframe
-            title="Mapa Consultorio Odontologico Los Andes"
+            title="Mapa Consultorio Odontológico Los Andes"
             src="https://www.google.com/maps?q=Carrera%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca&output=embed"
             className="h-80 w-full"
             loading="lazy"

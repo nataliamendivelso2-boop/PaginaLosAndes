@@ -10,18 +10,18 @@ const Hero = () => (
     <div className="max-w-7xl mx-auto grid items-center gap-8 px-6 py-10 md:grid-cols-2 md:py-14">
       <div className="space-y-8">
         <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-4 py-2 text-sm font-medium text-cyan-700 shadow-sm ring-1 ring-cyan-100">
-          Confianza y tecnologia de punta
+          Confianza y tecnología de punta
         </div>
         <div className="space-y-4">
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-slate-950"
             style={{ fontFamily: '"Playfair Display", serif' }}
           >
-            Sonrie con el cuidado integral que merece tu familia
+            Sonríe con el cuidado integral que merece tu familia
           </h1>
           <p className="text-lg text-slate-600">
-            Con mas de 12 años acompañando sonrisas en Soacha, creamos planes odontologicos personalizados que combinan calidez humana con
-            equipos de ultima generacion.
+            Con más de 12 años acompañando sonrisas en Soacha, creamos planes odontológicos personalizados que combinan calidez humana con
+            equipos de última generación.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-4">
@@ -41,8 +41,8 @@ const Hero = () => (
         <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200">
           {[
             { label: 'Pacientes felices', value: '+1.200' },
-            { label: 'Anos de experiencia', value: '12' },
-            { label: 'Tecnologias activas', value: '9' },
+            { label: 'Años de experiencia', value: '12' },
+            { label: 'Tecnologías activas', value: '9' },
           ].map((item) => (
             <div key={item.label} className="rounded-xl bg-white/80 p-4 text-center shadow-sm ring-1 ring-slate-100">
               <span className="block text-2xl font-semibold text-cyan-600">{item.value}</span>
@@ -58,12 +58,12 @@ const Hero = () => (
           <div className="absolute inset-0 -z-10 rotate-6 rounded-[2.75rem] border border-cyan-100 bg-gradient-to-br from-white via-cyan-50/40 to-white opacity-80 shadow-[0_35px_90px_-55px_rgba(6,182,212,0.6)]" aria-hidden />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/80 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
             <div className="aspect-[4/3]">
-              <img src={ph43} alt="Consultorio odontologico" className="h-full w-full object-cover" />
+              <img src={ph43} alt="Consultorio odontológico" className="h-full w-full object-cover" />
             </div>
             <div className="px-5 pb-5 pt-4">
               <div className="rounded-2xl bg-white/95 px-4 py-3 text-sm shadow-lg ring-1 ring-slate-100 backdrop-blur">
-                <p className="font-semibold text-slate-900">Metodologia preventiva y estetica</p>
-                <p className="mt-1 text-xs text-slate-500">Revisiones periodicas, ortodoncia, implantes y estetica dental en un solo lugar.</p>
+                <p className="font-semibold text-slate-900">Metodología preventiva y estética</p>
+                <p className="mt-1 text-xs text-slate-500">Revisiones periódicas, ortodoncia, implantes y estética dental en un solo lugar.</p>
               </div>
             </div>
           </div>

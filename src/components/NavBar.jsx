@@ -19,7 +19,7 @@ const NavBar = () => (
           Servicios
         </a>
         <a href="#galeria" className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]">
-          Galeria
+          Galería
         </a>
         <a href="#nosotros" className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]">
           Nosotros

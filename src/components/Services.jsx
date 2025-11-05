@@ -3,13 +3,13 @@ import Modal from './Modal';
 
 const SERVICES = [
   {
-    key: 'Odontologia general',
-    title: 'Odontologia general',
+    key: 'Odontología general',
+    title: 'Odontología general',
     summary: 'Limpiezas, restauraciones y control preventivo.',
     details: [
       'Profilaxis y control de placa',
-      'Resinas esteticas y sellantes',
-      'Evaluacion integral y educacion en higiene',
+      'Resinas estéticas y sellantes',
+      'Evaluación integral y educación en higiene',
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,cleaning',
@@ -17,12 +17,12 @@ const SERVICES = [
     ],
   },
   {
-    key: 'Cirugia oral',
-    title: 'Cirugia oral',
+    key: 'Cirugía oral',
+    title: 'Cirugía oral',
     summary: 'Extracciones y procedimientos ambulatorios.',
     details: [
-      'Extraccion de terceros molares',
-      'Cirugias menores con anestesia local',
+      'Extracción de terceros molares',
+      'Cirugías menores con anestesia local',
       'Manejo de lesiones orales leves',
     ],
     images: [
@@ -33,7 +33,7 @@ const SERVICES = [
   {
     key: 'Periodoncia',
     title: 'Periodoncia',
-    summary: 'Salud de encias: prevencion y tratamiento.',
+    summary: 'Salud de encías: prevención y tratamiento.',
     details: [
       'Limpiezas profundas (raspado y alisado radicular)',
       'Tratamiento de gingivitis y periodontitis',
@@ -49,9 +49,9 @@ const SERVICES = [
     title: 'Endodoncia',
     summary: 'Tratamientos de conducto con enfoque conservador.',
     details: [
-      'Alivio de dolor y preservacion de piezas',
+      'Alivio de dolor y preservación de piezas',
       'Tratamientos uni y multirradiculares',
-      'Reendodoncia selecta segun evaluacion',
+      'Reendodoncia selecta según evaluación',
     ],
     images: [
       'https://source.unsplash.com/featured/?root,canal',
@@ -61,11 +61,11 @@ const SERVICES = [
   {
     key: 'Ortodoncia',
     title: 'Ortodoncia',
-    summary: 'Correccion de maloclusiones con brackets y alineadores.',
+    summary: 'Corrección de maloclusiones con brackets y alineadores.',
     details: [
-      'Diagnostico cefalometrico y plan de tratamiento',
-      'Brackets metalicos o esteticos y alineadores',
-      'Contencion y seguimiento post tratamiento',
+      'Diagnóstico cefalométrico y plan de tratamiento',
+      'Brackets metálicos o estéticos y alineadores',
+      'Contención y seguimiento post tratamiento',
     ],
     images: [
       'https://source.unsplash.com/featured/?braces,teeth',
@@ -73,13 +73,13 @@ const SERVICES = [
     ],
   },
   {
-    key: 'Implantologia',
-    title: 'Implantologia',
-    summary: 'Reposicion de piezas con implantes y protesis.',
+    key: 'Implantología',
+    title: 'Implantología',
+    summary: 'Reposición de piezas con implantes y prótesis.',
     details: [
-      'Evaluacion osea y planificacion',
-      'Colocacion de implantes segun caso',
-      'Rehabilitacion protesica sobre implantes',
+      'Evaluación ósea y planificación',
+      'Colocación de implantes según caso',
+      'Rehabilitación protésica sobre implantes',
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,implant',
@@ -87,11 +87,11 @@ const SERVICES = [
     ],
   },
   {
-    key: 'Diseno de sonrisa',
-    title: 'Diseno de sonrisa',
-    summary: 'Estetica dental: resinas, carillas y blanqueamiento.',
+    key: 'Diseño de sonrisa',
+    title: 'Diseño de sonrisa',
+    summary: 'Estética dental: resinas, carillas y blanqueamiento.',
     details: [
-      'Analisis estetico y mock up',
+      'Análisis estético y mock up',
       'Carillas y resinas directas',
       'Blanqueamiento guiado y mantenimiento',
     ],
@@ -127,11 +127,11 @@ const Services = () => {
               Especialidades para cuidar cada sonrisa
             </h2>
             <p className="mt-3 max-w-2xl text-base text-slate-600">
-              Tratamientos preventivos, restaurativos y esteticos diseniados para generar resultados duraderos, con acompanamiento cercano en cada etapa.
+              Tratamientos preventivos, restaurativos y estéticos diseñados para generar resultados duraderos, con acompañamiento cercano en cada etapa.
             </p>
           </div>
           <div className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-600 shadow-sm ring-1 ring-slate-100">
-            Selecciona una especialidad y descubre mas detalles y beneficios.
+            Selecciona una especialidad y descubre más detalles y beneficios.
           </div>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
