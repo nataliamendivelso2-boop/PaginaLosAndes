@@ -3,10 +3,10 @@ import blogPosts from '../data/blogPosts';
 const BlogSection = ({ onNavigate }) => {
   const featuredPosts = blogPosts.slice(0, 3);
 
-  const handleNavigate = (event, hash) => {
+  const handleNavigate = (event, destination) => {
     event.preventDefault();
-    if (typeof onNavigate === 'function') {
-      onNavigate('blog', hash);
+    if (typeof onNavigate === 'function' && destination?.page) {
+      onNavigate(destination.page, destination.options);
     }
   };
 
@@ -33,7 +33,7 @@ const BlogSection = ({ onNavigate }) => {
           </div>
           <a
             href="/blogs"
-            onClick={(event) => handleNavigate(event)}
+            onClick={(event) => handleNavigate(event, { page: 'blogIndex' })}
             className="inline-flex items-center justify-center rounded-full bg-white/95 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-xl"
           >
             Ver todos los artículos
@@ -73,8 +73,13 @@ const BlogSection = ({ onNavigate }) => {
                   {post.readTime}
                 </span>
                 <a
-                  href={`/blogs#${post.id}`}
-                  onClick={(event) => handleNavigate(event, `#${post.id}`)}
+                  href={`/blogs/${post.id}`}
+                  onClick={(event) =>
+                    handleNavigate(event, {
+                      page: 'blogArticle',
+                      options: { slug: post.id },
+                    })
+                  }
                   className="inline-flex items-center gap-2 text-cyan-200 transition-colors duration-200 group-hover:text-cyan-100"
                 >
                   Leer artículo

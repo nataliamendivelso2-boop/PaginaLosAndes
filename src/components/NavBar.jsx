@@ -13,7 +13,7 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
 
       if (currentPage !== 'home') {
         if (typeof onNavigate === 'function') {
-          onNavigate('home', hash);
+          onNavigate('home', { hash });
         }
         return;
       }
@@ -21,7 +21,7 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
       const scrolled = scrollToHash(hash);
 
       if (typeof onNavigate === 'function') {
-        onNavigate('home', hash);
+        onNavigate('home', { hash });
       } else if (scrolled && window.location.hash !== hash) {
         window.history.replaceState({}, '', `${window.location.pathname}${hash}`);
       }
@@ -33,7 +33,7 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
     (event) => {
       event.preventDefault();
       if (typeof onNavigate === 'function') {
-        onNavigate('home', '#inicio');
+        onNavigate('home', { hash: '#inicio' });
       }
     },
     [onNavigate],
@@ -43,7 +43,7 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
     (event) => {
       event.preventDefault();
       if (typeof onNavigate === 'function') {
-        onNavigate('blog');
+        onNavigate('blogIndex');
       }
     },
     [onNavigate],
@@ -85,6 +85,13 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
             className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
           >
             Nosotros
+          </a>
+          <a
+            href="/blogs"
+            onClick={handleNavigateBlog}
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
+          >
+            Blog
           </a>
           <a
             href="#contacto"

@@ -3,34 +3,41 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
+import BlogIndex from './pages/BlogIndex';
+import BlogArticle from './pages/BlogArticle';
 import { scrollToHash } from './utils/scroll';
 
-const getInitialPage = () => {
+const parseLocation = () => {
   if (typeof window === 'undefined') {
-    return 'home';
+    return { page: 'home', hash: '' };
   }
-  return window.location.pathname === '/blogs' ? 'blog' : 'home';
-};
 
-const getInitialHash = () => {
-  if (typeof window === 'undefined') {
-    return '';
+  const { pathname, hash } = window.location;
+
+  if (pathname === '/blogs') {
+    return { page: 'blogIndex', hash };
   }
-  return window.location.hash;
+
+  const articleMatch = pathname.match(/^\/blogs\/([^/]+)\/?$/);
+
+  if (articleMatch) {
+    return { page: 'blogArticle', slug: decodeURIComponent(articleMatch[1]), hash };
+  }
+
+  return { page: 'home', hash };
 };
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState(getInitialPage);
-  const [scrollTarget, setScrollTarget] = useState(() => ({ hash: getInitialHash(), key: Date.now() }));
+  const [route, setRoute] = useState(parseLocation);
+  const [scrollTarget, setScrollTarget] = useState(() => {
+    const initialRoute = parseLocation();
+    return { hash: initialRoute.hash ?? '', key: Date.now() };
+  });
 
   const handlePopState = useCallback(() => {
-    if (typeof window === 'undefined') {
-      return;
-    }
-    const path = window.location.pathname === '/blogs' ? 'blog' : 'home';
-    setCurrentPage(path);
-    setScrollTarget({ hash: window.location.hash, key: Date.now() });
+    const locationState = parseLocation();
+    setRoute(locationState);
+    setScrollTarget({ hash: locationState.hash ?? '', key: Date.now() });
   }, []);
 
   useEffect(() => {
@@ -47,13 +54,26 @@ const App = () => {
     };
   }, [handlePopState]);
 
-  const navigateTo = useCallback((page, hash = '') => {
+  const navigateTo = useCallback((page, options = {}) => {
     if (typeof window === 'undefined') {
       return;
     }
 
+    const normalizedOptions =
+      typeof options === 'string' ? { hash: options } : options ?? {};
+
+    const { hash = '', slug } = normalizedOptions;
+
     const normalizedHash = hash && !hash.startsWith('#') ? `#${hash}` : hash;
-    const path = page === 'blog' ? '/blogs' : '/';
+
+    let path = '/';
+
+    if (page === 'blogIndex') {
+      path = '/blogs';
+    } else if (page === 'blogArticle') {
+      path = slug ? `/blogs/${encodeURIComponent(slug)}` : '/blogs';
+    }
+
     const url = `${path}${normalizedHash}`;
     const currentUrl = `${window.location.pathname}${window.location.hash}`;
 
@@ -61,7 +81,7 @@ const App = () => {
       window.history.pushState({}, '', url);
     }
 
-    setCurrentPage(page);
+    setRoute({ page, slug, hash: normalizedHash });
     setScrollTarget({ hash: normalizedHash, key: Date.now() });
   }, []);
 
@@ -88,18 +108,22 @@ const App = () => {
     };
 
     scrollWithRetry();
-  }, [currentPage, scrollTarget]);
+  }, [route.page, route.slug, scrollTarget]);
 
   const pageContent = useMemo(() => {
-    if (currentPage === 'blog') {
-      return <Blog />;
+    if (route.page === 'blogIndex') {
+      return <BlogIndex onNavigate={navigateTo} />;
+    }
+
+    if (route.page === 'blogArticle') {
+      return <BlogArticle slug={route.slug} onNavigate={navigateTo} />;
     }
     return <Home onNavigate={navigateTo} />;
-  }, [currentPage, navigateTo]);
+  }, [navigateTo, route.page, route.slug]);
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
-      <NavBar currentPage={currentPage} onNavigate={navigateTo} />
+      <NavBar currentPage={route.page} onNavigate={navigateTo} />
       <main className="flex-1">{pageContent}</main>
       <Footer />
     </div>
