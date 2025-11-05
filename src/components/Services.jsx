@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from './Modal';
 
 const SERVICES = [
@@ -102,16 +102,41 @@ const SERVICES = [
   },
 ];
 
-const Services = () => {
+const Services = ({ highlightRequest }) => {
   const [selectedService, setSelectedService] = useState(null);
 
-  const openModal = (service) => {
-    setSelectedService(service);
+  const openModal = (serviceOrKey) => {
+    if (!serviceOrKey) {
+      return;
+    }
+
+    const service =
+      typeof serviceOrKey === 'string'
+        ? SERVICES.find((entry) => entry.key.toLowerCase() === serviceOrKey.toLowerCase())
+        : serviceOrKey;
+
+    if (service) {
+      setSelectedService(service);
+    }
   };
 
   const closeModal = () => {
     setSelectedService(null);
   };
+
+  useEffect(() => {
+    if (!highlightRequest?.key) {
+      return;
+    }
+
+    const service = SERVICES.find(
+      (entry) => entry.key.toLowerCase() === highlightRequest.key.toLowerCase(),
+    );
+
+    if (service) {
+      setSelectedService(service);
+    }
+  }, [highlightRequest]);
 
   return (
     <section id="servicios" className="relative isolate overflow-hidden scroll-mt-24 py-20">

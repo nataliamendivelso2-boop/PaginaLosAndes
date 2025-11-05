@@ -3,11 +3,12 @@ import ph43 from '../assets/Consultorio.png';
 import { getCampaignContent } from '../utils/campaigns';
 import { scrollToHash } from '../utils/scroll';
 
-const Hero = ({ campaignKey }) => {
+const Hero = ({ campaignKey, onServiceModalRequest }) => {
   const { hero: heroContent } = getCampaignContent(campaignKey);
   const { eyebrow, title, description, primaryCta, secondaryCta, noteTitle, noteDescription } = heroContent;
   const navigate = useNavigate();
   const location = useLocation();
+  const isSecondaryServiceAction = Boolean(secondaryCta?.serviceKey);
 
   const handleHashNavigation = (event, target) => {
     if (!target || !target.startsWith('#')) {
@@ -68,7 +69,14 @@ const Hero = ({ campaignKey }) => {
             {secondaryCta && (
               <a
                 href={secondaryCta.href}
-                onClick={(event) => handleHashNavigation(event, secondaryCta.href)}
+                onClick={(event) => {
+                  if (isSecondaryServiceAction && secondaryCta?.serviceKey) {
+                    event.preventDefault();
+                    onServiceModalRequest?.(secondaryCta.serviceKey);
+                    return;
+                  }
+                  handleHashNavigation(event, secondaryCta.href);
+                }}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-700 shadow-sm transition duration-300 hover:border-cyan-300 hover:text-cyan-600"
               >
                 {secondaryCta.label}

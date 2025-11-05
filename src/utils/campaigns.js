@@ -7,6 +7,7 @@ const CTA_TARGET_SERVICES = '#servicios';
 
 export const CAMPAIGN_CONTENT = {
   [DEFAULT_CAMPAIGN_KEY]: {
+    highlightedServiceKey: null,
     hero: {
       eyebrow: 'Confianza y tecnología de punta',
       title: 'Sonríe con el cuidado integral que merece tu familia',
@@ -33,6 +34,7 @@ export const CAMPAIGN_CONTENT = {
     },
   },
   endodoncia: {
+    highlightedServiceKey: 'Endodoncia',
     hero: {
       eyebrow: 'Especialistas en endodoncia',
       title: 'Tratamiento de endodoncia | Conductos en Soacha',
@@ -45,6 +47,7 @@ export const CAMPAIGN_CONTENT = {
       secondaryCta: {
         label: 'Ver protocolo de endodoncia',
         href: CTA_TARGET_SERVICES,
+        serviceKey: 'Endodoncia',
       },
       noteTitle: 'Conductos indoloros y monitoreados',
       noteDescription:
@@ -59,6 +62,7 @@ export const CAMPAIGN_CONTENT = {
     },
   },
   ortodoncia: {
+    highlightedServiceKey: 'Ortodoncia',
     hero: {
       eyebrow: 'Ortodoncia personalizada',
       title: 'Ortodoncia moderna | Brackets y alineadores en Soacha',
@@ -71,6 +75,7 @@ export const CAMPAIGN_CONTENT = {
       secondaryCta: {
         label: 'Revisa planes de ortodoncia',
         href: CTA_TARGET_SERVICES,
+        serviceKey: 'Ortodoncia',
       },
       noteTitle: 'Planificación cefalométrica y 3D',
       noteDescription:

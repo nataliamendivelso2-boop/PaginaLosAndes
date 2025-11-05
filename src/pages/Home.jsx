@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -45,6 +45,18 @@ const Home = () => {
 
   const campaignKey = resolveCampaignKey(mergedSearchParams);
   const campaignContent = getCampaignContent(campaignKey);
+  const [serviceModalRequest, setServiceModalRequest] = useState(null);
+
+  useEffect(() => {
+    setServiceModalRequest(null);
+  }, [campaignKey]);
+
+  const handleServiceModalRequest = useCallback((serviceKey) => {
+    if (!serviceKey) {
+      return;
+    }
+    setServiceModalRequest({ key: serviceKey, nonce: Date.now() });
+  }, []);
 
   const pageTitle = campaignContent.seo.title;
   const pageDescription = campaignContent.seo.description;
@@ -118,8 +130,8 @@ const Home = () => {
         }}
         structuredData={structuredData}
       />
-      <Hero campaignKey={campaignKey} />
-      <Services />
+      <Hero campaignKey={campaignKey} onServiceModalRequest={handleServiceModalRequest} />
+      <Services highlightRequest={serviceModalRequest} />
       <Gallery />
       <About />
       <Contact />
