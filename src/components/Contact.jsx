@@ -60,7 +60,7 @@ const Contact = () => (
             </div>
             <div className="sm:col-span-2">
               <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">Correo</h3>
-              <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href="mailto:losandesodontologia@gmail.com">
+              <a className="mt-2 inline-block text-base font-medium text-cyan-600 hover:underline" href="mailto:losandesodontologiasoacha@gmail.com">
                 losandesodontologia@gmail.com
               </a>
             </div>
