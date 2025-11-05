@@ -11,7 +11,7 @@ const NavBar = () => (
         <img
           src={logo}
           alt="Logo Consultorio Los Andes"
-          className="w-50 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
+          className="w-40 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
         />
       </a>
       <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
