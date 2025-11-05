@@ -92,37 +92,37 @@ const Contact = () => (
           </p>
         </div>
       </div>
-      <div className="mt-12 space-y-4 rounded-[2rem] border border-white/70 bg-white p-4 shadow-[0_40px_100px_-60px_rgba(15,23,42,0.55)]">
-        <div className="overflow-hidden rounded-[1.75rem]">
+      <div className="mt-12 overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_40px_100px_-60px_rgba(15,23,42,0.55)]">
+        <div className="relative">
+          <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-end bg-gradient-to-t from-white/5 via-transparent to-transparent p-4">
+            <a
+              href="https://www.waze.com/ul?ll=4.5823224%2C-74.2157531&navigate=yes"
+              target="_blank"
+              rel="noreferrer"
+              className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/90 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700 shadow-sm transition hover:border-cyan-200 hover:text-cyan-800"
+            >
+              Abrir en Waze
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </div>
           <iframe
             title="Mapa Consultorio Odontológico Los Andes"
-            src="https://embed.waze.com/iframe?zoom=16&lat=4.5823224&lon=-74.2157531&pin=1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.909529048087!2d-74.2157531!3d4.5823224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fd7b20ef891%3A0x44b95b601a2f2244!2sCra.%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000"
             className="h-80 w-full"
             allowFullScreen
             loading="lazy"
           />
-        </div>
-        <div className="flex justify-end">
-          <a
-            href="https://www.waze.com/ul?ll=4.5823224%2C-74.2157531&navigate=yes"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-cyan-200 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-700 transition hover:border-cyan-400 hover:text-cyan-800"
-          >
-            Abrir en Waze
-            <svg
-              className="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </a>
         </div>
       </div>
     </div>
