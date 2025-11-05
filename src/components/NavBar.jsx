@@ -2,7 +2,7 @@ import logo from '../assets/logoblanco.png';
 
 const NavBar = () => (
   <header className="sticky top-0 z-50 bg-gradient-to-l from-slate-950 via-blue-900 to-cyan-500 shadow-xl">
-    <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2">
       <a
         href="#inicio"
         className="flex items-center gap-4 text-white transition-transform duration-300 hover:-translate-y-0.5"
@@ -11,7 +11,7 @@ const NavBar = () => (
         <img
           src={logo}
           alt="Logo Consultorio Los Andes"
-          className="w-40 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
+          className="w-48 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
         />
       </a>
       <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
