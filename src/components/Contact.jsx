@@ -92,6 +92,7 @@ const Contact = () => (
           </p>
         </div>
       </div>
+      
       <div className="mt-12 overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_40px_100px_-60px_rgba(15,23,42,0.55)]">
         <div className="relative">
           <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-end bg-gradient-to-t from-white/5 via-transparent to-transparent p-4">
