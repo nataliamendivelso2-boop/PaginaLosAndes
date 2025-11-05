@@ -1,5 +1,5 @@
 export const HEADER_OFFSET = 96;
-export const SCROLL_DURATION = 1100;
+export const SCROLL_DURATION = 750;
 
 const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
 

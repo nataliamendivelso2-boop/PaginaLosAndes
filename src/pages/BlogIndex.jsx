@@ -1,11 +1,51 @@
+import { useMemo, useState } from 'react';
 import blogPosts from '../data/blogPosts';
 
+const HIGHLIGHT_LIMIT = 3;
+const HIGHLIGHT_CHAR_LIMIT = 160;
+const DEFAULT_CATEGORY = 'Todos';
+
+const buildHighlights = (content = []) =>
+  content
+    .slice(0, HIGHLIGHT_LIMIT)
+    .map((paragraph) => paragraph.replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+    .map((text) => (text.length > HIGHLIGHT_CHAR_LIMIT ? `${text.slice(0, HIGHLIGHT_CHAR_LIMIT - 1)}…` : text));
+
 const BlogIndex = ({ onNavigate }) => {
-  const [featuredPost, ...otherPosts] = blogPosts;
+  const [activeCategory, setActiveCategory] = useState(DEFAULT_CATEGORY);
+
+  const categories = useMemo(() => {
+    const unique = new Set(blogPosts.map((post) => post.category));
+    return [DEFAULT_CATEGORY, ...Array.from(unique)];
+  }, []);
+
+  const filteredPosts = useMemo(() => {
+    if (activeCategory === DEFAULT_CATEGORY) {
+      return blogPosts;
+    }
+    return blogPosts.filter((post) => post.category === activeCategory);
+  }, [activeCategory]);
+
+  const [featuredPost, ...otherPosts] = filteredPosts;
 
   if (!featuredPost) {
-    return null;
+    return (
+      <div className="relative isolate overflow-hidden bg-white pb-24">
+        <div className="absolute inset-x-0 top-0 -z-10 h-[320px] bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
+        <section className="max-w-4xl mx-auto px-6 pt-32 text-center text-white">
+          <h1 className="text-4xl font-semibold" style={{ fontFamily: '"Playfair Display", serif' }}>
+            No encontramos artículos en esta categoría
+          </h1>
+          <p className="mt-4 text-white/80">
+            Prueba seleccionando otra especialidad o vuelve más tarde para descubrir nuevo contenido.
+          </p>
+        </section>
+      </div>
+    );
   }
+
+  const highlightItems = buildHighlights(featuredPost.content);
 
   const handleNavigate = (event, slug) => {
     event.preventDefault();
@@ -33,7 +73,31 @@ const BlogIndex = ({ onNavigate }) => {
           </p>
         </div>
       </section>
-      <section className="relative z-10 -mt-16 max-w-6xl mx-auto px-6">
+      <section className="relative z-10 mt-12 max-w-6xl mx-auto px-6">
+        <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-white/20 bg-slate-950/55 px-5 py-4 text-white shadow-[0_20px_45px_-30px_rgba(14,165,233,0.6)] backdrop-blur">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-white/80">Filtrar por especialidad</h2>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((category) => {
+              const isActive = category === activeCategory;
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  onClick={() => setActiveCategory(category)}
+                  className={`rounded-full border px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] transition ${
+                    isActive
+                      ? 'border-white bg-white/90 text-slate-900 shadow-sm'
+                      : 'border-white/30 bg-white/10 text-white/80 hover:border-white/60 hover:text-white'
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <section className="relative z-10 mt-10 max-w-6xl mx-auto px-6">
         <div className="grid gap-12">
           <article className="grid gap-10 overflow-hidden rounded-3xl border border-slate-100/60 bg-white/95 p-8 shadow-[0_45px_90px_-55px_rgba(15,23,42,0.45)] backdrop-blur md:grid-cols-2 md:p-12">
             <div className="space-y-6">
@@ -74,11 +138,19 @@ const BlogIndex = ({ onNavigate }) => {
               </a>
             </div>
             <div className="flex flex-col justify-between rounded-3xl bg-gradient-to-br from-cyan-500/10 via-slate-900/5 to-blue-900/10 p-6 text-slate-700">
-              <div className="space-y-4 text-sm leading-relaxed md:text-base md:leading-8">
-                {featuredPost.content.slice(0, 3).map((paragraph, index) => (
-                  <p key={`${featuredPost.id}-preview-${index}`}>{paragraph}</p>
-                ))}
-              </div>
+              {highlightItems.length > 0 && (
+                <div className="space-y-4">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-700">Ideas principales</h3>
+                  <ul className="space-y-4 text-sm leading-relaxed md:text-base">
+                    {highlightItems.map((highlight, index) => (
+                      <li key={`${featuredPost.id}-highlight-${index}`} className="flex items-start gap-3">
+                        <span className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-cyan-500" aria-hidden />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <p className="mt-6 text-xs uppercase tracking-[0.3em] text-slate-400">
                 {featuredPost.readTime} · Redacción Los Andes
               </p>
