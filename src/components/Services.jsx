@@ -114,7 +114,7 @@ const Services = () => {
   };
 
   return (
-    <section id="servicios" className="relative isolate overflow-hidden scroll-mt-32 py-20">
+    <section id="servicios" className="relative isolate overflow-hidden scroll-mt-24 py-20">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-white to-cyan-50" />
       <div className="absolute top-12 right-0 h-48 w-48 rounded-full bg-blue-200/20 blur-3xl" />
       <div className="max-w-6xl mx-auto px-6">

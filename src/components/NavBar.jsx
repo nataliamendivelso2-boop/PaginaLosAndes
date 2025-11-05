@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import logo from '../assets/logoblanco.png';
 
-const HEADER_OFFSET = 120;
+const HEADER_OFFSET = 96;
 const SCROLL_DURATION = 1100;
 
 const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);

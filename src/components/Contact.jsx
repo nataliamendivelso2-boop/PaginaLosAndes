@@ -8,7 +8,7 @@ const phoneLink = `tel:+${whatsappNumber}`;
 const displayPhone = '+57 317 437 4266';
 
 const Contact = () => (
-  <section id="contacto" className="relative isolate overflow-hidden scroll-mt-32 py-24">
+  <section id="contacto" className="relative isolate overflow-hidden scroll-mt-24 py-24">
     <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-slate-50" />
     <div className="absolute right-10 top-10 h-48 w-48 rounded-full bg-cyan-200/25 blur-3xl" />
     <div className="max-w-6xl mx-auto px-6">
@@ -96,7 +96,7 @@ const Contact = () => (
         <div className="relative">
           <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-end bg-gradient-to-t from-white/5 via-transparent to-transparent p-4">
             <a
-              href="https://www.waze.com/ul?ll=4.5823224%2C-74.2157531&navigate=yes"
+              href="https://www.waze.com/ul?ll=4.58240%2C-74.21585&navigate=yes"
               target="_blank"
               rel="noreferrer"
               className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/90 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700 shadow-sm transition hover:border-cyan-200 hover:text-cyan-800"
@@ -118,7 +118,7 @@ const Contact = () => (
           </div>
           <iframe
             title="Mapa Consultorio Odontológico Los Andes"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.909529048087!2d-74.2157531!3d4.5823224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fd7b20ef891%3A0x44b95b601a2f2244!2sCra.%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.909529048087!2d-74.21598!3d4.58253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fd7b20ef891%3A0x44b95b601a2f2244!2sCra.%207%20%2316-92%2C%20San%20Luis%2C%20Soacha%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000"
             className="h-80 w-full"
             allowFullScreen
             loading="lazy"
