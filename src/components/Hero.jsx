@@ -16,14 +16,19 @@ const Hero = ({ campaignKey }) => {
 
     event.preventDefault();
     const formattedHash = target;
+    const rawSearch =
+      (location.search && location.search !== '?' && location.search) ||
+      (typeof window !== 'undefined' ? window.location.search : '');
+    const search = rawSearch || '';
+    const searchOptions = search ? { search } : {};
 
     if (location.pathname !== '/') {
-      navigate({ pathname: '/', hash: formattedHash });
+      navigate({ pathname: '/', hash: formattedHash, ...searchOptions });
       return;
     }
 
     if (location.hash !== formattedHash) {
-      navigate({ hash: formattedHash });
+      navigate({ hash: formattedHash, ...searchOptions });
     } else {
       scrollToHash(formattedHash);
     }

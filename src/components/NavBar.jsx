@@ -18,14 +18,19 @@ const NavBar = () => {
   const navigateToHash = (hash) => {
     const formattedHash = hash.startsWith('#') ? hash : `#${hash}`;
     setIsMenuOpen(false);
+    const rawSearch =
+      (location.search && location.search !== '?' && location.search) ||
+      (typeof window !== 'undefined' ? window.location.search : '');
+    const search = rawSearch || '';
+    const searchOptions = search ? { search } : {};
 
     if (location.pathname !== '/') {
-      navigate({ pathname: '/', hash: formattedHash });
+      navigate({ pathname: '/', hash: formattedHash, ...searchOptions });
       return;
     }
 
     if (location.hash !== formattedHash) {
-      navigate({ hash: formattedHash });
+      navigate({ hash: formattedHash, ...searchOptions });
     } else {
       scrollToHash(formattedHash);
     }
@@ -33,7 +38,12 @@ const NavBar = () => {
 
   const navigateToPath = (path) => {
     setIsMenuOpen(false);
-    navigate(path);
+    const rawSearch =
+      (location.search && location.search !== '?' && location.search) ||
+      (typeof window !== 'undefined' ? window.location.search : '');
+    const search = rawSearch || '';
+    const searchOptions = search ? { search } : {};
+    navigate({ pathname: path, ...searchOptions });
   };
 
   return (

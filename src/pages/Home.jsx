@@ -14,7 +14,36 @@ const HOME_CANONICAL = `${SITE_URL}/`;
 
 const Home = () => {
   const [searchParams] = useSearchParams();
-  const campaignKey = resolveCampaignKey(searchParams);
+  const mergedSearchParams = useMemo(() => {
+    const params = new URLSearchParams();
+
+    if (typeof window !== 'undefined') {
+      const browserSearch = window.location.search;
+      if (browserSearch) {
+        const globalParams = new URLSearchParams(browserSearch);
+        globalParams.forEach((value, key) => {
+          params.set(key, value);
+        });
+      }
+
+      const hash = window.location.hash || '';
+      const hashQueryIndex = hash.indexOf('?');
+      if (hashQueryIndex !== -1) {
+        const hashParams = new URLSearchParams(hash.slice(hashQueryIndex + 1));
+        hashParams.forEach((value, key) => {
+          params.set(key, value);
+        });
+      }
+    }
+
+    searchParams.forEach((value, key) => {
+      params.set(key, value);
+    });
+
+    return params;
+  }, [searchParams]);
+
+  const campaignKey = resolveCampaignKey(mergedSearchParams);
   const campaignContent = getCampaignContent(campaignKey);
 
   const pageTitle = campaignContent.seo.title;
