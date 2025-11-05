@@ -1,58 +1,60 @@
 import { useCallback } from 'react';
 import logo from '../assets/logoblanco.png';
+import { scrollToHash } from '../utils/scroll';
 
-const HEADER_OFFSET = 96;
-const SCROLL_DURATION = 1100;
+const NavBar = ({ currentPage = 'home', onNavigate }) => {
+  const handleSmoothScroll = useCallback(
+    (event, hash) => {
+      if (typeof window === 'undefined') {
+        return;
+      }
 
-const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
+      event.preventDefault();
 
-const animateScroll = (targetPosition, duration) => {
-  if (typeof window === 'undefined') {
-    return;
-  }
+      if (currentPage !== 'home') {
+        if (typeof onNavigate === 'function') {
+          onNavigate('home', hash);
+        }
+        return;
+      }
 
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  let startTime = null;
+      const scrolled = scrollToHash(hash);
 
-  const step = (currentTime) => {
-    if (startTime === null) {
-      startTime = currentTime;
-    }
-    const progress = Math.min((currentTime - startTime) / duration, 1);
-    const easedProgress = easeInOutQuad(progress);
-    window.scrollTo(0, startPosition + distance * easedProgress);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
+      if (typeof onNavigate === 'function') {
+        onNavigate('home', hash);
+      } else if (scrolled && window.location.hash !== hash) {
+        window.history.replaceState({}, '', `${window.location.pathname}${hash}`);
+      }
+    },
+    [currentPage, onNavigate],
+  );
 
-  window.requestAnimationFrame(step);
-};
+  const handleNavigateHome = useCallback(
+    (event) => {
+      event.preventDefault();
+      if (typeof onNavigate === 'function') {
+        onNavigate('home', '#inicio');
+      }
+    },
+    [onNavigate],
+  );
 
-const NavBar = () => {
-  const handleSmoothScroll = useCallback((event, hash) => {
-    if (typeof document === 'undefined' || typeof window === 'undefined') {
-      return;
-    }
-
-    const target = document.querySelector(hash);
-    if (!target) {
-      return;
-    }
-
-    event.preventDefault();
-    const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
-    const targetPosition = elementTop - HEADER_OFFSET;
-    animateScroll(targetPosition, SCROLL_DURATION);
-  }, []);
+  const handleNavigateBlog = useCallback(
+    (event) => {
+      event.preventDefault();
+      if (typeof onNavigate === 'function') {
+        onNavigate('blog');
+      }
+    },
+    [onNavigate],
+  );
 
   return (
     <header className="sticky top-0 z-50 bg-gradient-to-l from-slate-950 via-blue-900 to-cyan-500 shadow-xl">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2">
         <a
           href="#inicio"
-          onClick={(event) => handleSmoothScroll(event, '#inicio')}
+          onClick={handleNavigateHome}
           className="flex items-center gap-4 text-white transition-transform duration-300 hover:-translate-y-0.5"
           style={{ fontFamily: '"Playfair Display", serif' }}
         >
@@ -83,6 +85,13 @@ const NavBar = () => {
             className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
           >
             Nosotros
+          </a>
+          <a
+            href="/blogs"
+            onClick={handleNavigateBlog}
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
+          >
+            Blog
           </a>
           <a
             href="#contacto"
