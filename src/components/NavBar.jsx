@@ -11,7 +11,7 @@ const NavBar = () => (
         <img
           src={logo}
           alt="Logo Consultorio Los Andes"
-          className="w-60 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
+          className="w-50 drop-shadow-[0_15px_25px_rgba(6,11,40,0.55)]"
         />
       </a>
       <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
@@ -30,7 +30,7 @@ const NavBar = () => (
       </nav>
       <a
         href="#contacto"
-        className="ml-4 inline-flex items-center rounded-full bg-white/95 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-0.5"
+        className="ml-4 inline-flex items-center justify-center text-center rounded-full bg-white/95 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-0.5"
       >
         Reservar cita
       </a>
