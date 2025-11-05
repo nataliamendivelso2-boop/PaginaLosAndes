@@ -5,14 +5,14 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import BlogSection from '../components/BlogSection';
 
-const Home = ({ onNavigate }) => (
+const Home = () => (
   <>
     <Hero />
     <Services />
     <Gallery />
     <About />
     <Contact />
-    <BlogSection onNavigate={onNavigate} />
+    <BlogSection />
   </>
 );
 

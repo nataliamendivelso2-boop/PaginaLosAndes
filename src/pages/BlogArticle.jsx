@@ -1,22 +1,10 @@
+import { Link, useParams } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 
-const BlogArticle = ({ slug, onNavigate }) => {
+const BlogArticle = () => {
+  const { slug } = useParams();
   const post = blogPosts.find((entry) => entry.id === slug);
   const relatedPosts = blogPosts.filter((entry) => entry.id !== slug).slice(0, 3);
-
-  const handleNavigateBlog = (event) => {
-    event.preventDefault();
-    if (typeof onNavigate === 'function') {
-      onNavigate('blogIndex');
-    }
-  };
-
-  const handleNavigateToArticle = (event, targetSlug) => {
-    event.preventDefault();
-    if (typeof onNavigate === 'function') {
-      onNavigate('blogArticle', { slug: targetSlug });
-    }
-  };
 
   if (!post) {
     return (
@@ -35,9 +23,8 @@ const BlogArticle = ({ slug, onNavigate }) => {
           <p className="mt-4 text-base text-white/80">
             Tal vez fue renombrado o la dirección cambió. Regresa al portal del blog para descubrir las últimas publicaciones.
           </p>
-          <a
-            href="/blogs"
-            onClick={handleNavigateBlog}
+          <Link
+            to="/blogs"
             className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5"
           >
             Ir al blog
@@ -54,7 +41,7 @@ const BlogArticle = ({ slug, onNavigate }) => {
               <path d="M5 12h14" />
               <path d="M12 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -65,9 +52,8 @@ const BlogArticle = ({ slug, onNavigate }) => {
       <div className="absolute inset-x-0 top-0 -z-10 h-[520px] bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
       <header className="max-w-4xl mx-auto px-6 pt-28 text-white">
         <div className="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-          <a
-            href="/blogs"
-            onClick={handleNavigateBlog}
+          <Link
+            to="/blogs"
             className="inline-flex items-center gap-2 text-white/80 transition-colors duration-200 hover:text-white"
           >
             Blog
@@ -84,7 +70,7 @@ const BlogArticle = ({ slug, onNavigate }) => {
               <path d="M5 12h14" />
               <path d="M12 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
           <span className="text-white/40">/</span>
           <span>{post.category}</span>
         </div>
@@ -122,9 +108,8 @@ const BlogArticle = ({ slug, onNavigate }) => {
                 Continúa explorando el conocimiento clínico
               </h2>
             </div>
-            <a
-              href="/blogs"
-              onClick={handleNavigateBlog}
+            <Link
+              to="/blogs"
               className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-700 transition-colors duration-200 hover:text-cyan-600"
             >
               Ver todos los artículos
@@ -140,7 +125,7 @@ const BlogArticle = ({ slug, onNavigate }) => {
               >
                 <path d="M9 18l6-6-6-6" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {relatedPosts.map((related) => (
@@ -165,9 +150,8 @@ const BlogArticle = ({ slug, onNavigate }) => {
                     <span className="inline-flex h-2 w-2 rounded-full bg-cyan-400" aria-hidden />
                     {related.readTime}
                   </span>
-                  <a
-                    href={`/blogs/${related.id}`}
-                    onClick={(event) => handleNavigateToArticle(event, related.id)}
+                  <Link
+                    to={`/blogs/${related.id}`}
                     className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
                   >
                     Leer más
@@ -183,7 +167,7 @@ const BlogArticle = ({ slug, onNavigate }) => {
                     >
                       <path d="M9 18l6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

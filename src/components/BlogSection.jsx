@@ -1,14 +1,8 @@
+import { Link } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 
-const BlogSection = ({ onNavigate }) => {
+const BlogSection = () => {
   const featuredPosts = blogPosts.slice(0, 3);
-
-  const handleNavigate = (event, destination) => {
-    event.preventDefault();
-    if (typeof onNavigate === 'function' && destination?.page) {
-      onNavigate(destination.page, destination.options);
-    }
-  };
 
   return (
     <section id="blog" className="relative isolate overflow-hidden bg-slate-950 py-20 text-white">
@@ -31,9 +25,8 @@ const BlogSection = ({ onNavigate }) => {
               Seleccionamos contenidos exclusivos escritos por nuestro equipo multidisciplinario para acompañar a las familias en cada etapa de su salud bucal. Descubre recomendaciones prácticas, innovación tecnológica y testimonios que inspiran confianza.
             </p>
           </div>
-          <a
-            href="/blogs"
-            onClick={(event) => handleNavigate(event, { page: 'blogIndex' })}
+          <Link
+            to="/blogs"
             className="inline-flex items-center justify-center rounded-full bg-white/95 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-xl"
           >
             Ver todos los artículos
@@ -50,7 +43,7 @@ const BlogSection = ({ onNavigate }) => {
               <path d="M5 12h14" />
               <path d="M12 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {featuredPosts.map((post) => (
@@ -72,14 +65,8 @@ const BlogSection = ({ onNavigate }) => {
                   <span className="inline-flex h-2.5 w-2.5 rounded-full bg-cyan-300" aria-hidden />
                   {post.readTime}
                 </span>
-                <a
-                  href={`/blogs/${post.id}`}
-                  onClick={(event) =>
-                    handleNavigate(event, {
-                      page: 'blogArticle',
-                      options: { slug: post.id },
-                    })
-                  }
+                <Link
+                  to={`/blogs/${post.id}`}
                   className="inline-flex items-center gap-2 text-cyan-200 transition-colors duration-200 group-hover:text-cyan-100"
                 >
                   Leer artículo
@@ -95,7 +82,7 @@ const BlogSection = ({ onNavigate }) => {
                   >
                     <path d="M9 18l6-6-6-6" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
           ))}

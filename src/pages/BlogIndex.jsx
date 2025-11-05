@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 
 const HIGHLIGHT_LIMIT = 3;
@@ -12,7 +13,7 @@ const buildHighlights = (content = []) =>
     .filter(Boolean)
     .map((text) => (text.length > HIGHLIGHT_CHAR_LIMIT ? `${text.slice(0, HIGHLIGHT_CHAR_LIMIT - 1)}…` : text));
 
-const BlogIndex = ({ onNavigate }) => {
+const BlogIndex = () => {
   const [activeCategory, setActiveCategory] = useState(DEFAULT_CATEGORY);
 
   const categories = useMemo(() => {
@@ -46,13 +47,6 @@ const BlogIndex = ({ onNavigate }) => {
   }
 
   const highlightItems = buildHighlights(featuredPost.content);
-
-  const handleNavigate = (event, slug) => {
-    event.preventDefault();
-    if (typeof onNavigate === 'function') {
-      onNavigate('blogArticle', { slug });
-    }
-  };
 
   return (
     <div className="relative isolate overflow-hidden bg-white pb-24">
@@ -116,9 +110,8 @@ const BlogIndex = ({ onNavigate }) => {
               <p className="text-base leading-relaxed text-slate-600 md:text-lg">
                 {featuredPost.excerpt}
               </p>
-              <a
-                href={`/blogs/${featuredPost.id}`}
-                onClick={(event) => handleNavigate(event, featuredPost.id)}
+              <Link
+                to={`/blogs/${featuredPost.id}`}
                 className="inline-flex w-fit items-center gap-3 rounded-full bg-slate-950 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-900"
               >
                 Leer artículo destacado
@@ -135,7 +128,7 @@ const BlogIndex = ({ onNavigate }) => {
                   <path d="M5 12h14" />
                   <path d="M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col justify-between rounded-3xl bg-gradient-to-br from-cyan-500/10 via-slate-900/5 to-blue-900/10 p-6 text-slate-700">
               {highlightItems.length > 0 && (
@@ -184,9 +177,8 @@ const BlogIndex = ({ onNavigate }) => {
                     <span className="inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" aria-hidden />
                     {post.readTime}
                   </span>
-                  <a
-                    href={`/blogs/${post.id}`}
-                    onClick={(event) => handleNavigate(event, post.id)}
+                  <Link
+                    to={`/blogs/${post.id}`}
                     className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
                   >
                     Leer más
@@ -202,7 +194,7 @@ const BlogIndex = ({ onNavigate }) => {
                     >
                       <path d="M9 18l6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
