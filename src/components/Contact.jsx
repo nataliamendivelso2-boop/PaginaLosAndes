@@ -8,7 +8,7 @@ const phoneLink = `tel:+${whatsappNumber}`;
 const displayPhone = '+57 317 437 4266';
 
 const Contact = () => (
-  <section id="contacto" className="relative isolate overflow-hidden scroll-mt-24 py-24">
+  <section id="contacto" className="relative isolate overflow-hidden scroll-mt-12 py-24">
     <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-slate-50" />
     <div className="absolute right-10 top-10 h-48 w-48 rounded-full bg-cyan-200/25 blur-3xl" />
     <div className="max-w-6xl mx-auto px-6">
@@ -47,7 +47,10 @@ const Contact = () => (
             </li>
             <li>
               <span className="block text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Correo electrónico</span>
-              <a className="mt-1 inline-block text-base font-medium text-cyan-600 hover:underline" href="mailto:losandesodontologiasoacha@gmail.com">
+              <a
+                className="mt-1 inline-block w-full break-words text-base font-medium text-cyan-600 hover:underline"
+                href="mailto:losandesodontologiasoacha@gmail.com"
+              >
                 losandesodontologiasoacha@gmail.com
               </a>
             </li>

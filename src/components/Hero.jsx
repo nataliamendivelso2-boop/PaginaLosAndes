@@ -1,9 +1,33 @@
+import { useLocation, useNavigate } from 'react-router-dom';
 import ph43 from '../assets/Consultorio.png';
 import { getCampaignContent } from '../utils/campaigns';
+import { scrollToHash } from '../utils/scroll';
 
 const Hero = ({ campaignKey }) => {
   const { hero: heroContent } = getCampaignContent(campaignKey);
   const { eyebrow, title, description, primaryCta, secondaryCta, noteTitle, noteDescription } = heroContent;
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleHashNavigation = (event, target) => {
+    if (!target || !target.startsWith('#')) {
+      return;
+    }
+
+    event.preventDefault();
+    const formattedHash = target;
+
+    if (location.pathname !== '/') {
+      navigate({ pathname: '/', hash: formattedHash });
+      return;
+    }
+
+    if (location.hash !== formattedHash) {
+      navigate({ hash: formattedHash });
+    } else {
+      scrollToHash(formattedHash);
+    }
+  };
 
   return (
     <section id="inicio" className="relative isolate overflow-hidden bg-white">
@@ -30,6 +54,7 @@ const Hero = ({ campaignKey }) => {
             {primaryCta && (
               <a
                 href={primaryCta.href}
+                onClick={(event) => handleHashNavigation(event, primaryCta.href)}
                 className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg transition duration-300 hover:shadow-xl hover:scale-105"
               >
                 {primaryCta.label}
@@ -38,6 +63,7 @@ const Hero = ({ campaignKey }) => {
             {secondaryCta && (
               <a
                 href={secondaryCta.href}
+                onClick={(event) => handleHashNavigation(event, secondaryCta.href)}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-700 shadow-sm transition duration-300 hover:border-cyan-300 hover:text-cyan-600"
               >
                 {secondaryCta.label}
