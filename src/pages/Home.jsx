@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
@@ -9,11 +9,39 @@ import BlogSection from '../components/BlogSection';
 import Seo from '../components/Seo';
 import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
 import { getCampaignContent, resolveCampaignKey } from '../utils/campaigns';
+import { scrollToHash } from '../utils/scroll';
+
+const SectionCta = ({ onNavigate }) => (
+  <div className="flex justify-center px-6 py-12">
+    <button
+      type="button"
+      onClick={onNavigate}
+      className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
+    >
+      Agenda y contacto
+      <svg
+        className="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden
+      >
+        <path d="M5 12h14" />
+        <path d="M12 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+);
 
 const HOME_CANONICAL = `${SITE_URL}/`;
 
 const Home = () => {
   const [searchParams] = useSearchParams();
+  const location = useLocation();
+  const navigate = useNavigate();
   const mergedSearchParams = useMemo(() => {
     const params = new URLSearchParams();
 
@@ -57,6 +85,27 @@ const Home = () => {
     }
     setServiceModalRequest({ key: serviceKey, nonce: Date.now() });
   }, []);
+
+  const handleContactNavigation = useCallback(() => {
+    const targetHash = '#contacto';
+    const rawSearch =
+      (location.search && location.search !== '?' && location.search) ||
+      (typeof window !== 'undefined' ? window.location.search : '');
+    const search = rawSearch || '';
+    const searchOptions = search ? { search } : {};
+
+    if (location.pathname !== '/') {
+      navigate({ pathname: '/', hash: targetHash, ...searchOptions });
+      return;
+    }
+
+    if (location.hash !== targetHash) {
+      navigate({ hash: targetHash, ...searchOptions });
+      return;
+    }
+
+    scrollToHash(targetHash);
+  }, [location.hash, location.pathname, location.search, navigate]);
 
   const pageTitle = campaignContent.seo.title;
   const pageDescription = campaignContent.seo.description;
@@ -131,10 +180,15 @@ const Home = () => {
         structuredData={structuredData}
       />
       <Hero campaignKey={campaignKey} onServiceModalRequest={handleServiceModalRequest} />
+      <SectionCta onNavigate={handleContactNavigation} />
       <Services highlightRequest={serviceModalRequest} />
+      <SectionCta onNavigate={handleContactNavigation} />
       <Gallery />
+      <SectionCta onNavigate={handleContactNavigation} />
       <About />
+      <SectionCta onNavigate={handleContactNavigation} />
       <Contact />
+      <SectionCta onNavigate={handleContactNavigation} />
       <BlogSection />
     </>
   );
