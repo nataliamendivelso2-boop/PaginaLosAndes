@@ -12,7 +12,7 @@ import { getCampaignContent, resolveCampaignKey } from '../utils/campaigns';
 import { scrollToHash } from '../utils/scroll';
 
 const SectionCta = ({ onNavigate }) => (
-  <div className="flex justify-center px-6 py-12">
+  <div className="flex justify-center px-6 py-6">
     <button
       type="button"
       onClick={onNavigate}

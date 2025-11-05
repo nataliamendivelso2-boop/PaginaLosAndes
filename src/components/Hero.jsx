@@ -42,7 +42,7 @@ const Hero = ({ campaignKey, onServiceModalRequest }) => {
         <div className="absolute -bottom-32 right-0 h-72 w-72 rounded-full bg-blue-900/15 blur-3xl" />
         <div className="absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/60 blur-3xl" />
       </div>
-      <div className="max-w-7xl mx-auto grid items-center gap-8 px-6 py-10 md:grid-cols-2 md:py-14">
+      <div className="max-w-7xl mx-auto grid items-center gap-8 px-6 py-8 md:grid-cols-2 md:py-8">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-4 py-2 text-sm font-medium text-cyan-700 shadow-sm ring-1 ring-cyan-100">
             {eyebrow}

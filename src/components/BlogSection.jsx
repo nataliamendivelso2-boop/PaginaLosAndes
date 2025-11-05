@@ -5,7 +5,7 @@ const BlogSection = () => {
   const featuredPosts = blogPosts.slice(0, 3);
 
   return (
-    <section id="blog" className="relative isolate overflow-hidden bg-slate-950 py-20 text-white">
+    <section id="blog" className="relative isolate overflow-hidden bg-slate-950 py-8 text-white">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-950 via-blue-950/70 to-cyan-700/30" />
       <div className="absolute -top-40 -left-24 h-64 w-64 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
       <div className="absolute -bottom-48 right-0 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" aria-hidden />
