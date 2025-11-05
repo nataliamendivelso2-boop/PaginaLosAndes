@@ -100,6 +100,13 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
           >
             Contacto
           </a>
+          <a
+            href="/blogs"
+            onClick={handleNavigateBlog}
+            className="ml-auto transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
+          >
+            Blog
+          </a>
         </nav>
         <a
           href="#contacto"
