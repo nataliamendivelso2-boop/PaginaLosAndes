@@ -26,8 +26,8 @@ const Contact = () => (
           Nuestro equipo está listo para diseñar un plan acorde a tus tiempos, necesidades y presupuesto. Elige el canal que prefieras y te contactaremos pronto.
         </p>
       </div>
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
-        <div className="space-y-8 rounded-3xl bg-white p-10 shadow-[0_30px_80px_-40px_rgba(6,182,212,0.5)] ring-1 ring-white/70">
+      <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="w-full space-y-8 rounded-3xl bg-white p-6 sm:p-8 lg:p-10 shadow-[0_30px_80px_-40px_rgba(6,182,212,0.5)] ring-1 ring-white/70">
           <p className="text-base text-slate-600">
             Coordinamos cada cita de manera personalizada para brindarte una experiencia cómoda y oportuna. Escríbenos y te ayudaremos a elegir el mejor horario.
           </p>
@@ -66,7 +66,7 @@ const Contact = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-6 rounded-3xl bg-white/95 p-10 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-white/70">
+        <div className="w-full space-y-6 rounded-3xl bg-white/95 p-6 sm:p-8 lg:p-10 shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-white/70">
           <span className="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-600">
             Horarios de atención
           </span>

@@ -68,9 +68,42 @@ const BlogIndex = () => {
         </div>
       </section>
       <section className="relative z-10 mt-12 max-w-6xl mx-auto px-6">
-        <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-white/20 bg-slate-950/55 px-5 py-4 text-white shadow-[0_20px_45px_-30px_rgba(14,165,233,0.6)] backdrop-blur">
+        <div className="flex flex-col gap-4 rounded-3xl border border-white/20 bg-slate-950/55 px-5 py-4 text-white shadow-[0_20px_45px_-30px_rgba(14,165,233,0.6)] backdrop-blur md:flex-row md:items-center md:justify-between">
           <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-white/80">Filtrar por especialidad</h2>
-          <div className="flex flex-wrap gap-2">
+          <div className="w-full md:hidden">
+            <label htmlFor="blog-category-filter" className="sr-only">
+              Selecciona una categoría
+            </label>
+            <div className="relative">
+              <select
+                id="blog-category-filter"
+                value={activeCategory}
+                onChange={(event) => setActiveCategory(event.target.value)}
+                className="w-full appearance-none rounded-full border border-white/30 bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/80 transition focus:border-white/70 focus:text-white focus:outline-none focus:ring-2 focus:ring-white/30"
+              >
+                {categories.map((category) => (
+                  <option key={`mobile-${category}`} value={category} className="bg-slate-900 text-white">
+                    {category}
+                  </option>
+                ))}
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-white/70">
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="m6 8 4 4 4-4" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div className="hidden flex-wrap gap-2 md:flex">
             {categories.map((category) => {
               const isActive = category === activeCategory;
               return (
