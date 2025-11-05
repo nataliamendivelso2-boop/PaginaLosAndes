@@ -7,9 +7,9 @@ const SERVICES = [
     title: 'Odontología general',
     summary: 'Limpiezas, restauraciones y control preventivo.',
     details: [
-      'Profilaxis y control de placa',
-      'Resinas estéticas y sellantes',
-      'Evaluación integral y educación en higiene',
+      'Profilaxis completa con ultrasonido y control de placa para mantener encías sanas.',
+      'Resinas estéticas, sellantes y restauraciones mínimamente invasivas que devuelven función.',
+      'Evaluación integral periódica con educación en hábitos de higiene personalizados.',
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,cleaning',
@@ -21,9 +21,9 @@ const SERVICES = [
     title: 'Cirugía oral',
     summary: 'Extracciones y procedimientos ambulatorios.',
     details: [
-      'Extracción de terceros molares',
-      'Cirugías menores con anestesia local',
-      'Manejo de lesiones orales leves',
+      'Extracción de terceros molares con planificación radiográfica y control del dolor.',
+      'Cirugías menores ambulatorias con anestesia local y seguimiento postoperatorio cercano.',
+      'Manejo de lesiones orales leves y biopsias cuando el diagnóstico lo requiere.',
     ],
     images: [
       'https://source.unsplash.com/featured/?oral,surgery',
@@ -35,9 +35,9 @@ const SERVICES = [
     title: 'Periodoncia',
     summary: 'Salud de encías: prevención y tratamiento.',
     details: [
-      'Limpiezas profundas (raspado y alisado radicular)',
-      'Tratamiento de gingivitis y periodontitis',
-      'Mantenimiento periodontal y control',
+      'Limpiezas profundas con raspado y alisado radicular para detener la progresión periodontal.',
+      'Tratamiento integral de gingivitis y periodontitis con controles de cicatrización.',
+      'Programas de mantenimiento periodontal y refuerzo de técnicas de higiene en casa.',
     ],
     images: [
       'https://source.unsplash.com/featured/?gum,care',
@@ -49,9 +49,9 @@ const SERVICES = [
     title: 'Endodoncia',
     summary: 'Tratamientos de conducto con enfoque conservador.',
     details: [
-      'Alivio de dolor y preservación de piezas',
-      'Tratamientos uni y multirradiculares',
-      'Reendodoncia selecta según evaluación',
+      'Alivio del dolor mediante tratamientos de conducto enfocados en preservar la pieza dental.',
+      'Procedimientos uni y multirradiculares con instrumentación rotatoria y obturación tridimensional.',
+      'Reendodoncia selecta con magnificación clínica cuando una terapia previa necesita correcciones.',
     ],
     images: [
       'https://source.unsplash.com/featured/?root,canal',
@@ -63,9 +63,9 @@ const SERVICES = [
     title: 'Ortodoncia',
     summary: 'Corrección de maloclusiones con brackets y alineadores.',
     details: [
-      'Diagnóstico cefalométrico y plan de tratamiento',
-      'Brackets metálicos o estéticos y alineadores',
-      'Contención y seguimiento post tratamiento',
+      'Diagnóstico cefalométrico y planificación digital para alinear dientes y armonizar la mordida.',
+      'Alternativas con brackets metálicos, estéticos y alineadores transparentes según cada caso.',
+      'Contención personalizada y monitoreo postratamiento para asegurar la estabilidad de los resultados.',
     ],
     images: [
       'https://source.unsplash.com/featured/?braces,teeth',
@@ -77,9 +77,9 @@ const SERVICES = [
     title: 'Implantología',
     summary: 'Reposición de piezas con implantes y prótesis.',
     details: [
-      'Evaluación ósea y planificación',
-      'Colocación de implantes según caso',
-      'Rehabilitación protésica sobre implantes',
+      'Evaluación ósea con tomografía y software de planificación para definir el posicionamiento ideal.',
+      'Colocación de implantes con técnicas mínimamente invasivas y protocolos de carga controlada.',
+      'Rehabilitación protésica sobre implantes con materiales biocompatibles y ajustes precisos.',
     ],
     images: [
       'https://source.unsplash.com/featured/?dental,implant',
@@ -91,9 +91,9 @@ const SERVICES = [
     title: 'Diseño de sonrisa',
     summary: 'Estética dental: resinas, carillas y blanqueamiento.',
     details: [
-      'Análisis estético y mock up',
-      'Carillas y resinas directas',
-      'Blanqueamiento guiado y mantenimiento',
+      'Análisis estético digital y mock up para proyectar la nueva sonrisa antes del procedimiento.',
+      'Carillas cerámicas o resinas estratificadas que armonizan forma, color y proporciones.',
+      'Blanqueamiento guiado y mantenimiento periódico para prolongar el brillo y la uniformidad.',
     ],
     images: [
       'https://source.unsplash.com/featured/?smile,teeth',
