@@ -87,18 +87,18 @@ const NavBar = ({ currentPage = 'home', onNavigate }) => {
             Nosotros
           </a>
           <a
-            href="/blogs"
-            onClick={handleNavigateBlog}
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
-          >
-            Blog
-          </a>
-          <a
             href="#contacto"
             onClick={(event) => handleSmoothScroll(event, '#contacto')}
             className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
           >
             Contacto
+          </a>
+          <a
+            href="/blogs"
+            onClick={handleNavigateBlog}
+            className="ml-auto transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
+          >
+            Blog
           </a>
         </nav>
         <a
