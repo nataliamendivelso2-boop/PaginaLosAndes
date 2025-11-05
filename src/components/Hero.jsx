@@ -1,4 +1,4 @@
-import ph43 from '../assets/placeholder-4x3.svg';
+import ph43 from '../assets/Consultorio.png';
 
 const Hero = () => (
   <section id="inicio" className="relative isolate overflow-hidden bg-white">
