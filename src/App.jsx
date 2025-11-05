@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import BlogIndex from './pages/BlogIndex';
 import BlogArticle from './pages/BlogArticle';
+import Seo from './components/Seo';
+import { OG_IMAGE_URL, SITE_URL } from './utils/seo';
 import { scrollToHash } from './utils/scroll';
 
 const ScrollManager = () => {
@@ -34,7 +36,7 @@ const ScrollManager = () => {
     };
 
     scrollWithRetry();
-  }, [location.hash, location.pathname]);
+  }, [location]);
 
   return null;
 };
@@ -51,20 +53,43 @@ const Layout = () => (
 );
 
 const NotFound = () => (
-  <div className="flex min-h-[60vh] flex-col items-center justify-center bg-white px-6 text-center text-slate-600">
-    <span className="inline-flex items-center gap-2 rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-700">
-      Página no encontrada
-    </span>
-    <h1
-      className="mt-6 text-4xl font-semibold text-slate-950"
-      style={{ fontFamily: '"Playfair Display", serif' }}
-    >
-      No pudimos encontrar lo que buscas
-    </h1>
-    <p className="mt-3 max-w-2xl text-base text-slate-500">
-      Regresa al inicio para seguir explorando servicios, testimonios y artículos diseñados para tu bienestar.
-    </p>
-  </div>
+  <>
+    <Seo
+      title="Página no encontrada | Consultorio Odontológico Los Andes"
+      description="La página que buscas ya no existe o fue movida. Vuelve al inicio para explorar servicios odontológicos, testimonios y artículos especializados."
+      canonical={`${SITE_URL}/404`}
+      robots="noindex,follow"
+      openGraph={{
+        'og:title': 'Página no encontrada | Consultorio Odontológico Los Andes',
+        'og:description':
+          'Vuelve al inicio del Consultorio Odontológico Los Andes para conocer servicios y artículos especializados.',
+        'og:url': `${SITE_URL}/404`,
+        'og:type': 'website',
+        'og:image': OG_IMAGE_URL,
+      }}
+      twitter={{
+        'twitter:card': 'summary_large_image',
+        'twitter:title': 'Página no encontrada | Consultorio Odontológico Los Andes',
+        'twitter:description':
+          'Regresa al inicio y sigue explorando servicios odontológicos y artículos especializados.',
+        'twitter:image': OG_IMAGE_URL,
+      }}
+    />
+    <div className="flex min-h-[60vh] flex-col items-center justify-center bg-white px-6 text-center text-slate-600">
+      <span className="inline-flex items-center gap-2 rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-700">
+        Página no encontrada
+      </span>
+      <h1
+        className="mt-6 text-4xl font-semibold text-slate-950"
+        style={{ fontFamily: '"Playfair Display", serif' }}
+      >
+        No pudimos encontrar lo que buscas
+      </h1>
+      <p className="mt-3 max-w-2xl text-base text-slate-500">
+        Regresa al inicio para seguir explorando servicios, testimonios y artículos diseñados para tu bienestar.
+      </p>
+    </div>
+  </>
 );
 
 const App = () => (

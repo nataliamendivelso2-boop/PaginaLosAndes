@@ -1,4 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
+import Seo from '../components/Seo';
+import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
+import { toIsoDate } from '../utils/dates';
 import blogPosts from '../data/blogPosts';
 
 const BlogArticle = () => {
@@ -9,6 +12,27 @@ const BlogArticle = () => {
   if (!post) {
     return (
       <div className="relative isolate overflow-hidden bg-white py-32">
+        <Seo
+          title="Artículo no encontrado | Blog Consultorio Odontológico Los Andes"
+          description="Lo sentimos, el artículo que buscas ya no está disponible. Explora el blog del Consultorio Odontológico Los Andes para encontrar contenido actualizado."
+          canonical={`${SITE_URL}/blogs/${slug ?? ''}`}
+          robots="noindex,nofollow"
+          openGraph={{
+            'og:title': 'Artículo no encontrado | Blog Consultorio Odontológico Los Andes',
+            'og:description':
+              'El artículo solicitado ya no está disponible. Descubre más guías y casos clínicos en nuestro blog.',
+            'og:url': `${SITE_URL}/blogs/${slug ?? ''}`,
+            'og:type': 'website',
+            'og:image': OG_IMAGE_URL,
+          }}
+          twitter={{
+            'twitter:card': 'summary_large_image',
+            'twitter:title': 'Artículo no encontrado | Blog Consultorio Odontológico Los Andes',
+            'twitter:description':
+              'Encuentra nuevos artículos y guías en el blog del Consultorio Odontológico Los Andes.',
+            'twitter:image': OG_IMAGE_URL,
+          }}
+        />
         <div className="absolute inset-x-0 top-0 -z-10 h-96 bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
@@ -47,8 +71,71 @@ const BlogArticle = () => {
     );
   }
 
+  const canonicalUrl = `${SITE_URL}/blogs/${post.id}`;
+  const isoDate = toIsoDate(post.date);
+  const wordCount = post.content.join(' ').split(/\s+/).filter(Boolean).length;
+  const articleTitle = `${post.title} | Blog Consultorio Odontológico Los Andes`;
+  const articleStructuredData = [
+    {
+      id: `ld-blog-${post.id}`,
+      data: {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        '@id': canonicalUrl,
+        url: canonicalUrl,
+        headline: post.title,
+        description: post.excerpt,
+        articleSection: post.category,
+        inLanguage: 'es-CO',
+        mainEntityOfPage: {
+          '@id': canonicalUrl,
+        },
+        isPartOf: {
+          '@id': WEBSITE_ID,
+        },
+        publisher: {
+          '@id': BUSINESS_ID,
+        },
+        author: {
+          '@type': 'Organization',
+          '@id': BUSINESS_ID,
+          name: 'Consultorio Odontológico Los Andes',
+        },
+        image: OG_IMAGE_URL,
+        wordCount,
+        ...(isoDate
+          ? {
+              datePublished: isoDate,
+              dateModified: isoDate,
+            }
+          : {}),
+      },
+    },
+  ];
+
   return (
     <article className="relative isolate overflow-hidden bg-white pb-24">
+      <Seo
+        title={articleTitle}
+        description={post.excerpt}
+        canonical={canonicalUrl}
+        openGraph={{
+          'og:title': articleTitle,
+          'og:description': post.excerpt,
+          'og:url': canonicalUrl,
+          'og:type': 'article',
+          ...(isoDate ? { 'article:published_time': isoDate } : {}),
+          'article:section': post.category,
+          'og:image': OG_IMAGE_URL,
+        }}
+        twitter={{
+          'twitter:card': 'summary_large_image',
+          'twitter:title': articleTitle,
+          'twitter:description': post.excerpt,
+          'twitter:image': OG_IMAGE_URL,
+        }}
+        structuredData={articleStructuredData}
+      />
       <div className="absolute inset-x-0 top-0 -z-10 h-[520px] bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
       <header className="max-w-4xl mx-auto px-6 pt-28 text-white">
         <div className="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">

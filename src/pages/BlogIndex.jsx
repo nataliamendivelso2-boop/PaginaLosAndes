@@ -1,5 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
+import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
+import { toIsoDate } from '../utils/dates';
 import blogPosts from '../data/blogPosts';
 
 const HIGHLIGHT_LIMIT = 3;
@@ -12,6 +15,69 @@ const buildHighlights = (content = []) =>
     .map((paragraph) => paragraph.replace(/\s+/g, ' ').trim())
     .filter(Boolean)
     .map((text) => (text.length > HIGHLIGHT_CHAR_LIMIT ? `${text.slice(0, HIGHLIGHT_CHAR_LIMIT - 1)}…` : text));
+
+const BLOGS_CANONICAL = `${SITE_URL}/blogs`;
+
+const BLOG_STRUCTURED_DATA = [
+  {
+    id: 'ld-blog-collection',
+    data: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${BLOGS_CANONICAL}#collection`,
+      url: BLOGS_CANONICAL,
+      name: 'Blog Consultorio Odontológico Los Andes',
+      description:
+        'Artículos sobre odontología preventiva, ortodoncia, implantología, estética dental y bienestar bucal escritos por el Consultorio Odontológico Los Andes.',
+      inLanguage: 'es-CO',
+      isPartOf: {
+        '@id': WEBSITE_ID,
+      },
+      mainEntity: {
+        '@type': 'Blog',
+        '@id': `${SITE_URL}/#blog`,
+        name: 'Blog Consultorio Odontológico Los Andes',
+        publisher: {
+          '@id': BUSINESS_ID,
+        },
+        blogPost: blogPosts.map((post, index) => {
+          const isoDate = toIsoDate(post.date);
+
+          return {
+            '@type': 'BlogPosting',
+            '@id': `${SITE_URL}/blogs/${post.id}`,
+            url: `${SITE_URL}/blogs/${post.id}`,
+            position: index + 1,
+            headline: post.title,
+            description: post.excerpt,
+            inLanguage: 'es-CO',
+            ...(isoDate ? { datePublished: isoDate } : {}),
+          };
+        }),
+      },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Inicio',
+            item: `${SITE_URL}/`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: BLOGS_CANONICAL,
+          },
+        ],
+      },
+      publisher: {
+        '@id': BUSINESS_ID,
+      },
+    },
+  },
+];
 
 const BlogIndex = () => {
   const [activeCategory, setActiveCategory] = useState(DEFAULT_CATEGORY);
@@ -29,10 +95,32 @@ const BlogIndex = () => {
   }, [activeCategory]);
 
   const [featuredPost, ...otherPosts] = filteredPosts;
+  const pageTitle = 'Blog odontológico | Consultorio Odontológico Los Andes';
+  const pageDescription =
+    'Recomendaciones clínicas, tendencias en odontología, casos reales y guías de autocuidado escritas por el Consultorio Odontológico Los Andes.';
 
   if (!featuredPost) {
     return (
       <div className="relative isolate overflow-hidden bg-white pb-24">
+        <Seo
+          title={pageTitle}
+          description={pageDescription}
+          canonical={BLOGS_CANONICAL}
+          openGraph={{
+            'og:title': pageTitle,
+            'og:description': pageDescription,
+            'og:url': BLOGS_CANONICAL,
+            'og:type': 'website',
+            'og:image': OG_IMAGE_URL,
+          }}
+          twitter={{
+            'twitter:card': 'summary_large_image',
+            'twitter:title': pageTitle,
+            'twitter:description': pageDescription,
+            'twitter:image': OG_IMAGE_URL,
+          }}
+          structuredData={BLOG_STRUCTURED_DATA}
+        />
         <div className="absolute inset-x-0 top-0 -z-10 h-[320px] bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
         <section className="max-w-4xl mx-auto px-6 pt-32 text-center text-white">
           <h1 className="text-4xl font-semibold" style={{ fontFamily: '"Playfair Display", serif' }}>
@@ -50,6 +138,25 @@ const BlogIndex = () => {
 
   return (
     <div className="relative isolate overflow-hidden bg-white pb-24">
+      <Seo
+        title={pageTitle}
+        description={pageDescription}
+        canonical={BLOGS_CANONICAL}
+        openGraph={{
+          'og:title': pageTitle,
+          'og:description': pageDescription,
+          'og:url': BLOGS_CANONICAL,
+          'og:type': 'website',
+          'og:image': OG_IMAGE_URL,
+        }}
+        twitter={{
+          'twitter:card': 'summary_large_image',
+          'twitter:title': pageTitle,
+          'twitter:description': pageDescription,
+          'twitter:image': OG_IMAGE_URL,
+        }}
+        structuredData={BLOG_STRUCTURED_DATA}
+      />
       <div className="absolute inset-x-0 top-0 -z-10 h-[520px] bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600" />
       <section className="max-w-6xl mx-auto px-6 pt-28 text-white">
         <div className="max-w-3xl space-y-6">
