@@ -1,3 +1,4 @@
+import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
 import Seo from '../components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from '../utils/seo';
@@ -45,6 +46,7 @@ const SuccessStoriesPage = () => {
         </div>
       </section>
       <Gallery />
+      <Contact />
     </>
   );
 };

@@ -99,14 +99,15 @@ const NotFound = () => (
 const App = () => (
   <Routes>
     <Route element={<Layout />}>
-      <Route path="inicio" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="servicios" element={<ServicesPage />} />
       <Route path="casos-de-exito" element={<SuccessStoriesPage />} />
       <Route path="agenda" element={<AgendaPage />} />
       <Route path="contacto" element={<ContactPage />} />
       <Route path="blogs" element={<BlogIndex />} />
       <Route path="blogs/:slug" element={<BlogArticle />} />
-      <Route path="*" element={<Navigate to="/inicio" replace />} />
+      <Route path="inicio" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Route>
   </Routes>
 );

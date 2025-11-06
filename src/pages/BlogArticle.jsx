@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import Contact from '../components/Contact';
 import Seo from '../components/Seo';
 import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
 import { toIsoDate } from '../utils/dates';
@@ -261,6 +262,7 @@ const BlogArticle = () => {
           </div>
         </section>
       )}
+      <Contact />
     </article>
   );
 };

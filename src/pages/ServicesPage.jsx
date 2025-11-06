@@ -1,3 +1,4 @@
+import Contact from '../components/Contact';
 import Services from '../components/Services';
 import Seo from '../components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from '../utils/seo';
@@ -46,6 +47,7 @@ const ServicesPage = () => {
         </div>
       </section>
       <Services />
+      <Contact />
     </>
   );
 };

@@ -1,8 +1,10 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useCallback, useMemo, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Contact from '../components/Contact';
 import Seo from '../components/Seo';
 import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
 import { toIsoDate } from '../utils/dates';
+import { scrollToHash } from '../utils/scroll';
 import blogPosts from '../data/blogPosts';
 
 const HIGHLIGHT_LIMIT = 3;
@@ -80,7 +82,29 @@ const BLOG_STRUCTURED_DATA = [
 ];
 
 const BlogIndex = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState(DEFAULT_CATEGORY);
+  const handleContactNavigation = useCallback(() => {
+    const targetHash = '#contacto';
+    const rawSearch =
+      (location.search && location.search !== '?' && location.search) ||
+      (typeof window !== 'undefined' ? window.location.search : '');
+    const search = rawSearch || '';
+    const searchOptions = search ? { search } : {};
+
+    if (location.pathname !== '/blogs') {
+      navigate({ pathname: '/blogs', hash: targetHash, ...searchOptions });
+      return;
+    }
+
+    if (location.hash !== targetHash) {
+      navigate({ hash: targetHash, ...searchOptions });
+      return;
+    }
+
+    scrollToHash(targetHash);
+  }, [location.hash, location.pathname, location.search, navigate]);
 
   const categories = useMemo(() => {
     const unique = new Set(blogPosts.map((post) => post.category));
@@ -129,7 +153,30 @@ const BlogIndex = () => {
           <p className="mt-4 text-white/80">
             Prueba seleccionando otra especialidad o vuelve más tarde para descubrir nuevo contenido.
           </p>
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={handleContactNavigation}
+              className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              Agenda y contacto
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </section>
+        <Contact />
       </div>
     );
   }
@@ -172,6 +219,28 @@ const BlogIndex = () => {
           <p className="text-base md:text-lg text-white/80">
             Conecta con artículos desarrollados por nuestro equipo interdisciplinario. Encuentra guías prácticas, tendencias en tecnología odontológica y experiencias reales que te acompañan en cada decisión de bienestar bucal.
           </p>
+          <div className="pt-4">
+            <button
+              type="button"
+              onClick={handleContactNavigation}
+              className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              Agenda y contacto
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section className="relative z-10 mt-12 max-w-6xl mx-auto px-6">
@@ -341,6 +410,29 @@ const BlogIndex = () => {
           </div>
         </div>
       </section>
+      <div className="relative z-10 mt-16 flex justify-center px-6">
+        <button
+          type="button"
+          onClick={handleContactNavigation}
+          className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+        >
+          Agenda y contacto
+          <svg
+            className="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden
+          >
+            <path d="M5 12h14" />
+            <path d="M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <Contact />
     </div>
   );
 };
