@@ -10,6 +10,7 @@ import ServicesPage from './pages/ServicesPage';
 import SuccessStoriesPage from './pages/SuccessStoriesPage';
 import AgendaPage from './pages/AgendaPage';
 import ContactPage from './pages/ContactPage';
+import OrtodonciaPage from './pages/OrtodonciaPage';
 import Seo from './components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from './utils/seo';
 import { scrollToHash } from './utils/scroll';
@@ -101,6 +102,7 @@ const App = () => (
     <Route element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="servicios" element={<ServicesPage />} />
+      <Route path="ortodoncia" element={<OrtodonciaPage />} />
       <Route path="casos-de-exito" element={<SuccessStoriesPage />} />
       <Route path="agenda" element={<AgendaPage />} />
       <Route path="contacto" element={<ContactPage />} />

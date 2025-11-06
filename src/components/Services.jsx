@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import Modal from './Modal';
 
 const SERVICES = [
@@ -21,9 +21,9 @@ const SERVICES = [
     title: 'Cirugía oral',
     summary: 'Extracciones y procedimientos ambulatorios.',
     details: [
-      'Extracción de terceros molares con planificación radiográfica y control del dolor.',
-      'Cirugías menores ambulatorias con anestesia local y seguimiento postoperatorio cercano.',
-      'Manejo de lesiones orales leves y biopsias cuando el diagnóstico lo requiere.',
+      'Extracción de cordales',
+      'Cirugía de dientes retenidos o fracturados',
+      'Regularización ósea: preparación del hueso para rehabilitación o prótesis',
     ],
     images: [
       'https://source.unsplash.com/featured/?oral,surgery',
@@ -49,9 +49,10 @@ const SERVICES = [
     title: 'Endodoncia',
     summary: 'Tratamientos de conducto con enfoque conservador.',
     details: [
-      'Alivio del dolor mediante tratamientos de conducto enfocados en preservar la pieza dental.',
-      'Procedimientos uni y multirradiculares con instrumentación rotatoria y obturación tridimensional.',
-      'Reendodoncia selecta con magnificación clínica cuando una terapia previa necesita correcciones.',
+      'Tratamiento de conductos (Endodoncia)',
+      'Re tratamiento de Endodoncia: solución cuando una endodoncia anterior no funcionó.',
+      'Urgencias por dolor dental: diagnóstico inmediato y alivio del dolor.',
+      'Cirugía apical (apicectomía): elimina infecciones persistentes y salva el diente sin extracción.',
     ],
     images: [
       'https://source.unsplash.com/featured/?root,canal',
@@ -63,9 +64,10 @@ const SERVICES = [
     title: 'Ortodoncia',
     summary: 'Corrección de maloclusiones con brackets y alineadores.',
     details: [
-      'Diagnóstico cefalométrico y planificación digital para alinear dientes y armonizar la mordida.',
-      'Alternativas con brackets metálicos, estéticos y alineadores transparentes según cada caso.',
-      'Contención personalizada y monitoreo postratamiento para asegurar la estabilidad de los resultados.',
+      'Corrección de malposiciones dentales: mejora estética y función.',
+      'Ortodoncia MBT / Brackets / Alineadores: tratamientos personalizados.',
+      'Ortopedia maxilar (ortodoncia ósea): guía el crecimiento de huesos en niños y adolescentes.',
+      'Estabilización de mordida: garantiza resultados funcionales y duraderos.',
     ],
     images: [
       'https://source.unsplash.com/featured/?braces,teeth',
@@ -152,11 +154,11 @@ const Services = ({ highlightRequest }) => {
               Especialidades para cuidar cada sonrisa
             </h2>
             <p className="mt-3 max-w-2xl text-base text-slate-600">
-              Tratamientos preventivos, restaurativos y estéticos diseñados para generar resultados duraderos, con acompañamiento cercano en cada etapa.
+              Tratamientos preventivos, restaurativos y estÃ©ticos diseÃ±ados para generar resultados duraderos, con acompaÃ±amiento cercano en cada etapa.
             </p>
           </div>
           <div className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-600 shadow-sm ring-1 ring-slate-100">
-            Selecciona una especialidad y descubre más detalles y beneficios.
+            Selecciona una especialidad y descubre mÃ¡s detalles y beneficios.
           </div>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -225,3 +227,8 @@ const Services = ({ highlightRequest }) => {
 };
 
 export default Services;
+
+
+
+
+
