@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
 import { toIsoDate } from '../utils/dates';
 import { scrollToHash } from '../utils/scroll';
-import blogPosts from '../data/blogPosts';
+import blogPosts from '../data/posts';
 
 const HIGHLIGHT_LIMIT = 3;
 const HIGHLIGHT_CHAR_LIMIT = 160;
@@ -47,8 +47,8 @@ const BLOG_STRUCTURED_DATA = [
 
           return {
             '@type': 'BlogPosting',
-            '@id': `${SITE_URL}/blogs/${post.id}`,
-            url: `${SITE_URL}/blogs/${post.id}`,
+            '@id': `${SITE_URL}/blogs/${post.slug}`,
+            url: `${SITE_URL}/blogs/${post.slug}`,
             position: index + 1,
             headline: post.title,
             description: post.excerpt,
@@ -320,7 +320,7 @@ const BlogIndex = () => {
                 {featuredPost.excerpt}
               </p>
               <Link
-                to={`/blogs/${featuredPost.id}`}
+                to={`/blogs/${featuredPost.slug}`}
                 className="inline-flex w-fit items-center gap-3 rounded-full bg-slate-950 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-900"
               >
                 Leer artículo destacado
@@ -345,7 +345,7 @@ const BlogIndex = () => {
                   <h3 className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-700">Ideas principales</h3>
                   <ul className="space-y-4 text-sm leading-relaxed md:text-base">
                     {highlightItems.map((highlight, index) => (
-                      <li key={`${featuredPost.id}-highlight-${index}`} className="flex items-start gap-3">
+                      <li key={`${featuredPost.slug}-highlight-${index}`} className="flex items-start gap-3">
                         <span className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-cyan-500" aria-hidden />
                         <span>{highlight}</span>
                       </li>
@@ -361,7 +361,7 @@ const BlogIndex = () => {
           <div className="grid gap-8 md:grid-cols-2">
             {otherPosts.map((post) => (
               <article
-                key={post.id}
+                key={post.slug}
                 className="flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white/95 p-8 shadow-[0_35px_80px_-60px_rgba(14,165,233,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_45px_110px_-50px_rgba(14,165,233,0.4)]"
               >
                 <div className="space-y-4">
@@ -387,7 +387,7 @@ const BlogIndex = () => {
                     {post.readTime}
                   </span>
                   <Link
-                    to={`/blogs/${post.id}`}
+                    to={`/blogs/${post.slug}`}
                     className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
                   >
                     Leer más

@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import blogPosts from '../src/data/blogPosts.js';
+import { loadPosts } from './load-posts.mjs';
 import { SITE_URL } from '../src/utils/seo.js';
 import { toIsoDate } from '../src/utils/dates.js';
 
@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const OUTPUT_DIR = path.resolve(__dirname, '../public');
 const OUTPUT_PATH = path.join(OUTPUT_DIR, 'sitemap.xml');
+const blogPosts = await loadPosts();
 
 const toXml = (value) =>
   value
@@ -56,7 +57,7 @@ const urls = [
     lastmod: today,
   },
   ...blogPosts.map((post) => ({
-    loc: `${SITE_URL}/blogs/${post.id}`,
+    loc: `${SITE_URL}/blogs/${post.slug}`,
     changefreq: 'monthly',
     priority: '0.7',
     lastmod: toIsoDate(post.date) || today,

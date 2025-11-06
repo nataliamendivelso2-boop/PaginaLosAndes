@@ -1,4 +1,4 @@
-import blogPosts from '../data/blogPosts';
+import blogPosts from '../data/posts';
 
 const Blog = () => (
   <div className="relative isolate overflow-hidden bg-white pb-20">
@@ -24,8 +24,8 @@ const Blog = () => (
         <div className="grid gap-12">
           {blogPosts.map((post) => (
             <article
-              key={post.id}
-              id={post.id}
+              key={post.slug}
+              id={post.slug}
               className="rounded-3xl border border-slate-100 bg-white/95 p-6 shadow-[0_35px_80px_-50px_rgba(14,116,144,0.45)] transition-shadow duration-300 hover:shadow-[0_45px_100px_-40px_rgba(14,165,233,0.35)] md:p-10"
             >
               <header className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
@@ -46,7 +46,7 @@ const Blog = () => (
               </header>
               <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-700 md:text-lg md:leading-[1.9]">
                 {post.content.map((paragraph, index) => (
-                  <p key={`${post.id}-${index}`}>{paragraph}</p>
+                  <p key={`${post.slug}-${index}`}>{paragraph}</p>
                 ))}
               </div>
             </article>

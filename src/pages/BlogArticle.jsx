@@ -3,12 +3,12 @@ import Contact from '../components/Contact';
 import Seo from '../components/Seo';
 import { BUSINESS_ID, OG_IMAGE_URL, SITE_URL, WEBSITE_ID } from '../utils/seo';
 import { toIsoDate } from '../utils/dates';
-import blogPosts from '../data/blogPosts';
+import blogPosts from '../data/posts';
 
 const BlogArticle = () => {
   const { slug } = useParams();
-  const post = blogPosts.find((entry) => entry.id === slug);
-  const relatedPosts = blogPosts.filter((entry) => entry.id !== slug).slice(0, 3);
+  const post = blogPosts.find((entry) => entry.slug === slug);
+  const relatedPosts = blogPosts.filter((entry) => entry.slug !== slug).slice(0, 3);
 
   if (!post) {
     return (
@@ -72,13 +72,13 @@ const BlogArticle = () => {
     );
   }
 
-  const canonicalUrl = `${SITE_URL}/blogs/${post.id}`;
+  const canonicalUrl = `${SITE_URL}/blogs/${post.slug}`;
   const isoDate = toIsoDate(post.date);
   const wordCount = post.content.join(' ').split(/\s+/).filter(Boolean).length;
   const articleTitle = `${post.title} | Blog Consultorio Odontológico Los Andes`;
   const articleStructuredData = [
     {
-      id: `ld-blog-${post.id}`,
+      id: `ld-blog-${post.slug}`,
       data: {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
@@ -177,7 +177,7 @@ const BlogArticle = () => {
         <div className="rounded-3xl bg-white p-8 shadow-[0_45px_90px_-55px_rgba(15,23,42,0.45)] ring-1 ring-slate-100/70 md:p-12">
           <div className="space-y-6 text-base leading-relaxed text-slate-700 md:text-lg md:leading-[1.9]">
             {post.content.map((paragraph, index) => (
-              <p key={`${post.id}-${index}`}>{paragraph}</p>
+              <p key={`${post.slug}-${index}`}>{paragraph}</p>
             ))}
           </div>
         </div>
@@ -218,7 +218,7 @@ const BlogArticle = () => {
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {relatedPosts.map((related) => (
               <article
-                key={related.id}
+                key={related.slug}
                 className="flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white/95 p-6 shadow-[0_35px_90px_-60px_rgba(56,189,248,0.55)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_45px_110px_-55px_rgba(14,116,144,0.5)]"
               >
                 <div className="space-y-4">
@@ -239,7 +239,7 @@ const BlogArticle = () => {
                     {related.readTime}
                   </span>
                   <Link
-                    to={`/blogs/${related.id}`}
+                    to={`/blogs/${related.slug}`}
                     className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
                   >
                     Leer más

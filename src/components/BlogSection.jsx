@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import blogPosts from '../data/blogPosts';
+import blogPosts from '../data/posts';
 
 const BlogSection = () => {
   const featuredPosts = blogPosts.slice(0, 3);
@@ -48,7 +48,7 @@ const BlogSection = () => {
         <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {featuredPosts.map((post) => (
             <article
-              key={post.id}
+              key={post.slug}
               className="group flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_35px_90px_-55px_rgba(56,189,248,0.6)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10"
             >
               <div className="space-y-4">
@@ -66,7 +66,7 @@ const BlogSection = () => {
                   {post.readTime}
                 </span>
                 <Link
-                  to={`/blogs/${post.id}`}
+                  to={`/blogs/${post.slug}`}
                   className="inline-flex items-center gap-2 text-cyan-200 transition-colors duration-200 group-hover:text-cyan-100"
                 >
                   Leer artículo
