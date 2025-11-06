@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Route, Routes, useLocation, Outlet } from 'react-router-dom';
+import { Route, Routes, useLocation, Outlet, Navigate } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -99,14 +99,14 @@ const NotFound = () => (
 const App = () => (
   <Routes>
     <Route element={<Layout />}>
-      <Route index element={<Home />} />
+      <Route path="inicio" element={<Home />} />
       <Route path="servicios" element={<ServicesPage />} />
       <Route path="casos-de-exito" element={<SuccessStoriesPage />} />
       <Route path="agenda" element={<AgendaPage />} />
       <Route path="contacto" element={<ContactPage />} />
       <Route path="blogs" element={<BlogIndex />} />
       <Route path="blogs/:slug" element={<BlogArticle />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Navigate to="/inicio" replace />} />
     </Route>
   </Routes>
 );
