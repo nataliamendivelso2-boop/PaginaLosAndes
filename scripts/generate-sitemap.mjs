@@ -26,6 +26,30 @@ const urls = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/servicios`,
+    changefreq: 'monthly',
+    priority: '0.9',
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/casos-de-exito`,
+    changefreq: 'monthly',
+    priority: '0.85',
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/agenda`,
+    changefreq: 'monthly',
+    priority: '0.8',
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/contacto`,
+    changefreq: 'monthly',
+    priority: '0.8',
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/blogs`,
     changefreq: 'weekly',
     priority: '0.9',

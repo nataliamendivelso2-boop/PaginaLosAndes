@@ -3,9 +3,13 @@ import { Route, Routes, useLocation, Outlet } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
 import BlogIndex from './pages/BlogIndex';
 import BlogArticle from './pages/BlogArticle';
+import Home from './pages/Home';
+import ServicesPage from './pages/ServicesPage';
+import SuccessStoriesPage from './pages/SuccessStoriesPage';
+import AgendaPage from './pages/AgendaPage';
+import ContactPage from './pages/ContactPage';
 import Seo from './components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from './utils/seo';
 import { scrollToHash } from './utils/scroll';
@@ -96,6 +100,10 @@ const App = () => (
   <Routes>
     <Route element={<Layout />}>
       <Route index element={<Home />} />
+      <Route path="servicios" element={<ServicesPage />} />
+      <Route path="casos-de-exito" element={<SuccessStoriesPage />} />
+      <Route path="agenda" element={<AgendaPage />} />
+      <Route path="contacto" element={<ContactPage />} />
       <Route path="blogs" element={<BlogIndex />} />
       <Route path="blogs/:slug" element={<BlogArticle />} />
       <Route path="*" element={<NotFound />} />
