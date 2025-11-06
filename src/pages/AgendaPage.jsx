@@ -2,6 +2,30 @@ import Contact from '../components/Contact';
 import Seo from '../components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from '../utils/seo';
 
+const CTAButton = () => (
+  <div className="mt-8 flex justify-center">
+    <a
+      href="#contacto"
+      className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-950 shadow-lg transition-transform duration-300 hover:-translate-y-0.5"
+    >
+      Agenda y contacto
+      <svg
+        className="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden
+      >
+        <path d="M5 12h14" />
+        <path d="M12 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+);
+
 const AgendaPage = () => {
   const title = 'Agenda tu cita odontológica en Soacha | Consultorio Los Andes';
   const description =
@@ -39,9 +63,7 @@ const AgendaPage = () => {
           >
             Agenda tu cita con especialistas de confianza
           </h1>
-          <p className="mt-4 text-base text-white/80">
-            Cuéntanos qué necesitas y coordinamos el mejor horario para ti. Resolvemos todas tus dudas antes del procedimiento.
-          </p>
+          <CTAButton />
         </div>
       </section>
       <section className="bg-white py-12 text-slate-700">

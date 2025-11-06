@@ -3,6 +3,30 @@ import Gallery from '../components/Gallery';
 import Seo from '../components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from '../utils/seo';
 
+const CTAButton = () => (
+  <div className="mt-8 flex justify-center">
+    <a
+      href="#contacto"
+      className="inline-flex items-center gap-3 rounded-full bg-cyan-700 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:bg-cyan-600"
+    >
+      Agenda y contacto
+      <svg
+        className="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden
+      >
+        <path d="M5 12h14" />
+        <path d="M12 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+);
+
 const SuccessStoriesPage = () => {
   const title = 'Casos de éxito odontológicos en Soacha | Consultorio Los Andes';
   const description =
@@ -40,9 +64,7 @@ const SuccessStoriesPage = () => {
           >
             Resultados que respaldan nuestra experiencia clínica
           </h1>
-          <p className="mt-4 text-base text-slate-600">
-            Explora tratamientos completos documentados en imágenes y conoce los protocolos que aplicamos para cada necesidad.
-          </p>
+          <CTAButton />
         </div>
       </section>
       <Gallery />
