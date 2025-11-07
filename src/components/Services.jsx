@@ -357,7 +357,51 @@ const Services = ({ highlightRequest }) => {
             Selecciona una especialidad y descubre más detalles y beneficios.
           </div>
         </div>
-        <div className="mt-2 space-y-6 sm:mt-2">
+        <div className="mt-5  sm:mt-2">
+          <div className="flex justify-end gap-3 pr-2">
+            <button
+              type="button"
+              onClick={() => handleNavigate('prev')}
+              disabled={!canGoPrev}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/50 bg-white/70 text-slate-500 transition hover:border-cyan-300 hover:text-cyan-600 disabled:cursor-not-allowed disabled:opacity-40 backdrop-blur"
+              aria-label="Ver servicios anteriores"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleNavigate('next')}
+              disabled={!canGoNext}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/50 bg-white/70 text-slate-500 transition hover:border-cyan-300 hover:text-cyan-600 disabled:cursor-not-allowed disabled:opacity-40 backdrop-blur"
+              aria-label="Ver más servicios"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
           <div className="relative mt-6 rounded-[34px] bg-transparent px-2 pt-6 sm:px-5 lg:px-6">
             <span className="pointer-events-none absolute inset-y-4 left-0 w-16 bg-gradient-to-r from-white/0 via-white/60 to-white/0" aria-hidden="true" />
             <span className="pointer-events-none absolute inset-y-4 right-6 w-16 bg-gradient-to-l from-white/0 via-white/60 to-white/0" aria-hidden="true" />
