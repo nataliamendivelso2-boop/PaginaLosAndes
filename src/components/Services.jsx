@@ -170,13 +170,13 @@ const Services = ({ highlightRequest }) => {
     const track = trackRef.current;
     if (!track) return;
     const target = track.children[index];
-    if (target && target.scrollIntoView) {
-      target.scrollIntoView({
-        behavior,
-        block: 'nearest',
-        inline: 'start',
-      });
-    }
+    if (!target) return;
+
+    const left = target.offsetLeft;
+    track.scrollTo({
+      left,
+      behavior,
+    });
   }, []);
 
   const handleNavigate = (direction) => {
