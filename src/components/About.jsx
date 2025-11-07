@@ -19,7 +19,7 @@ const About = () => (
         </h2>
         <p className="text-base text-slate-600">
           Nuestra misiA3n es lograr tratamientos odontolA3gicos previsibles, indoloros y adaptados a cada paciente. Respondemos todas tus
-          preguntas con transparencia para que te sientas acompaA�ado de principio a fin.
+          preguntas con transparencia para que te sientas acompaA���ado de principio a fin.
         </p>
         <ul className="grid gap-3 text-sm text-slate-700">
           <li className="flex items-start gap-3">
@@ -32,7 +32,7 @@ const About = () => (
           </li>
           <li className="flex items-start gap-3">
             <span className="mt-1 inline-flex h-2 w-2 flex-none rounded-full bg-cyan-500" aria-hidden />
-            AcompaA�amiento en seguros y financiaciA3n para facilitar cada tratamiento.
+            AcompaA���amiento en seguros y financiaciA3n para facilitar cada tratamiento.
           </li>
         </ul>
         <div className="rounded-3xl bg-white px-5 py-4 text-sm text-slate-600 shadow-inner ring-1 ring-slate-100">
@@ -45,9 +45,9 @@ const About = () => (
           <div className="absolute -top-6 -left-6 h-20 w-20 rounded-full bg-cyan-100 blur-xl" />
           <div className="absolute -bottom-8 -right-4 h-24 w-24 rounded-full bg-blue-900/15 blur-xl" />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
-            <div className="flex items-center justify-center gap-3 p-4">
-              <img src={team1} alt="Equipo clínico Los Andes - foto 1" className="h-90 w-90 rounded-xl object-cover sm:h-28 sm:w-28 md:h-32 md:w-32" />
-              <img src={team2} alt="Equipo clínico Los Andes - foto 2" className="h-90 w-90 rounded-xl object-cover sm:h-28 sm:w-28 md:h-32 md:w-32" />
+            <div className="flex items-center justify-center gap-4 p-5">
+              <img src={team1} alt="Equipo clA-nico Los Andes - foto 1" className="h-36 w-36 rounded-xl object-cover sm:h-44 sm:w-44 md:h-56 md:w-56" />
+              <img src={team2} alt="Equipo clA-nico Los Andes - foto 2" className="h-36 w-36 rounded-xl object-cover sm:h-44 sm:w-44 md:h-56 md:w-56" />
             </div>
             <div className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-cyan-600 shadow">
               Equipo clA-nico
@@ -60,3 +60,4 @@ const About = () => (
 );
 
 export default About;
+
