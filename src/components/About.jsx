@@ -45,9 +45,9 @@ const About = () => (
           <div className="absolute -top-6 -left-6 h-20 w-20 rounded-full bg-cyan-100 blur-xl" />
           <div className="absolute -bottom-8 -right-4 h-24 w-24 rounded-full bg-blue-900/15 blur-xl" />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
-            <div className="flex items-center justify-center gap-3 p-4">
-              <img src={team1} alt="Equipo clínico Los Andes - foto 1" className="h-28 w-28 rounded-xl object-cover sm:h-32 sm:w-32" />
-              <img src={team2} alt="Equipo clínico Los Andes - foto 2" className="h-28 w-28 rounded-xl object-cover sm:h-32 sm:w-32" />
+            <div className="flex items-center justify-center gap-2 p-3">
+              <img src={team1} alt="Equipo clínico Los Andes - foto 1" className="h-14 w-14 rounded-xl object-cover sm:h-16 sm:w-16 md:h-20 md:w-20" />
+              <img src={team2} alt="Equipo clínico Los Andes - foto 2" className="h-14 w-14 rounded-xl object-cover sm:h-16 sm:w-16 md:h-20 md:w-20" />
             </div>
             <div className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-cyan-600 shadow">
               Equipo clA-nico
@@ -60,4 +60,3 @@ const About = () => (
 );
 
 export default About;
-
