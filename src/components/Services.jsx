@@ -354,7 +354,7 @@ const Services = ({ highlightRequest }) => {
             </p>
           </div>
           <div className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-600 shadow-sm ring-1 ring-slate-100">
-            Selecciona una especialidad y descubre mÃ¡s detalles y beneficios.
+            Selecciona una especialidad y descubre más detalles y beneficios.
           </div>
         </div>
         <div className="mt-2 space-y-6 sm:mt-2">
