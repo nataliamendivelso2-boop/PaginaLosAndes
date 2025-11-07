@@ -1,4 +1,5 @@
-import ph43 from '../assets/placeholder-4x3.svg';
+import team1 from '../assets/equipo.jpg';
+import team2 from '../assets/equipo 2 .jpg';
 
 const About = () => (
   <section id="nosotros" className="relative isolate overflow-hidden scroll-mt-8 py-8">
@@ -44,7 +45,8 @@ const About = () => (
           <div className="absolute -top-6 -left-6 h-20 w-20 rounded-full bg-cyan-100 blur-xl" />
           <div className="absolute -bottom-8 -right-4 h-24 w-24 rounded-full bg-blue-900/15 blur-xl" />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
-            <img src={ph43} alt="Equipo del consultorio Los Andes" className="h-full w-full object-cover" />
+            <img src={team1} alt="Equipo clínico Los Andes - foto 1" className="w-full object-cover" />
+            <img src={team2} alt="Equipo clínico Los Andes - foto 2" className="mt-2 w-full object-cover" />
             <div className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-cyan-600 shadow">
               Equipo clínico
             </div>
