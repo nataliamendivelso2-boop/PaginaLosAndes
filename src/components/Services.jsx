@@ -471,7 +471,7 @@ const Services = ({ highlightRequest }) => {
         <img
           src={getImageForTitle(selectedService.title)}
           alt={selectedService.title}
-          className="rounded-2xl border border-white/70 bg-white shadow-md h-90 "
+          className="rounded-2xl border border-white/70 bg-white shadow-md h-80 md:h-90 "
           loading="lazy"
         />
       </div>
