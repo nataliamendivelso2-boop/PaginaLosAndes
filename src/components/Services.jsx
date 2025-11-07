@@ -376,14 +376,11 @@ const Services = ({ highlightRequest }) => {
                   type="button"
                   key={service.key}
                   onClick={() => openModal(service)}
-                  className="group relative min-w-[85%] min-h-[200px]  rounded-3xl bg-white/90 p-[1px] text-left shadow-[0_25px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(14,165,233,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 sm:min-w-[48%] lg:min-w-[32%] lg:min-h-[250px] md:mb-20 snap-start"
+                  className="group relative min-w-[47%] rounded-3xl bg-white/90 p-[1px] text-left shadow-[0_25px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(14,165,233,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 sm:min-w-[48%] lg:min-w-[32%] lg:min-h-[250px] md:mb-20 mb-16 snap-start"
                 >
                   <span className="absolute inset-x-0 -top-20 h-20 bg-gradient-to-b from-cyan-200/40 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
-                  <div className="relative flex h-full flex-col rounded-3xl bg-white p-7">
-                    <div
-                      className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700"
-                      aria-hidden
-                    >
+                  <div className="relative flex h-full flex-col rounded-3xl bg-white px-5 py-2 md:p-10">
+                    <div className="hidden sm:flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700" aria-hidden>
                       {service.title.slice(0, 2).toUpperCase()}
                     </div>
                     <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
