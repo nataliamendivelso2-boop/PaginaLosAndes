@@ -45,7 +45,7 @@ const About = () => (
           <div className="absolute -top-6 -left-6 h-20 w-20 rounded-full bg-cyan-100 blur-xl" />
           <div className="absolute -bottom-8 -right-4 h-24 w-24 rounded-full bg-blue-900/15 blur-xl" />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-white shadow-[0_45px_95px_-55px_rgba(15,23,42,0.65)]">
-            <div className="flex items-center justify-center gap-4 p-3">
+            <div className="flex items-center justify-center gap-2 p-1 sm:p-2">
               <img src={team1} alt="Equipo clA-nico Los Andes - foto 1" className="h-40 w-40 rounded-xl object-cover sm:h-48 sm:w-48 md:h-60 md:w-60" />
               <img src={team2} alt="Equipo clA-nico Los Andes - foto 2" className="h-40 w-40 rounded-xl object-cover sm:h-48 sm:w-48 md:h-60 md:w-60" />
             </div>
