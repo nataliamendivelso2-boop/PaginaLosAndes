@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+﻿import { useCallback, useEffect, useRef, useState } from 'react';
 import Modal from './Modal';
 import odontologiaGeneral from '../assets/odontologia_general.png';
 import placeholderImg from '../assets/placeholder-4x3.svg';
@@ -131,8 +131,64 @@ const SERVICES = [
   },
 ];
 
+const getSlidesPerView = () => {
+  if (typeof window === 'undefined') {
+    return 1;
+  }
+  if (window.innerWidth >= 1024) {
+    return 3;
+  }
+  if (window.innerWidth >= 640) {
+    return 2;
+  }
+  return 1;
+};
+
+const AUTOPLAY_INTERVAL = 6000;
+const IDLE_DELAY = 4000;
+
 const Services = ({ highlightRequest }) => {
   const [selectedService, setSelectedService] = useState(null);
+  const [slidesPerView, setSlidesPerView] = useState(() => getSlidesPerView());
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const trackRef = useRef(null);
+  const maxIndex = Math.max(0, SERVICES.length - slidesPerView);
+  const dragStateRef = useRef({
+    isPointerDown: false,
+    startX: 0,
+    scrollLeft: 0,
+    pointerId: null,
+  });
+  const lastInteractionRef = useRef(Date.now());
+
+  const markInteraction = useCallback(() => {
+    lastInteractionRef.current = Date.now();
+  }, []);
+
+  const scrollToCard = useCallback((index, behavior = 'smooth') => {
+    const track = trackRef.current;
+    if (!track) return;
+    const target = track.children[index];
+    if (target && target.scrollIntoView) {
+      target.scrollIntoView({
+        behavior,
+        block: 'nearest',
+        inline: 'start',
+      });
+    }
+  }, []);
+
+  const handleNavigate = (direction) => {
+    markInteraction();
+    const delta = direction === 'next' ? slidesPerView : -slidesPerView;
+    const target = Math.min(Math.max(0, visibleIndex + delta), maxIndex);
+    if (target === visibleIndex) {
+      return;
+    }
+    setVisibleIndex(target);
+    scrollToCard(target);
+  };
 
   const openModal = (serviceOrKey) => {
     if (!serviceOrKey) {
@@ -153,6 +209,119 @@ const Services = ({ highlightRequest }) => {
     setSelectedService(null);
   };
 
+  const handlePointerDown = (event) => {
+    if (event.pointerType !== 'mouse') return;
+    const track = trackRef.current;
+    if (!track) return;
+    if (event.button !== 0) return;
+    markInteraction();
+    dragStateRef.current = {
+      isPointerDown: true,
+      startX: event.clientX,
+      scrollLeft: track.scrollLeft,
+      pointerId: event.pointerId,
+    };
+    setIsDragging(true);
+    track.setPointerCapture?.(event.pointerId);
+  };
+
+  const handlePointerMove = (event) => {
+    if (event.pointerType !== 'mouse') return;
+    const track = trackRef.current;
+    if (!track || !dragStateRef.current.isPointerDown) return;
+    event.preventDefault();
+    track.scrollLeft = dragStateRef.current.scrollLeft - (event.clientX - dragStateRef.current.startX);
+  };
+
+  const releasePointer = (event) => {
+    const track = trackRef.current;
+    if (!track || !dragStateRef.current.isPointerDown) return;
+    dragStateRef.current.isPointerDown = false;
+    track.releasePointerCapture?.(dragStateRef.current.pointerId);
+    dragStateRef.current.pointerId = null;
+    setIsDragging(false);
+  };
+
+  const handleWheel = (event) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const isMostlyVertical = Math.abs(event.deltaY) > Math.abs(event.deltaX);
+    if (!isMostlyVertical) return;
+    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+    if ((event.deltaY < 0 && track.scrollLeft <= 0) || (event.deltaY > 0 && track.scrollLeft >= maxScrollLeft)) {
+      return;
+    }
+    track.scrollLeft += event.deltaY;
+    event.preventDefault();
+    markInteraction();
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesPerView(getSlidesPerView());
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return undefined;
+
+    let frame = null;
+    const handleScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        frame = null;
+        const { scrollLeft } = track;
+        const children = track.children;
+        let candidate = 0;
+        for (let i = 0; i < children.length; i += 1) {
+          if (children[i].offsetLeft <= scrollLeft + 1) {
+            candidate = i;
+          } else {
+            break;
+          }
+        }
+        setVisibleIndex(candidate);
+        markInteraction();
+      });
+    };
+
+    handleScroll();
+    track.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      track.removeEventListener('scroll', handleScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, [markInteraction]);
+
+  useEffect(() => {
+    if (visibleIndex > maxIndex) {
+      setVisibleIndex(maxIndex);
+      scrollToCard(maxIndex, 'auto');
+    }
+  }, [maxIndex, scrollToCard, visibleIndex]);
+
+  const canGoPrev = visibleIndex > 0;
+  const canGoNext = visibleIndex < maxIndex;
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      if (Date.now() - lastInteractionRef.current < IDLE_DELAY) {
+        return;
+      }
+      setVisibleIndex((prev) => {
+        const next = prev + slidesPerView;
+        const wrapped = next > maxIndex ? 0 : next;
+        scrollToCard(wrapped);
+        return wrapped;
+      });
+    }, AUTOPLAY_INTERVAL);
+
+    return () => window.clearInterval(id);
+  }, [slidesPerView, maxIndex, scrollToCard]);
+
   useEffect(() => {
     if (!highlightRequest?.key) {
       return;
@@ -168,7 +337,7 @@ const Services = ({ highlightRequest }) => {
   }, [highlightRequest]);
 
   return (
-    <section id="servicios" className="relative isolate overflow-hidden scroll-mt-8 py-8">
+    <section id="servicios" className="relative isolate overflow-hidden scroll-mt-8 py-12 md:py-16">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-white to-cyan-50" />
       <div className="absolute top-12 right-0 h-48 w-48 rounded-full bg-blue-200/20 blur-3xl" />
       <div className="max-w-6xl mx-auto px-6">
@@ -181,55 +350,65 @@ const Services = ({ highlightRequest }) => {
               Especialidades para cuidar cada sonrisa
             </h2>
             <p className="mt-3 max-w-2xl text-base text-slate-600">
-              Tratamientos preventivos, restaurativos y estÃ©ticos diseÃ±ados para generar resultados duraderos, con acompaÃ±amiento cercano en cada etapa.
+              Tratamientos preventivos, restaurativos y estéticos diseñados para generar resultados duraderos, con acompañamiento cercano en cada etapa.
             </p>
           </div>
           <div className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-600 shadow-sm ring-1 ring-slate-100">
             Selecciona una especialidad y descubre mÃ¡s detalles y beneficios.
           </div>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <button
-              type="button"
-              key={service.key}
-              onClick={() => openModal(service)}
-              className="group relative overflow-hidden rounded-3xl bg-white/90 p-[1px] text-left shadow-[0_25px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(14,165,233,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+        <div className="mt-2 space-y-6 sm:mt-2">
+          
+          <div className="relative mt-6 rounded-[34px] px-2 pt-6 sm:px-5 lg:px-6">
+            <span className="pointer-events-none absolute inset-y-4 left-0 w-16 bg-gradient-to-r from-white via-white/80 to-transparent" aria-hidden="true" />
+            <span className="pointer-events-none absolute inset-y-4 right-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent" aria-hidden="true" />
+            <div
+              ref={trackRef}
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={releasePointer}
+              onPointerLeave={releasePointer}
+              onPointerCancel={releasePointer}
+              onWheel={handleWheel}
+              className={`flex gap-8 overflow-x-auto no-scrollbar px-1 pb-10 pt-4 scroll-smooth snap-x snap-mandatory sm:px-4 ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
             >
-              <span className="absolute inset-x-0 -top-20 h-28 bg-gradient-to-b from-cyan-200/40 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
-              <div className="relative h-full rounded-3xl bg-white p-7">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700" aria-hidden>
-          {service.title.slice(0, 2).toUpperCase()}
-        </div>
-        {/* Imagen del servicio: la tarjeta se ajusta al tamaño real de la imagen */}
-        <div className="mt-5 overflow-hidden rounded-2xl border border-white/70 bg-white">
-          <img
-            src={getImageForTitle(service.title)}
-            alt={service.title}
-            className="w-full h-auto object-contain"
-            loading="lazy"
-          />
-        </div>
-        <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
-        <p className="mt-3 text-sm text-slate-600">{service.summary}</p>
-                <span className="mt-6 inline-flex items-center text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600">
-                  Ver detalles
-                  <svg
-                    className="ml-2 h-4 w-4 transition-transform duration-200 ease-out group-hover:translate-x-1"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M9 18l6-6-6-6" />
-                  </svg>
-                </span>
-              </div>
-            </button>
-          ))}
+              {SERVICES.map((service) => (
+                <button
+                  type="button"
+                  key={service.key}
+                  onClick={() => openModal(service)}
+                  className="group relative min-w-[85%] min-h-[200px] overflow-hidden rounded-3xl bg-white/90 p-[1px] text-left shadow-[0_25px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(14,165,233,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 sm:min-w-[48%] lg:min-w-[32%] lg:min-h-[250px] md:mb-20 snap-start"
+                >
+                  <span className="absolute inset-x-0 -top-20 h-20 bg-gradient-to-b from-cyan-200/40 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+                  <div className="relative flex h-full flex-col rounded-3xl bg-white p-7">
+                    <div
+                      className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700"
+                      aria-hidden
+                    >
+                      {service.title.slice(0, 2).toUpperCase()}
+                    </div>
+                    <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
+                    <p className="mt-3 text-sm text-slate-600">{service.summary}</p>
+                    <span className="mt-6 inline-flex items-center text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600">
+                      Ver detalles
+                      <svg
+                        className="ml-2 h-4 w-4 transition-transform duration-200 ease-out group-hover:translate-x-1"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
      <Modal open={Boolean(selectedService)} onClose={closeModal} title={selectedService?.title}>
@@ -248,11 +427,11 @@ const Services = ({ highlightRequest }) => {
       </ul>
 
       {/* Imagen principal: el contenedor se ajusta al tamaño de la imagen */}
-      <div className="mx-auto inline-block rounded-2xl border border-white/70 bg-white shadow-sm p-2">
+      <div className="flex justify-center">
         <img
           src={getImageForTitle(selectedService.title)}
           alt={selectedService.title}
-          className="block w-auto h-auto max-w-[85vw] max-h-[70vh] object-contain"
+          className="rounded-2xl border border-white/70 bg-white shadow-md h-90 "
           loading="lazy"
         />
       </div>
@@ -265,8 +444,3 @@ const Services = ({ highlightRequest }) => {
 };
 
 export default Services;
-
-
-
-
-
