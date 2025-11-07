@@ -93,7 +93,7 @@ const SERVICES = [
       'Urgencias por dolor dental: diagnóstico inmediato y alivio del dolor.',
       'Cirugía apical (apicectomía): elimina infecciones persistentes y salva el diente sin extracción.',
     ],
-    image: 'https://source.unsplash.com/featured/?root,canal',
+    image: getImageForTitle('Endodoncia'),
   },
   {
     key: 'Ortodoncia',
@@ -198,11 +198,20 @@ const Services = ({ highlightRequest }) => {
             >
               <span className="absolute inset-x-0 -top-20 h-28 bg-gradient-to-b from-cyan-200/40 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
               <div className="relative h-full rounded-3xl bg-white p-7">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700" aria-hidden>
-                  {service.title.slice(0, 2).toUpperCase()}
-                </div>
-                <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{service.summary}</p>
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-base font-semibold text-cyan-700" aria-hidden>
+          {service.title.slice(0, 2).toUpperCase()}
+        </div>
+        {/* Imagen del servicio: la tarjeta se ajusta al tamaño real de la imagen */}
+        <div className="mt-5 overflow-hidden rounded-2xl border border-white/70 bg-white">
+          <img
+            src={getImageForTitle(service.title)}
+            alt={service.title}
+            className="w-full h-auto object-contain"
+            loading="lazy"
+          />
+        </div>
+        <h3 className="mt-5 text-lg font-semibold text-slate-900">{service.title}</h3>
+        <p className="mt-3 text-sm text-slate-600">{service.summary}</p>
                 <span className="mt-6 inline-flex items-center text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600">
                   Ver detalles
                   <svg
@@ -238,12 +247,12 @@ const Services = ({ highlightRequest }) => {
         ))}
       </ul>
 
-      {/* Imagen principal */}
-      <div className="mx-auto w-80 h-96 overflow-hidden rounded-2xl border border-white/70 bg-white shadow-sm">
+      {/* Imagen principal: el contenedor se ajusta al tamaño de la imagen */}
+      <div className="mx-auto inline-block rounded-2xl border border-white/70 bg-white shadow-sm p-2">
         <img
           src={getImageForTitle(selectedService.title)}
           alt={selectedService.title}
-          className="w-full h-auto object-cover"
+          className="block w-auto h-auto max-w-[85vw] max-h-[70vh] object-contain"
           loading="lazy"
         />
       </div>
