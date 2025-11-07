@@ -1,5 +1,53 @@
 ﻿import { useEffect, useState } from 'react';
 import Modal from './Modal';
+import odontologiaGeneral from '../assets/odontologia_general.png';
+import placeholderImg from '../assets/placeholder-4x3.svg';
+
+// Carga todas las imágenes de assets (png/jpg/webp)
+const IMAGE_URLS = import.meta.glob('../assets/*.{png,jpg,jpeg,JPG,webp,WEBP}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
+
+const normalize = (text) =>
+  (text || '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+const unique = (arr) => [...new Set(arr.filter(Boolean))];
+
+const candidatesFromTitle = (title) => {
+  const norm = normalize(title);
+  const parts = norm.split(/\s+/).filter(Boolean);
+  const noStop = parts.filter((p) => !['de', 'del', 'la', 'las', 'los', 'el', 'y'].includes(p));
+  const cands = [
+    noStop.join('_'),
+    parts.join('_'),
+    noStop.join(''),
+    parts.join(''),
+    noStop[0],
+  ];
+  if (norm.includes('diseno')) cands.push('diseno');
+  if (norm.includes('odontologia')) cands.push('odontologia_general', 'odontologia');
+  if (norm.includes('cirugia')) cands.push('cirugia_oral', 'cirugia');
+  return unique(cands);
+};
+
+const getImageForTitle = (title) => {
+  const cands = candidatesFromTitle(title);
+  const entries = Object.entries(IMAGE_URLS);
+  for (const base of cands) {
+    for (const ext of ['.png', '.jpg', '.jpeg', '.JPG', '.webp', '.WEBP']) {
+      const match = entries.find(([p]) => p.endsWith(`/${base}${ext}`));
+      if (match) return match[1];
+    }
+  }
+  return placeholderImg;
+};
 
 const SERVICES = [
   {
@@ -11,10 +59,7 @@ const SERVICES = [
       'Resinas estéticas, sellantes y restauraciones mínimamente invasivas que devuelven función.',
       'Evaluación integral periódica con educación en hábitos de higiene personalizados.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?dental,cleaning',
-      'https://source.unsplash.com/featured/?tooth,care',
-    ],
+    image: getImageForTitle('Odontolog general'),
   },
   {
     key: 'Cirugía oral',
@@ -25,10 +70,7 @@ const SERVICES = [
       'Cirugía de dientes retenidos o fracturados',
       'Regularización ósea: preparación del hueso para rehabilitación o prótesis',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?oral,surgery',
-      'https://source.unsplash.com/featured/?dentist,clinic',
-    ],
+    image: 'https://source.unsplash.com/featured/?oral,surgery',
   },
   {
     key: 'Periodoncia',
@@ -39,10 +81,7 @@ const SERVICES = [
       'Tratamiento integral de gingivitis y periodontitis con controles de cicatrización.',
       'Programas de mantenimiento periodontal y refuerzo de técnicas de higiene en casa.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?gum,care',
-      'https://source.unsplash.com/featured/?dental,hygiene',
-    ],
+    image: 'https://source.unsplash.com/featured/?gum,care',
   },
   {
     key: 'Endodoncia',
@@ -54,10 +93,7 @@ const SERVICES = [
       'Urgencias por dolor dental: diagnóstico inmediato y alivio del dolor.',
       'Cirugía apical (apicectomía): elimina infecciones persistentes y salva el diente sin extracción.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?root,canal',
-      'https://source.unsplash.com/featured/?endodontics',
-    ],
+    image: 'https://source.unsplash.com/featured/?root,canal',
   },
   {
     key: 'Ortodoncia',
@@ -69,10 +105,7 @@ const SERVICES = [
       'Ortopedia maxilar (ortodoncia ósea): guía el crecimiento de huesos en niños y adolescentes.',
       'Estabilización de mordida: garantiza resultados funcionales y duraderos.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?braces,teeth',
-      'https://source.unsplash.com/featured/?aligners,orthodontics',
-    ],
+    image: 'https://source.unsplash.com/featured/?braces,teeth',
   },
   {
     key: 'Implantología',
@@ -83,10 +116,7 @@ const SERVICES = [
       'Colocación de implantes con técnicas mínimamente invasivas y protocolos de carga controlada.',
       'Rehabilitación protésica sobre implantes con materiales biocompatibles y ajustes precisos.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?dental,implant',
-      'https://source.unsplash.com/featured/?prosthesis,dental',
-    ],
+    image: 'https://source.unsplash.com/featured/?dental,implant',
   },
   {
     key: 'Diseño de sonrisa',
@@ -97,10 +127,7 @@ const SERVICES = [
       'Carillas cerámicas o resinas estratificadas que armonizan forma, color y proporciones.',
       'Blanqueamiento guiado y mantenimiento periódico para prolongar el brillo y la uniformidad.',
     ],
-    images: [
-      'https://source.unsplash.com/featured/?smile,teeth',
-      'https://source.unsplash.com/featured/?teeth,whitening',
-    ],
+    image: 'https://source.unsplash.com/featured/?smile,teeth',
   },
 ];
 
@@ -196,32 +223,34 @@ const Services = ({ highlightRequest }) => {
           ))}
         </div>
       </div>
-      <Modal open={Boolean(selectedService)} onClose={closeModal} title={selectedService?.title}>
-        {selectedService && (
-          <div className="space-y-6">
-            <ul className="grid gap-2 text-sm text-slate-700">
-              {selectedService.details.map((detail) => (
-                <li key={detail} className="flex items-start gap-2">
-                  <span className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-cyan-500" aria-hidden />
-                  <span>{detail}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="grid grid-cols-2 gap-4">
-              {selectedService.images.map((src, index) => (
-                <div key={src} className="overflow-hidden rounded-2xl border border-white/70 bg-white shadow-sm">
-                  <img
-                    src={src}
-                    alt={`${selectedService.title} imagen ${index + 1}`}
-                    className="h-40 w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </Modal>
+     <Modal open={Boolean(selectedService)} onClose={closeModal} title={selectedService?.title}>
+  {selectedService && (
+    <div className="space-y-6">
+      <ul className="grid gap-2 text-sm text-slate-700">
+        {selectedService.details.map((detail) => (
+          <li key={detail} className="flex items-start gap-2">
+            <span
+              className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-cyan-500"
+              aria-hidden
+            />
+            <span>{detail}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* Imagen principal */}
+      <div className="mx-auto w-80 h-96 overflow-hidden rounded-2xl border border-white/70 bg-white shadow-sm">
+        <img
+          src={getImageForTitle(selectedService.title)}
+          alt={selectedService.title}
+          className="w-full h-auto object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  )}
+</Modal>
+
     </section>
   );
 };
