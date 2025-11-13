@@ -2,6 +2,11 @@ import Contact from '../components/Contact';
 import Seo from '../components/Seo';
 import { OG_IMAGE_URL, SITE_URL } from '../utils/seo';
 import placeholder43 from '../assets/placeholder-4x3.svg';
+import plan1Img from '../assets/ortodoncia/plan1.JPG';
+import plan2Img from '../assets/ortodoncia/plan2.JPG';
+import plan3Img from '../assets/ortodoncia/plan3.JPG';
+import plan4Img from '../assets/ortodoncia/plan4.JPG';
+import plan5Img from '../assets/ortodoncia/plan5.PNG';
 
 const CTAButton = () => (
   <div className="mt-8 flex justify-center">
@@ -33,30 +38,35 @@ const plans = [
     controls: ['18 controles aprox.', '21 controles aprox.'],
     desc:
       'Sistema de brackets metálicos Mini Roth, ideal para correcciones confiables y progresivas con alta eficiencia clínica.',
+    image: plan1Img,
   },
   {
     title: 'Plan 2. Precisión y Confort (MBT)',
     controls: ['18 controles aprox.'],
     desc:
       'Técnica MBT enfocada en precisión del posicionamiento dental y confort durante el tratamiento con fuerzas controladas.',
+    image: plan2Img,
   },
   {
     title: 'Plan 3. Promoción Especial (2x1 Mini Roth)',
     controls: ['18 controles aprox.'],
     desc:
       'Aprovecha una promoción pensada para familias o parejas con brackets Mini Roth: resultados consistentes y económicos.',
+    image: plan3Img,
   },
   {
     title: 'Plan 4. Alta Tecnología (Autoligado)',
     controls: ['16 controles aprox.'],
     desc:
       'Brackets de autoligado que reducen fricción, facilitan la higiene y pueden requerir menos ajustes durante el proceso.',
+    image: plan4Img,
   },
   {
     title: 'Plan 5. Ortodoncia Avanzada (MBT Integral)',
     controls: ['18 controles aprox.'],
     desc:
       'Enfoque integral con técnica MBT, orientado a casos complejos que requieren mayor control tridimensional de las piezas.',
+    image: plan5Img,
   },
 ];
 
@@ -127,9 +137,8 @@ const OrtodonciaPage = () => {
                 className="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-[0_35px_90px_-45px_rgba(15,23,42,0.6)] ring-1 ring-slate-100 transition hover:shadow-[0_45px_100px_-45px_rgba(6,182,212,0.45)]"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-50">
-                  {/* Placeholder de imagen: reemplazar por fotografías reales */}
                   <img
-                    src={placeholder43}
+                    src={plan.image || placeholder43}
                     alt={`Imagen referencial de ${plan.title}`}
                     className="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-[1.02]"
                   />
@@ -208,4 +217,3 @@ const OrtodonciaPage = () => {
 };
 
 export default OrtodonciaPage;
-
