@@ -5,6 +5,8 @@ import disenoImg from '../assets/diseno.JPG';
 import implantologiaImg from '../assets/implantologia.JPG';
 import ortodonciaImg from '../assets/ortodoncia.JPG';
 import protesisImg from '../assets/protesis.JPG';
+import casoOrtodoncia2Img from '../assets/galeria/casoOrtodoncia2.png';
+import casoOrtodoncia3Img from '../assets/galeria/casoOrtodoncia3.png';
 
 const ITEMS = [
   {
@@ -18,6 +20,32 @@ const ITEMS = [
       'Plan de tratamiento basado en cefalometría y escaneo intraoral.',
       'Opciones de brackets metálicos, estéticos y alineadores transparentes según la necesidad clínica.',
       'Programa de retención y controles postratamiento para mantener los resultados.',
+    ],
+  },
+  {
+    title: 'Ortodoncia estética combinada',
+    tag: 'Ortodoncia',
+    description: 'Transformación visible del arco superior e inferior corregida con brackets estéticos y alineadores.',
+    modalDescription:
+      'Planificamos la secuencia con software digital para abrir espacios, nivelar márgenes gingivales y centrar líneas medias. El resultado fue una sonrisa armónica sin extracciones y con retención personalizada.',
+    src: casoOrtodoncia2Img,
+    highlights: [
+      'Escaneo intraoral y set-up digital para previsualizar cada micro movimiento dental.',
+      'Uso alternado de arcos termoactivos y alineadores para acelerar la alineación sin perder control radicular.',
+      'Contención fija inferior y placas transparentes nocturnas para mantener los cambios logrados.',
+    ],
+  },
+  {
+    title: 'Corrección de mordida abierta',
+    tag: 'Ortodoncia',
+    description: 'Caso de impacto que combinó ortopedia y anclaje temporal para cerrar mordida anterior y nivelar sonrisa.',
+    modalDescription:
+      'El enfoque interdisciplinario incluyó aparatología funcional, brackets cerámicos y elásticos verticales controlados. La paciente recuperó guía anterior y mejoró su perfil facial.',
+    src: casoOrtodoncia3Img,
+    highlights: [
+      'Alineación inicial con dispositivos miofuncionales para reeducar la postura lingual.',
+      'Mini implantes de anclaje para controlar la intrusión posterior y dirigir el cierre de la mordida abierta.',
+      'Retención con alineadores invisibles y férula nocturna que cuida la articulación temporomandibular.',
     ],
   },
   {
