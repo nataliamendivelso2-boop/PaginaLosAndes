@@ -358,7 +358,7 @@ const Services = ({ highlightRequest }) => {
           </div>
         </div>
         <div className="mt-5  sm:mt-2">
-          <div className="flex justify-end gap-3 pr-2">
+          <div className="flex justify-end gap-3 pr-2 md:hidden">
             <button
               type="button"
               onClick={() => handleNavigate('prev')}
@@ -403,17 +403,65 @@ const Services = ({ highlightRequest }) => {
             </button>
           </div>
           <div className="relative mt-6 rounded-[34px] bg-transparent px-2 pt-6 sm:px-5 lg:px-6">
+            <div className="hidden md:flex absolute inset-y-0 left-0 items-center pl-2 z-10">
+              <button
+                type="button"
+                onClick={() => handleNavigate('prev')}
+                disabled={!canGoPrev}
+                className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-cyan-400 bg-white/90 text-slate-600 shadow-lg transition hover:border-cyan-500 hover:text-cyan-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label="Ver servicios anteriores"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+            </div>
+            <div className="hidden md:flex absolute inset-y-0 right-0 items-center pr-2 z-10">
+              <button
+                type="button"
+                onClick={() => handleNavigate('next')}
+                disabled={!canGoNext}
+                className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-cyan-400 bg-white/90 text-slate-600 shadow-lg transition hover:border-cyan-500 hover:text-cyan-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label="Ver más servicios"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
             <span className="pointer-events-none absolute inset-y-4 left-0 w-16 bg-gradient-to-r from-white/0 via-white/60 to-white/0" aria-hidden="true" />
             <span className="pointer-events-none absolute inset-y-4 right-6 w-16 bg-gradient-to-l from-white/0 via-white/60 to-white/0" aria-hidden="true" />
             <div
               ref={trackRef}
-              onPointerDown={handlePointerDown}
-              onPointerMove={handlePointerMove}
-              onPointerUp={releasePointer}
-              onPointerLeave={releasePointer}
-              onPointerCancel={releasePointer}
+              onPointerDown={slidesPerView === 1 ? handlePointerDown : undefined}
+              onPointerMove={slidesPerView === 1 ? handlePointerMove : undefined}
+              onPointerUp={slidesPerView === 1 ? releasePointer : undefined}
+              onPointerLeave={slidesPerView === 1 ? releasePointer : undefined}
+              onPointerCancel={slidesPerView === 1 ? releasePointer : undefined}
               onWheel={handleWheel}
-              className={`flex gap-8 overflow-x-auto no-scrollbar px-1 pt-4 scroll-smooth snap-x snap-mandatory sm:px-6 ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+              className={`flex gap-8 overflow-x-auto no-scrollbar px-1 pt-4 scroll-smooth snap-x snap-mandatory sm:px-6 ${
+                slidesPerView === 1 ? (isDragging ? 'cursor-grabbing' : 'cursor-grab') : ''
+              }`}
             >
               {SERVICES.map((service) => (
                 <button
