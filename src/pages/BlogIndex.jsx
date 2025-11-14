@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { Fragment, useCallback, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Contact from '../components/Contact';
 import Seo from '../components/Seo';
@@ -10,6 +10,7 @@ import blogPosts from '../data/posts';
 const HIGHLIGHT_LIMIT = 3;
 const HIGHLIGHT_CHAR_LIMIT = 160;
 const DEFAULT_CATEGORY = 'Todos';
+const CTA_INSERT_INTERVAL = 4;
 
 const buildHighlights = (content = []) =>
   content
@@ -359,53 +360,84 @@ const BlogIndex = () => {
             </div>
           </article>
           <div className="grid gap-8 md:grid-cols-2">
-            {otherPosts.map((post) => (
-              <article
-                key={post.slug}
-                className="flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white/95 p-8 shadow-[0_35px_80px_-60px_rgba(14,165,233,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_45px_110px_-50px_rgba(14,165,233,0.4)]"
-              >
-                <div className="space-y-4">
-                  <span className="inline-flex items-center rounded-full bg-cyan-100/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-700">
-                    {post.category}
-                  </span>
-                  <h3
-                    className="text-2xl font-semibold text-slate-950"
-                    style={{ fontFamily: '"Playfair Display", serif' }}
-                  >
-                    {post.title}
-                  </h3>
-                  <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
-                    {post.date} · {post.readTime}
-                  </p>
-                  <p className="text-sm leading-relaxed text-slate-600 md:text-base">
-                    {post.excerpt}
-                  </p>
-                </div>
-                <div className="mt-8 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
-                  <span className="inline-flex items-center gap-2">
-                    <span className="inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" aria-hidden />
-                    {post.readTime}
-                  </span>
-                  <Link
-                    to={`/blogs/${post.slug}`}
-                    className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
-                  >
-                    Leer más
-                    <svg
-                      className="h-4 w-4"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden
+            {otherPosts.map((post, index) => (
+              <Fragment key={post.slug}>
+                <article
+                  className="flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white/95 p-8 shadow-[0_35px_80px_-60px_rgba(14,165,233,0.45)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_45px_110px_-50px_rgba(14,165,233,0.4)]"
+                >
+                  <div className="space-y-4">
+                    <span className="inline-flex items-center rounded-full bg-cyan-100/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-700">
+                      {post.category}
+                    </span>
+                    <h3
+                      className="text-2xl font-semibold text-slate-950"
+                      style={{ fontFamily: '"Playfair Display", serif' }}
                     >
-                      <path d="M9 18l6-6-6-6" />
-                    </svg>
-                  </Link>
-                </div>
-              </article>
+                      {post.title}
+                    </h3>
+                    <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
+                      {post.date} · {post.readTime}
+                    </p>
+                    <p className="text-sm leading-relaxed text-slate-600 md:text-base">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                  <div className="mt-8 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+                    <span className="inline-flex items-center gap-2">
+                      <span className="inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400" aria-hidden />
+                      {post.readTime}
+                    </span>
+                    <Link
+                      to={`/blogs/${post.slug}`}
+                      className="inline-flex items-center gap-2 text-cyan-600 transition-colors duration-200 hover:text-cyan-500"
+                    >
+                      Leer más
+                      <svg
+                        className="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden
+                      >
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                    </Link>
+                  </div>
+                </article>
+                {(index + 1) % CTA_INSERT_INTERVAL === 0 && (
+                  <div className="flex flex-col items-center justify-center rounded-3xl border border-cyan-100 bg-gradient-to-br from-white via-cyan-50 to-blue-50 p-8 text-center text-slate-800 shadow-[0_40px_120px_-70px_rgba(14,165,233,0.7)] md:col-span-2">
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-700">¿Listo para agendar?</p>
+                    <p className="mt-3 text-base text-slate-600">
+                      Nuestros especialistas pueden orientarte por WhatsApp o agendar tu valoración en minutos.
+                    </p>
+                    <div className="mt-6">
+                      <button
+                        type="button"
+                        onClick={handleContactNavigation}
+                        className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                      >
+                        Agenda y contacto
+                        <svg
+                          className="h-4 w-4"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </Fragment>
             ))}
           </div>
         </div>
