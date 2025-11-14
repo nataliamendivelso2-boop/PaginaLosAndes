@@ -62,6 +62,14 @@ const NavBar = () => {
           />
         </button>
         <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+          <button
+            type="button"
+            onClick={() => navigateToPath('/ortodoncia')}
+            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
+          >
+            Ortodoncia
+          </button>
+
           {sectionLinks.map((item) => (
             <button
               key={item.hash}
@@ -72,13 +80,7 @@ const NavBar = () => {
               {item.label}
             </button>
           ))}
-          <button
-            type="button"
-            onClick={() => navigateToPath('/ortodoncia')}
-            className="transition-all duration-200 hover:text-white hover:drop-shadow-[0_2px_6px_rgba(6,182,212,0.5)]"
-          >
-            Ortodoncia
-          </button>
+
           <button
             type="button"
             onClick={() => navigateToPath('/blogs')}
@@ -129,7 +131,7 @@ const NavBar = () => {
               </button>
             </div>
             <nav className="mt-8 flex flex-col gap-3 text-slate-700">
-            <button
+              <button
                 type="button"
                 onClick={() => navigateToPath('/ortodoncia')}
                 className="flex items-center justify-between rounded-2xl border border-slate-200 px-4 py-3 text-sm font-semibold uppercase tracking-[0.25em] transition hover:border-cyan-300 hover:text-cyan-600"
@@ -138,8 +140,8 @@ const NavBar = () => {
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
-              </button> 
-              
+              </button>
+
               {sectionLinks.map((item) => (
                 <button
                   key={item.hash}
@@ -153,7 +155,7 @@ const NavBar = () => {
                   </svg>
                 </button>
               ))}
-              
+
               <button
                 type="button"
                 onClick={() => navigateToPath('/blogs')}
