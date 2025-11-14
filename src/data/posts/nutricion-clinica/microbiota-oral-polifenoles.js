@@ -1,0 +1,24 @@
+const post = {
+  "id": "microbiota-oral-polifenoles",
+  "slug": "microbiota-oral-polifenoles",
+  "category": "Nutrición clínica",
+  "categorySlug": "nutricion-clinica",
+  "order": 41,
+  "title": "Microbiota oral y polifenoles: nutriendo los tejidos periodontales",
+  "date": "05 de mayo de 2025",
+  "readTime": "8 min de lectura",
+  "excerpt": "Una dieta rica en polifenoles y prebióticos modula la microbiota oral, reduce la inflamación periodontal y complementa la terapia periodontal con enfoque integral.",
+  "content": [
+    "La microbiota oral no es estática; responde a lo que comemos. El predominio de bacterias anaerobias se fortalece con dietas altas en carbohidratos fermentables, mientras que los compuestos fenólicos de frutas y semillas promueven comunidades bacterianas protectoras. El nutrólogo clínico observa cada caso periodontally activo y ofrece recomendaciones específicas: en lugar de enfocarse solo en cepillado y enjuagues, se propone una intervención dietética que fortalezca la mucosa y reduzca la inflamación crónica.",
+    "Los polifenoles son pigmentos naturales que encontramos en té verde, cacao, uvas, frutos rojos y cúrcuma. Mantienen la barrera oral porque inhiben la adhesión de Streptococcus mutans y Porphyromonas gingivalis, principales agentes en la periodontitis. Se ha demostrado que consumir tres porciones diarias de alimentos ricos en polifenoles reduce los marcadores de inflamación en la saliva (como IL-1β y TNF-α) y favorece la producción de óxido nítrico, que mejora la perfusión gingival.",
+    "Además de los polifenoles, los prebióticos como la fibra soluble y los oligosacáridos alimentan bacterias benéficas. Los alimentos fermentados contienen bacterias lácticas que compiten con los patógenos, mientras que las fibras alimenticias modulan el pH y la viscosidad de la saliva. El plan incluye avena, semillas de chía, y frutas como manzana o pera con piel, que además de fibra brindan antioxidantes. Los pacientes aprenden a distribuir en tres comidas principales y dos colaciones ligeras para evitar picos glicémicos que alimenten la inflamación.",
+    "El profesional también vigila la relación calcio-fósforo y la vitamina D, esenciales para reparar el hueso alveolar. Introduce lácteos fermentados naturales, pescado azul y huevos, complementados con suplementos cuando hay deficiencias documentadas. Un balance adecuado evita la resorción ósea, que es la base de los defectos periodontales. La suplementación con vitamina C en dosis divididas reforzando la síntesis de colágeno se utiliza durante los episodios agudos para acelerar la cicatrización.",
+    "Se enfatiza la regulación del consumo de azúcares libres y ácidos dañinos. Los pacientes aprenden a identificar etiquetas y a preferir endulzantes naturales como stevia o pequeñas cantidades de miel cruda. Se recomienda enjuagar con agua después de comidas ácidas y aislar su consumo a momentos específicos del día para dar tiempo de remineralización entre comidas. Restaurar la salud periodontal es un proceso gradual que requiere compromiso, pero los pacientes se sienten más motivados al notar menos sangrado y una sensación de boca más fresca.",
+    "El seguimiento incluye evaluaciones nutricionales mensuales donde se revisan registros de alimentos, niveles de hidratación y síntomas de xerostomía. Si se detectan deficiencias, se ajustan suplementos de zinc, magnesio o ácidos grasos omega-3, que tienen propiedades antiinflamatorias. Las preparaciones se diseñan para ser prácticas: batidos con cacao puro, smoothies con cúrcuma y jengibre, o ensaladas con aderezos cítricos y semillas tostadas. El objetivo es incorporar hábitos sostenibles, no dietas restrictivas temporales.",
+    "La educación se complementa con talleres sobre lectura de etiquetas, preparación de snacks saludables y experiencias culinarias en consulta. Se invita al paciente a compartir fotos de sus comidas para recibir retroalimentación en tiempo real. Los resultados se miden no solo con sondajes, sino con encuestas de percepción de bienestar, nivel de energía y control del apetito.",
+    "También se registra la evolución microbiológica mediante kits caseros de saliva que analizan la carga bacteriana cada trimestre. Estos datos permiten ver cómo responde la microbiota a los ajustes dietéticos y refuerzan la adherencia, ya que el paciente observa resultados cuantificables.",
+    "Al enriquecer la dieta con polifenoles y prebióticos no solo se protege la salud periodontal, también se favorece el sistema inmune general. La microbiota oral actúa como primera línea de defensa; cuando está equilibrada, retroalimenta la microbiota intestinal mediante el eje oral-gastrointestinal. Este enfoque integrador demuestra que la nutrición clínica puede ser un aliado potentísimo para lograr encías firmes y sonrisas estables."
+  ]
+};
+
+export default post;
