@@ -403,7 +403,7 @@ const Services = ({ highlightRequest }) => {
             </button>
           </div>
           <div className="relative mt-6 rounded-[34px] bg-transparent px-2 pt-6 sm:px-5 lg:px-6">
-            <div className="hidden md:flex absolute inset-y-0 -left-6 items-center z-10">
+            <div className="hidden md:flex absolute inset-y-0 -left-12 items-center z-10">
               <button
                 type="button"
                 onClick={() => handleNavigate('prev')}
@@ -426,7 +426,7 @@ const Services = ({ highlightRequest }) => {
                 </svg>
               </button>
             </div>
-            <div className="hidden md:flex absolute inset-y-0 -right-6 items-center z-10">
+            <div className="hidden md:flex absolute inset-y-0 -right-12 items-center z-10">
               <button
                 type="button"
                 onClick={() => handleNavigate('next')}
