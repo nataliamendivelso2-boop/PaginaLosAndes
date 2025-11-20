@@ -36,7 +36,7 @@ const ITEMS = [
     ],
   },
   {
-    title: 'Corrección de transiposición dental',
+    title: 'Corrección de transposición dental',
     tag: 'Ortodoncia',
     description: 'Caso de transposición con excelente resultado estético y correcta oclusión, manteniendo una adecuada guía canina.',
     modalDescription:
