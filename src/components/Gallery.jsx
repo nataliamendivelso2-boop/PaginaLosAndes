@@ -12,7 +12,7 @@ const ITEMS = [
   {
     title: 'Ortodoncia integral',
     tag: 'Ortodoncia',
-    description: 'Corrección personalizada de mordida con brackets estéticos, metálicos y alineadores.',
+    description: 'Solución de apiñamiento severo  con ortodoncia convencional.',
     modalDescription:
       'Controlamos cada fase del movimiento dental con estudios radiográficos y seguimiento digital para lograr una mordida funcional y armónica en el menor tiempo posible.',
     src: ortodonciaImg,
@@ -23,9 +23,9 @@ const ITEMS = [
     ],
   },
   {
-    title: 'Ortodoncia estética combinada',
+    title: 'Ortodoncia mordida cruzada anterior',
     tag: 'Ortodoncia',
-    description: 'Transformación visible del arco superior e inferior corregida con brackets estéticos y alineadores.',
+    description: 'Corrección de mordida cruzada anterior con desarrollo transversal y de la premaxila del maxilar superior.',
     modalDescription:
       'Planificamos la secuencia con software digital para abrir espacios, nivelar márgenes gingivales y centrar líneas medias. El resultado fue una sonrisa armónica sin extracciones y con retención personalizada.',
     src: casoOrtodoncia2Img,
@@ -36,9 +36,9 @@ const ITEMS = [
     ],
   },
   {
-    title: 'Corrección de mordida abierta',
+    title: 'Corrección de transiposición dental',
     tag: 'Ortodoncia',
-    description: 'Caso de impacto que combinó ortopedia y anclaje temporal para cerrar mordida anterior y nivelar sonrisa.',
+    description: 'Caso de transposición con excelente resultado estético y correcta oclusión, manteniendo una adecuada guía canina.',
     modalDescription:
       'El enfoque interdisciplinario incluyó aparatología funcional, brackets cerámicos y elásticos verticales controlados. La paciente recuperó guía anterior y mejoró su perfil facial.',
     src: casoOrtodoncia3Img,
