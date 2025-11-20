@@ -10,42 +10,42 @@ import casoOrtodoncia3Img from '../assets/galeria/casoOrtodoncia3.png';
 
 const ITEMS = [
   {
-    title: 'Ortodoncia integral',
+    title: 'Corrección de apiñamiento severo',
     tag: 'Ortodoncia',
     description: 'Solución de apiñamiento severo  con ortodoncia convencional.',
     modalDescription:
-      'Controlamos cada fase del movimiento dental con estudios radiográficos y seguimiento digital para lograr una mordida funcional y armónica en el menor tiempo posible.',
+      'Tratamiento de apiñamiento severo mediante ortodoncia convencional, logrando una alineación estable y una oclusión funcional en cada etapa del proceso.',
     src: ortodonciaImg,
     highlights: [
-      'Plan de tratamiento basado en cefalometría y escaneo intraoral.',
-      'Opciones de brackets metálicos, estéticos y alineadores transparentes según la necesidad clínica.',
-      'Programa de retención y controles postratamiento para mantener los resultados.',
+      'Diagnóstico preciso del apiñamiento severo y planificación individualizada.',
+      'Secuencia de arcos diseñada para mejorar la alineación sin comprometer raíces.',
+      'Retención personalizada para mantener estabilidad a largo plazo.',
     ],
   },
   {
-    title: 'Ortodoncia mordida cruzada anterior',
+    title: 'Corrección de mordida cruzada anterior',
     tag: 'Ortodoncia',
     description: 'Corrección de mordida cruzada anterior con desarrollo transversal y de la premaxila del maxilar superior.',
     modalDescription:
-      'Planificamos la secuencia con software digital para abrir espacios, nivelar márgenes gingivales y centrar líneas medias. El resultado fue una sonrisa armónica sin extracciones y con retención personalizada.',
+      'Tratamiento dirigido a desarrollar transversalmente el maxilar superior y corregir la mordida cruzada anterior, restableciendo simetría, función y estética.',
     src: casoOrtodoncia2Img,
     highlights: [
-      'Escaneo intraoral y set-up digital para previsualizar cada micro movimiento dental.',
-      'Uso alternado de arcos termoactivos y alineadores para acelerar la alineación sin perder control radicular.',
-      'Contención fija inferior y placas transparentes nocturnas para mantener los cambios logrados.',
+      'Desarrollo transversal controlado para equilibrar el maxilar superior.',
+      'Secuencia clínica orientada a centrar líneas medias y armonizar márgenes gingivales.',
+      'Retención adecuada para preservar la corrección obtenida.',
     ],
   },
   {
-    title: 'Corrección de transposición dental',
+    title: 'Transposición dental corregida',
     tag: 'Ortodoncia',
     description: 'Caso de transposición con excelente resultado estético y correcta oclusión, manteniendo una adecuada guía canina.',
     modalDescription:
-      'El enfoque interdisciplinario incluyó aparatología funcional, brackets cerámicos y elásticos verticales controlados. La paciente recuperó guía anterior y mejoró su perfil facial.',
+      'Caso de transposición tratado con enfoque ortodóntico integral, logrando oclusión estable, adecuada guía canina y excelente resultado estético.',
     src: casoOrtodoncia3Img,
     highlights: [
-      'Alineación inicial con dispositivos miofuncionales para reeducar la postura lingual.',
-      'Mini implantes de anclaje para controlar la intrusión posterior y dirigir el cierre de la mordida abierta.',
-      'Retención con alineadores invisibles y férula nocturna que cuida la articulación temporomandibular.',
+      'Reubicación dental progresiva respetando trayectorias radiculares.',
+      'Control preciso de la oclusión para recuperar guía canina funcional.',
+      'Retención diseñada para conservar la estabilidad del caso.',
     ],
   },
   {
